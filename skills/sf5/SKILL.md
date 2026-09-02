@@ -36,14 +36,17 @@ Tailwind conversion, Bitrix integration or exhaustive reference routing.
 1. Define goal, `Done When` and affected SF5 layer.
 2. Select an activity from `activities/activity-registry.json`; use
    `scripts/recommend_sf5_activity.py` when unclear.
-3. Load only the selected activity, specialist and directly required reference.
-4. Separate source refresh, routing, recipes and working-set changes into
+3. For a new or substantially changed Component/Smart Component, execute
+   `component-design-evolution` and load
+   `references/component-design-evolution.md` before editing implementation.
+4. Load only the selected activity, specialist and directly required reference.
+5. Separate source refresh, routing, recipes and working-set changes into
    explicit batches.
-5. Implement the nearest reversible slice with stated assumptions.
-6. Run the selected change gates and source/route/scaffold validation.
-7. Run `scripts/run_local_checks.sh` before delivery for repository-wide SF5
+6. Implement the nearest reversible slice with stated assumptions.
+7. Run the selected change gates and source/route/scaffold validation.
+8. Run `scripts/run_local_checks.sh` before delivery for repository-wide SF5
    changes.
-8. Update source-backed inventories/references only when their inputs changed.
+9. Update source-backed inventories/references only when their inputs changed.
 
 ## Layer Boundaries
 
@@ -69,6 +72,8 @@ them through its own surfaces.
 - recipes: `references/page-recipe-routing.md`;
 - loader/components: `references/frontend-loader.md` and
   `references/frontend-components-smart.md`;
+- component and Smart Component design/evolution:
+  `references/component-design-evolution.md`;
 - task/working set: `scripts/prepare_sf5_task.py` and
   `scripts/generate_sf5_working_set.py`;
 - strict HTML/recipe validation: `scripts/validate_page_recipes.py` and

@@ -5,6 +5,8 @@ The coordinator chooses the smallest sufficient activity and specialist set.
 Activity selection:
 
 - upstream refresh, mirrors, inventory rebuild, example drift -> `source-refresh`
+- new Component, major component refactor, scenario/variant design, or Smart
+  projection -> `component-design-evolution`
 - route ranking, scenario rules, recipe routing, fixtures -> `routing-maintenance`
 - page/component/block scaffold changes -> `recipe-scaffold-maintenance`
 - working-set sections, upstream extracts, bundle contract -> `working-set-maintenance`
@@ -30,6 +32,9 @@ Specialist selection:
 Default bias:
 
 - simple source refresh: `source-sync` + light `validation-qa`
+- component design/evolution: `task-goal` + `source-sync` + `validation-qa`,
+  with `ux`/`designer` for interaction and visual judgement and `docs`/`docara`
+  when public examples are affected
 - routing change: `routing-orchestrator` + `validation-qa`
 - recipe or working-set change: `recipe-scaffold` or `working-set` + `validation-qa`
 - Tailwind CSS conversion: `tailwind-converter` + `validation-qa`, optionally `recipe-scaffold` or `working-set`

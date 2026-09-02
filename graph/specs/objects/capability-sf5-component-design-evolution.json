@@ -1,0 +1,30 @@
+{
+  "id": "capability.sf5.component-design-evolution",
+  "schema_version": "1.0.0",
+  "kind": "capability",
+  "title": "SF5 Component design and evolution",
+  "summary": "Design and evolve ordinary and Smart Components from verified scenarios through a source-backed target contract, gap analysis and browser acceptance.",
+  "owner": "sf5",
+  "lifecycle": "active",
+  "readiness": "pilot",
+  "confidence": 0.9,
+  "confidence_method": "human_asserted_from_skill_contract",
+  "evidence_status": "asserted_by_human",
+  "source_refs": [
+    "skills/sf5/activities/component-design-evolution.json",
+    "skills/sf5/references/component-design-evolution.md",
+    "skills/sf5/technologies/component-design-evolution.process.json"
+  ],
+  "evidence_refs": [
+    "skills/sf5/quality/component-design-evolution-fixtures.json"
+  ],
+  "tags": [
+    "skill",
+    "mirai-graph-runtime",
+    "sf5",
+    "component-design",
+    "smart-component",
+    "technology"
+  ],
+  "subtype": "skill_capability"
+}

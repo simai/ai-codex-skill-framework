@@ -2,6 +2,16 @@
   "schemaVersion": 1,
   "fixtures": [
     {
+      "query": "изучи сценарии accordion, доработай базовый компонент и затем спроектируй смарт компонент без дублирования стилей",
+      "expectedActivityId": "component-design-evolution",
+      "requiredSpecialists": ["task-goal", "source-sync", "validation-qa"],
+      "requiredGateRules": ["rules/change-gates.md#component-design-evolution-gate"],
+      "requiredKnowledgePacks": ["references/component-design-evolution.md"],
+      "requiredRoles": {"validation-qa": "gatekeeper"},
+      "requiredWorkflowSnippets": ["Define the component essence", "base Component before projecting"],
+      "requiredOutputs": ["component brief", "scenario matrix", "target contract", "Smart Component projection decision", "technology quality feedback"]
+    },
+    {
       "query": "ui-play changed, new components appeared and source inventory should be refreshed",
       "expectedActivityId": "source-refresh",
       "requiredSpecialists": ["task-goal", "source-sync", "validation-qa"],

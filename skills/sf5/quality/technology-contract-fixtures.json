@@ -12,6 +12,13 @@
       "id": "sf5.paraphrase.en",
       "task": "Use $sf5 to complete the owner's representative task in a synthetic project.",
       "expected_process_model_id": "sf5_frontend_delivery"
+    },
+    {
+      "id": "sf5.component_design_evolution.ru",
+      "task": "Спроектируй новый компонент accordion по пользовательским сценариям и затем создай Smart Component без дублирования стилей.",
+      "expected_process_model_id": "sf5_frontend_delivery",
+      "expected_activity_id": "component-design-evolution",
+      "expected_technology_id": "sf5.component-design-evolution"
     }
   ],
   "negative_cases": [

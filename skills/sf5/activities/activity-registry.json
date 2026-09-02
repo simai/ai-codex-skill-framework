@@ -1,6 +1,7 @@
 {
   "activities": [
     "source-refresh",
+    "component-design-evolution",
     "routing-maintenance",
     "recipe-scaffold-maintenance",
     "working-set-maintenance",

@@ -1,0 +1,20 @@
+{
+  "id": "relation-gate-sf5-release-readiness-validates-capability-sf5-component-design-evolution",
+  "schema_version": "1.0.0",
+  "kind": "relation",
+  "from": "gate.sf5.release-readiness",
+  "to": "capability.sf5.component-design-evolution",
+  "relation_type": "validates",
+  "status": "accepted",
+  "confidence": 0.9,
+  "confidence_method": "human_asserted_from_skill_contract",
+  "evidence_status": "asserted_by_human",
+  "impact": "high",
+  "owner": "graph",
+  "source_refs": [
+    "skills/sf5/rules/change-gates.md"
+  ],
+  "evidence_refs": [
+    "skills/sf5/quality/component-design-evolution-fixtures.json"
+  ]
+}

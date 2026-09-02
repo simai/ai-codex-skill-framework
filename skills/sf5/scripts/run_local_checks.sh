@@ -25,6 +25,7 @@ echo "[sf5] Python syntax checks"
   skills/sf5/scripts/validate_activity_manifests.py \
   skills/sf5/scripts/validate_route_fixtures.py \
   skills/sf5/scripts/validate_activity_fixtures.py \
+  skills/sf5/scripts/validate_component_design_technology.py \
   skills/sf5/scripts/validate_router_hints.py \
   skills/sf5/scripts/validate_scaffold_hints.py \
   skills/sf5/scripts/validate_source_refresh_contract.py \
@@ -88,6 +89,9 @@ fi
 
 echo "[sf5] Validate activity manifests"
 "$PYTHON_BIN" skills/sf5/scripts/validate_activity_manifests.py > /tmp/sf5-activity-manifests.json
+
+echo "[sf5] Validate Component design/evolution technology"
+"$PYTHON_BIN" skills/sf5/scripts/validate_component_design_technology.py > /tmp/sf5-component-design-technology.json
 
 if [[ "$SF5_UPSTREAM_SOURCES_AVAILABLE" == "1" ]]; then
   echo "[sf5] Validate source-refresh contract"

@@ -28,6 +28,10 @@ ACTIVITY_NOTES = {
         "source-refresh gate",
         "verify source mirror paths and rebuild source-backed artifacts",
     ],
+    "component-design-evolution": [
+        "component design evolution gate",
+        "prove scenarios and the base Component contract before Smart projection",
+    ],
     "routing-maintenance": [
         "routing regression gate",
         "update fixtures before closing ranking changes",
@@ -102,6 +106,27 @@ def apply_activity_heuristics(text: str, activity_id: str, score: int, hits: lis
         if has_any(text, ["ui-play", "ui-smart", "ui-doc", "ui repo", "upstream", "mirror", "inventory", "playground", "новые компоненты", "обновились репозитории"]):
             score += 3
             bonus_hits.append("source-drift-intent")
+
+    if activity_id == "component-design-evolution":
+        component_subject = has_any(text, [
+            "component", "smart component", "accordion", "компонент",
+            "смарт компонент", "аккордеон", "аккардион",
+        ])
+        design_action = has_any(text, [
+            "design", "evolve", "refactor", "scenario", "variant",
+            "create", "new", "спроектировать", "доработать", "создать",
+            "новый", "сценарий", "вариант", "модификатор",
+        ])
+        source_refresh_context = has_any(text, [
+            "source inventory", "refresh", "sync upstream", "mirror",
+            "инвентар", "обновились репозитории",
+        ])
+        if component_subject and design_action and not source_refresh_context:
+            score += 9
+            bonus_hits.append("component-design-evolution-intent")
+        if component_subject and has_any(text, ["smart", "смарт"]):
+            score += 2
+            bonus_hits.append("smart-projection-intent")
 
     if activity_id == "routing-maintenance":
         if has_any(text, ["route", "routing", "scenario", "ranking", "matcher", "recipe routing", "fixtures", "роутинг", "маршрутизация", "ранжирование", "фикстуры"]):
