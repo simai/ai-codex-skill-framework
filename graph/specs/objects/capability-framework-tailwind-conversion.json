@@ -1,0 +1,28 @@
+{
+  "id": "capability.framework.tailwind-conversion",
+  "schema_version": "1.0.0",
+  "kind": "capability",
+  "title": "Tailwind to SIMAI Framework conversion",
+  "summary": "Convert Tailwind/UI source into SIMAI Framework components with working-set coverage and validation hardening.",
+  "owner": "framework",
+  "lifecycle": "active",
+  "readiness": "pilot",
+  "confidence": 0.88,
+  "confidence_method": "human_asserted_from_skill_contract",
+  "evidence_status": "asserted_by_human",
+  "source_refs": [
+    "skills/framework/SKILL.md",
+    "skills/framework/activities/tailwind-conversion.json",
+    "skills/framework/knowledge-packs/tailwind-to-framework-conversion.md"
+  ],
+  "evidence_refs": [],
+  "tags": [
+    "skill",
+    "mirai-graph-runtime",
+    "capability-profile",
+    "framework",
+    "capability",
+    "capability"
+  ],
+  "subtype": "skill_capability"
+}

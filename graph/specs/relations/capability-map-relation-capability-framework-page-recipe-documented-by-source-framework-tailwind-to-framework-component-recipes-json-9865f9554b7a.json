@@ -1,0 +1,18 @@
+{
+  "evidence": [],
+  "from": "capability.framework.page_recipe",
+  "id": "relation.capability-framework-page-recipe.documented-by.source-framework-tailwind-to-framework-component-recipes-json-9865f9554b7a",
+  "kind": "relation",
+  "profile": "skill_runtime",
+  "readiness": "accepted",
+  "relation_type": "documented_by",
+  "schema_version": "1.0.0",
+  "source": "capability.framework.page_recipe",
+  "source_refs": [
+    "skills/framework/quality/capability-map.json"
+  ],
+  "status": "accepted",
+  "target": "source.framework.tailwind-to-framework-component-recipes-json.9865f9554b7a",
+  "to": "source.framework.tailwind-to-framework-component-recipes-json.9865f9554b7a",
+  "type": "documented_by"
+}

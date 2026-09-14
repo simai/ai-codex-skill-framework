@@ -1,0 +1,508 @@
+{
+  "schema_version": "1.0.0",
+  "operation_id": "simai.owner_skill.capability_map",
+  "owner_skill": "framework",
+  "readiness": "ready",
+  "capabilities": [
+    {
+      "id": "framework.loader",
+      "aliases": [
+        "SIMAI Framework loader",
+        "framework loader",
+        "загрузчик framework"
+      ],
+      "user_outcome": "Подключение ресурсов штатным loader",
+      "readiness": "ready",
+      "canonical_source_refs": [
+        "references/framework-contract-registry.md",
+        "references/vendor/framework-contract-registry.pointer.json"
+      ],
+      "extension_points": [
+        {
+          "id": "framework.loader.extension",
+          "kind": "extend",
+          "source_ref": "references/framework-contract-registry.md",
+          "validator_ref": "federation://technology-conformance"
+        }
+      ],
+      "constraints": [
+        "Use the exact project version and native lifecycle, rights and APIs."
+      ],
+      "non_goals": [
+        "Do not create a parallel data, access, status or notification subsystem."
+      ],
+      "validator_refs": [
+        "federation://technology-conformance"
+      ],
+      "roles": [
+        "discovery",
+        "outcome_harness"
+      ],
+      "discovery": {
+        "intent_signals": [
+          "SIMAI Framework loader",
+          "framework loader",
+          "загрузчик framework",
+          "framework.loader",
+          "Подключение ресурсов штатным loader"
+        ],
+        "requirement_signals": [
+          "SIMAI Framework loader",
+          "framework loader",
+          "загрузчик framework",
+          "framework.loader",
+          "Подключение ресурсов штатным loader"
+        ],
+        "project_signals": [
+          "framework"
+        ],
+        "dependency_signals": []
+      },
+      "applicability": {
+        "platform": "framework",
+        "editions": [],
+        "version_range": "exact-project-version-or-owner-contract",
+        "required_modules": []
+      },
+      "coverage": {
+        "provides": [
+          "Подключение ресурсов штатным loader"
+        ],
+        "does_not_provide": [
+          "Capabilities outside the declared owner boundary"
+        ]
+      },
+      "ownership": {
+        "data": "framework",
+        "access": "framework",
+        "lifecycle": "framework",
+        "interface": "framework",
+        "runtime": "framework"
+      },
+      "composition": {
+        "requires": [],
+        "compatible_with": [],
+        "conflicts_with": []
+      },
+      "no_fit_conditions": [
+        "A required outcome remains uncovered after checking the exact owner source and project version."
+      ]
+    },
+    {
+      "id": "framework.page_recipe",
+      "aliases": [
+        "SIMAI Framework recipe",
+        "framework recipe",
+        "рецепт страницы"
+      ],
+      "user_outcome": "Страница из штатного рецепта SIMAI Framework",
+      "readiness": "ready",
+      "canonical_source_refs": [
+        "references/vendor/tailwind-to-framework.component-recipes.json"
+      ],
+      "extension_points": [
+        {
+          "id": "framework.page_recipe.extension",
+          "kind": "extend",
+          "source_ref": "references/vendor/tailwind-to-framework.component-recipes.json",
+          "validator_ref": "federation://technology-conformance"
+        }
+      ],
+      "constraints": [
+        "Use the exact project version and native lifecycle, rights and APIs."
+      ],
+      "non_goals": [
+        "Do not create a parallel data, access, status or notification subsystem."
+      ],
+      "validator_refs": [
+        "federation://technology-conformance"
+      ],
+      "roles": [
+        "discovery",
+        "outcome_harness"
+      ],
+      "discovery": {
+        "intent_signals": [
+          "SIMAI Framework recipe",
+          "framework recipe",
+          "рецепт страницы",
+          "framework.page_recipe",
+          "Страница из штатного рецепта SIMAI Framework"
+        ],
+        "requirement_signals": [
+          "SIMAI Framework recipe",
+          "framework recipe",
+          "рецепт страницы",
+          "framework.page_recipe",
+          "Страница из штатного рецепта SIMAI Framework"
+        ],
+        "project_signals": [
+          "framework"
+        ],
+        "dependency_signals": []
+      },
+      "applicability": {
+        "platform": "framework",
+        "editions": [],
+        "version_range": "exact-project-version-or-owner-contract",
+        "required_modules": []
+      },
+      "coverage": {
+        "provides": [
+          "Страница из штатного рецепта SIMAI Framework"
+        ],
+        "does_not_provide": [
+          "Capabilities outside the declared owner boundary"
+        ]
+      },
+      "ownership": {
+        "data": "framework",
+        "access": "framework",
+        "lifecycle": "framework",
+        "interface": "framework",
+        "runtime": "framework"
+      },
+      "composition": {
+        "requires": [],
+        "compatible_with": [],
+        "conflicts_with": []
+      },
+      "no_fit_conditions": [
+        "A required outcome remains uncovered after checking the exact owner source and project version."
+      ]
+    },
+    {
+      "id": "framework.ready_component",
+      "aliases": [
+        "SIMAI Framework ready component",
+        "framework component",
+        "компонент framework"
+      ],
+      "user_outcome": "Готовый компонент из точного registry",
+      "readiness": "ready",
+      "canonical_source_refs": [
+        "references/framework-contract-registry.md"
+      ],
+      "extension_points": [
+        {
+          "id": "framework.ready_component.extension",
+          "kind": "extend",
+          "source_ref": "references/framework-contract-registry.md",
+          "validator_ref": "federation://technology-conformance"
+        }
+      ],
+      "constraints": [
+        "Use the exact project version and native lifecycle, rights and APIs."
+      ],
+      "non_goals": [
+        "Do not create a parallel data, access, status or notification subsystem."
+      ],
+      "validator_refs": [
+        "federation://technology-conformance"
+      ],
+      "roles": [
+        "discovery",
+        "outcome_harness"
+      ],
+      "discovery": {
+        "intent_signals": [
+          "SIMAI Framework ready component",
+          "framework component",
+          "компонент framework",
+          "framework.ready_component",
+          "Готовый компонент из точного registry"
+        ],
+        "requirement_signals": [
+          "SIMAI Framework ready component",
+          "framework component",
+          "компонент framework",
+          "framework.ready_component",
+          "Готовый компонент из точного registry"
+        ],
+        "project_signals": [
+          "framework"
+        ],
+        "dependency_signals": []
+      },
+      "applicability": {
+        "platform": "framework",
+        "editions": [],
+        "version_range": "exact-project-version-or-owner-contract",
+        "required_modules": []
+      },
+      "coverage": {
+        "provides": [
+          "Готовый компонент из точного registry"
+        ],
+        "does_not_provide": [
+          "Capabilities outside the declared owner boundary"
+        ]
+      },
+      "ownership": {
+        "data": "framework",
+        "access": "framework",
+        "lifecycle": "framework",
+        "interface": "framework",
+        "runtime": "framework"
+      },
+      "composition": {
+        "requires": [],
+        "compatible_with": [],
+        "conflicts_with": []
+      },
+      "no_fit_conditions": [
+        "A required outcome remains uncovered after checking the exact owner source and project version."
+      ]
+    },
+    {
+      "id": "framework.ready_registry_reuse",
+      "aliases": [
+        "SIMAI Framework registry",
+        "ready record"
+      ],
+      "user_outcome": "Reuse only a ready SIMAI Framework registry record and return an upstream gap for discoverable-only entries.",
+      "readiness": "ready",
+      "canonical_source_refs": [
+        "references/framework-contract-registry.md",
+        "references/vendor/framework-contract-registry.pointer.json"
+      ],
+      "extension_points": [
+        {
+          "id": "framework.ready_registry_reuse.extension",
+          "kind": "extend",
+          "source_ref": "references/framework-contract-registry.md",
+          "validator_ref": "federation://owner-capability-map"
+        }
+      ],
+      "constraints": [
+        "Use raw owner sources for methodology and judgement.",
+        "Fail closed when required owner or platform evidence is unavailable."
+      ],
+      "non_goals": [
+        "Do not create a parallel owner or duplicate an existing platform capability."
+      ],
+      "validator_refs": [
+        "federation://owner-capability-map",
+        "federation://technology-conformance"
+      ],
+      "roles": [
+        "discovery",
+        "outcome_harness"
+      ],
+      "discovery": {
+        "intent_signals": [
+          "SIMAI Framework registry",
+          "ready record",
+          "framework.ready_registry_reuse",
+          "Reuse only a ready SIMAI Framework registry record and return an upstream gap for discoverable-only entries."
+        ],
+        "requirement_signals": [
+          "SIMAI Framework registry",
+          "ready record",
+          "framework.ready_registry_reuse",
+          "Reuse only a ready SIMAI Framework registry record and return an upstream gap for discoverable-only entries."
+        ],
+        "project_signals": [
+          "framework"
+        ],
+        "dependency_signals": []
+      },
+      "applicability": {
+        "platform": "framework",
+        "editions": [],
+        "version_range": "exact-project-version-or-owner-contract",
+        "required_modules": []
+      },
+      "coverage": {
+        "provides": [
+          "Reuse only a ready SIMAI Framework registry record and return an upstream gap for discoverable-only entries."
+        ],
+        "does_not_provide": [
+          "Capabilities outside the declared owner boundary"
+        ]
+      },
+      "ownership": {
+        "data": "framework",
+        "access": "framework",
+        "lifecycle": "framework",
+        "interface": "framework",
+        "runtime": "framework"
+      },
+      "composition": {
+        "requires": [],
+        "compatible_with": [],
+        "conflicts_with": []
+      },
+      "no_fit_conditions": [
+        "A required outcome remains uncovered after checking the exact owner source and project version."
+      ]
+    },
+    {
+      "id": "framework.ready_smart_component",
+      "aliases": [
+        "SIMAI Framework smart component",
+        "smart component",
+        "умный компонент"
+      ],
+      "user_outcome": "Готовый smart component из точного registry",
+      "readiness": "ready",
+      "canonical_source_refs": [
+        "references/component-smart-catalog.md"
+      ],
+      "extension_points": [
+        {
+          "id": "framework.ready_smart_component.extension",
+          "kind": "extend",
+          "source_ref": "references/component-smart-catalog.md",
+          "validator_ref": "federation://technology-conformance"
+        }
+      ],
+      "constraints": [
+        "Use the exact project version and native lifecycle, rights and APIs."
+      ],
+      "non_goals": [
+        "Do not create a parallel data, access, status or notification subsystem."
+      ],
+      "validator_refs": [
+        "federation://technology-conformance"
+      ],
+      "roles": [
+        "discovery",
+        "outcome_harness"
+      ],
+      "discovery": {
+        "intent_signals": [
+          "SIMAI Framework smart component",
+          "smart component",
+          "умный компонент",
+          "framework.ready_smart_component",
+          "Готовый smart component из точного registry"
+        ],
+        "requirement_signals": [
+          "SIMAI Framework smart component",
+          "smart component",
+          "умный компонент",
+          "framework.ready_smart_component",
+          "Готовый smart component из точного registry"
+        ],
+        "project_signals": [
+          "framework"
+        ],
+        "dependency_signals": []
+      },
+      "applicability": {
+        "platform": "framework",
+        "editions": [],
+        "version_range": "exact-project-version-or-owner-contract",
+        "required_modules": []
+      },
+      "coverage": {
+        "provides": [
+          "Готовый smart component из точного registry"
+        ],
+        "does_not_provide": [
+          "Capabilities outside the declared owner boundary"
+        ]
+      },
+      "ownership": {
+        "data": "framework",
+        "access": "framework",
+        "lifecycle": "framework",
+        "interface": "framework",
+        "runtime": "framework"
+      },
+      "composition": {
+        "requires": [],
+        "compatible_with": [],
+        "conflicts_with": []
+      },
+      "no_fit_conditions": [
+        "A required outcome remains uncovered after checking the exact owner source and project version."
+      ]
+    },
+    {
+      "id": "framework.utilities",
+      "aliases": [
+        "SIMAI Framework utilities",
+        "framework utilities",
+        "утилиты framework"
+      ],
+      "user_outcome": "Использование готовых utilities SIMAI Framework",
+      "readiness": "ready",
+      "canonical_source_refs": [
+        "references/framework-contract-registry.md",
+        "references/vendor/framework-contract-registry.pointer.json"
+      ],
+      "extension_points": [
+        {
+          "id": "framework.utilities.extension",
+          "kind": "extend",
+          "source_ref": "references/framework-contract-registry.md",
+          "validator_ref": "federation://technology-conformance"
+        }
+      ],
+      "constraints": [
+        "Use the exact project version and native lifecycle, rights and APIs."
+      ],
+      "non_goals": [
+        "Do not create a parallel data, access, status or notification subsystem."
+      ],
+      "validator_refs": [
+        "federation://technology-conformance"
+      ],
+      "roles": [
+        "discovery",
+        "outcome_harness"
+      ],
+      "discovery": {
+        "intent_signals": [
+          "SIMAI Framework utilities",
+          "framework utilities",
+          "утилиты framework",
+          "framework.utilities",
+          "Использование готовых utilities SIMAI Framework"
+        ],
+        "requirement_signals": [
+          "SIMAI Framework utilities",
+          "framework utilities",
+          "утилиты framework",
+          "framework.utilities",
+          "Использование готовых utilities SIMAI Framework"
+        ],
+        "project_signals": [
+          "framework"
+        ],
+        "dependency_signals": []
+      },
+      "applicability": {
+        "platform": "framework",
+        "editions": [],
+        "version_range": "exact-project-version-or-owner-contract",
+        "required_modules": []
+      },
+      "coverage": {
+        "provides": [
+          "Использование готовых utilities SIMAI Framework"
+        ],
+        "does_not_provide": [
+          "Capabilities outside the declared owner boundary"
+        ]
+      },
+      "ownership": {
+        "data": "framework",
+        "access": "framework",
+        "lifecycle": "framework",
+        "interface": "framework",
+        "runtime": "framework"
+      },
+      "composition": {
+        "requires": [],
+        "compatible_with": [],
+        "conflicts_with": []
+      },
+      "no_fit_conditions": [
+        "A required outcome remains uncovered after checking the exact owner source and project version."
+      ]
+    }
+  ]
+}

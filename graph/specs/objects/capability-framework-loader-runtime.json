@@ -1,0 +1,28 @@
+{
+  "id": "capability.framework.loader-runtime",
+  "schema_version": "1.0.0",
+  "kind": "capability",
+  "title": "SIMAI Framework loader runtime",
+  "summary": "Handle frontend loader, smart runtime, backend-first integration and project conventions.",
+  "owner": "framework",
+  "lifecycle": "active",
+  "readiness": "pilot",
+  "confidence": 0.88,
+  "confidence_method": "human_asserted_from_skill_contract",
+  "evidence_status": "asserted_by_human",
+  "source_refs": [
+    "skills/framework/SKILL.md",
+    "skills/framework/references/frontend-loader.md",
+    "skills/framework/knowledge-packs/backend-first-smart-runtime.md"
+  ],
+  "evidence_refs": [],
+  "tags": [
+    "skill",
+    "mirai-graph-runtime",
+    "capability-profile",
+    "framework",
+    "capability",
+    "capability"
+  ],
+  "subtype": "skill_capability"
+}

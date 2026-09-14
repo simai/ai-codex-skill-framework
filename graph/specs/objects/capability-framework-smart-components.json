@@ -1,0 +1,28 @@
+{
+  "id": "capability.framework.smart-components",
+  "schema_version": "1.0.0",
+  "kind": "capability",
+  "title": "SIMAI Framework smart components",
+  "summary": "Design and validate smart components, catalog entries, templates and smart hints.",
+  "owner": "framework",
+  "lifecycle": "active",
+  "readiness": "pilot",
+  "confidence": 0.88,
+  "confidence_method": "human_asserted_from_skill_contract",
+  "evidence_status": "asserted_by_human",
+  "source_refs": [
+    "skills/framework/SKILL.md",
+    "skills/framework/references/component-smart-catalog.md",
+    "skills/framework/references/smart-component-template.md"
+  ],
+  "evidence_refs": [],
+  "tags": [
+    "skill",
+    "mirai-graph-runtime",
+    "capability-profile",
+    "framework",
+    "capability",
+    "capability"
+  ],
+  "subtype": "skill_capability"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "skill.framework.core",
+  "schema_version": "1.0.0",
+  "kind": "skill",
+  "title": "SIMAI Framework skill core",
+  "summary": "Owns SIMAI Framework frontend-first workflows: loader, utilities, components, smart-components, recipes and staged backend planning.",
+  "owner": "framework",
+  "lifecycle": "active",
+  "readiness": "pilot",
+  "confidence": 0.88,
+  "confidence_method": "human_asserted_from_skill_contract",
+  "evidence_status": "asserted_by_human",
+  "source_refs": [
+    "skills/framework/SKILL.md"
+  ],
+  "evidence_refs": [],
+  "tags": [
+    "skill",
+    "mirai-graph-runtime",
+    "capability-profile",
+    "framework",
+    "skill",
+    "core"
+  ],
+  "subtype": "skill_core"
+}

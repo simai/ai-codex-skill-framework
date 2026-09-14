@@ -1,0 +1,18 @@
+{
+  "id": "relation-skill-framework-core-implements-capability-framework-loader-runtime",
+  "schema_version": "1.0.0",
+  "kind": "relation",
+  "from": "skill.framework.core",
+  "to": "capability.framework.loader-runtime",
+  "relation_type": "implements",
+  "status": "accepted",
+  "confidence": 0.86,
+  "confidence_method": "human_asserted_from_skill_contract",
+  "evidence_status": "asserted_by_human",
+  "impact": "high",
+  "owner": "graph",
+  "source_refs": [
+    "skills/framework/SKILL.md"
+  ],
+  "evidence_refs": []
+}

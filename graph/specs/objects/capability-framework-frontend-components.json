@@ -1,0 +1,28 @@
+{
+  "id": "capability.framework.frontend-components",
+  "schema_version": "1.0.0",
+  "kind": "capability",
+  "title": "SIMAI Framework frontend components",
+  "summary": "Implement SIMAI Framework frontend components, blocks, utilities, modifiers and component recipes.",
+  "owner": "framework",
+  "lifecycle": "active",
+  "readiness": "pilot",
+  "confidence": 0.88,
+  "confidence_method": "human_asserted_from_skill_contract",
+  "evidence_status": "asserted_by_human",
+  "source_refs": [
+    "skills/framework/SKILL.md",
+    "skills/framework/references/frontend-components-smart.md",
+    "skills/framework/references/frontend-playbook.md"
+  ],
+  "evidence_refs": [],
+  "tags": [
+    "skill",
+    "mirai-graph-runtime",
+    "capability-profile",
+    "framework",
+    "capability",
+    "capability"
+  ],
+  "subtype": "skill_capability"
+}

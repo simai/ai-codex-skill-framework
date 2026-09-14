@@ -1,0 +1,33 @@
+{
+  "aliases": [
+    "SIMAI Framework smart component",
+    "smart component",
+    "умный компонент"
+  ],
+  "applicability": {
+    "editions": [],
+    "platform": "framework",
+    "required_modules": [],
+    "version_range": "exact-project-version-or-owner-contract"
+  },
+  "authority": "owner_capability_map",
+  "evidence": [],
+  "expansion_policy": "expandable",
+  "id": "capability.framework.ready_smart_component",
+  "kind": "capability",
+  "lifecycle": "accepted",
+  "negative_boundaries": [
+    "Do not create a parallel data, access, status or notification subsystem."
+  ],
+  "owner": "framework",
+  "profile": "skill_runtime",
+  "readiness": "ready",
+  "schema_version": "1.0.0",
+  "source_refs": [
+    "skills/framework/quality/capability-map.json",
+    "skills/framework/references/component-smart-catalog.md"
+  ],
+  "subtype": "owner_capability_map_entry",
+  "summary": "Готовый smart component из точного registry",
+  "title": "Готовый smart component из точного registry"
+}

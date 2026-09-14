@@ -1,0 +1,20 @@
+{
+  "id": "relation-skill-framework-core-implements-capability-framework-component-design-evolution",
+  "schema_version": "1.0.0",
+  "kind": "relation",
+  "from": "skill.framework.core",
+  "to": "capability.framework.component-design-evolution",
+  "relation_type": "implements",
+  "status": "accepted",
+  "confidence": 0.9,
+  "confidence_method": "human_asserted_from_skill_contract",
+  "evidence_status": "asserted_by_human",
+  "impact": "high",
+  "owner": "graph",
+  "source_refs": [
+    "skills/framework/references/component-design-evolution.md"
+  ],
+  "evidence_refs": [
+    "skills/framework/quality/component-design-evolution-fixtures.json"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "recipe_id": "framework.technology-overlay",
+  "positive": [
+    {
+      "name": "project-technology-capability",
+      "base_recipe": "generic.repository",
+      "overlays": [
+        "framework.technology-overlay"
+      ],
+      "expected": "compatible",
+      "requires_capabilities": [
+        "project_technology"
+      ]
+    }
+  ],
+  "negative": [
+    {
+      "name": "missing-capability-rejected",
+      "base_recipe": "generic.repository",
+      "overlays": [
+        "framework.technology-overlay"
+      ],
+      "expected": "incompatible",
+      "requires_capabilities": [
+
+      ],
+      "expected_diagnostics": [
+        "project_technology_capability_required"
+      ]
+    }
+  ],
+  "compatibility": [
+    {
+      "name": "single-owner-overlay",
+      "base_recipe": "generic.repository",
+      "primary_owner": "framework",
+      "overlays": [
+        "framework.technology-overlay"
+      ],
+      "expected": "compatible",
+      "requires_capabilities": [
+        "project_technology"
+      ]
+    }
+  ]
+}

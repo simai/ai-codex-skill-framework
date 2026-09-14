@@ -36,7 +36,7 @@ The GitHub workflow also runs this gate after ordinary repository checks.
 Current migration scope:
 
 ```text
-skill:sf5
+skill:framework
 ```
 
 Canonical repo-local graph root:

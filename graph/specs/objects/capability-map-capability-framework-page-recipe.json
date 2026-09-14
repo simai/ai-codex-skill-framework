@@ -1,0 +1,33 @@
+{
+  "aliases": [
+    "SIMAI Framework recipe",
+    "framework recipe",
+    "рецепт страницы"
+  ],
+  "applicability": {
+    "editions": [],
+    "platform": "framework",
+    "required_modules": [],
+    "version_range": "exact-project-version-or-owner-contract"
+  },
+  "authority": "owner_capability_map",
+  "evidence": [],
+  "expansion_policy": "expandable",
+  "id": "capability.framework.page_recipe",
+  "kind": "capability",
+  "lifecycle": "accepted",
+  "negative_boundaries": [
+    "Do not create a parallel data, access, status or notification subsystem."
+  ],
+  "owner": "framework",
+  "profile": "skill_runtime",
+  "readiness": "ready",
+  "schema_version": "1.0.0",
+  "source_refs": [
+    "skills/framework/quality/capability-map.json",
+    "skills/framework/references/vendor/tailwind-to-framework.component-recipes.json"
+  ],
+  "subtype": "owner_capability_map_entry",
+  "summary": "Страница из штатного рецепта SIMAI Framework",
+  "title": "Страница из штатного рецепта SIMAI Framework"
+}

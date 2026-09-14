@@ -1,0 +1,30 @@
+{
+  "id": "capability.framework.component-design-evolution",
+  "schema_version": "1.0.0",
+  "kind": "capability",
+  "title": "SIMAI Framework Component design and evolution",
+  "summary": "Design and evolve ordinary and Smart Components from verified scenarios through a source-backed target contract, gap analysis and browser acceptance.",
+  "owner": "framework",
+  "lifecycle": "active",
+  "readiness": "pilot",
+  "confidence": 0.9,
+  "confidence_method": "human_asserted_from_skill_contract",
+  "evidence_status": "asserted_by_human",
+  "source_refs": [
+    "skills/framework/activities/component-design-evolution.json",
+    "skills/framework/references/component-design-evolution.md",
+    "skills/framework/technologies/component-design-evolution.process.json"
+  ],
+  "evidence_refs": [
+    "skills/framework/quality/component-design-evolution-fixtures.json"
+  ],
+  "tags": [
+    "skill",
+    "mirai-graph-runtime",
+    "framework",
+    "component-design",
+    "smart-component",
+    "technology"
+  ],
+  "subtype": "skill_capability"
+}

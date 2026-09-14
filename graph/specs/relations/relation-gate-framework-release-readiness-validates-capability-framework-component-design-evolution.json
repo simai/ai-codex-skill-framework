@@ -1,0 +1,20 @@
+{
+  "id": "relation-gate-framework-release-readiness-validates-capability-framework-component-design-evolution",
+  "schema_version": "1.0.0",
+  "kind": "relation",
+  "from": "gate.framework.release-readiness",
+  "to": "capability.framework.component-design-evolution",
+  "relation_type": "validates",
+  "status": "accepted",
+  "confidence": 0.9,
+  "confidence_method": "human_asserted_from_skill_contract",
+  "evidence_status": "asserted_by_human",
+  "impact": "high",
+  "owner": "graph",
+  "source_refs": [
+    "skills/framework/rules/change-gates.md"
+  ],
+  "evidence_refs": [
+    "skills/framework/quality/component-design-evolution-fixtures.json"
+  ]
+}

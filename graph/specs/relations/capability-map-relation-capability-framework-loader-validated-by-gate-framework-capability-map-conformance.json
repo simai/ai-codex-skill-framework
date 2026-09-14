@@ -1,0 +1,18 @@
+{
+  "evidence": [],
+  "from": "capability.framework.loader",
+  "id": "relation.capability-framework-loader.validated-by.gate-framework-capability-map-conformance",
+  "kind": "relation",
+  "profile": "skill_runtime",
+  "readiness": "accepted",
+  "relation_type": "validated_by",
+  "schema_version": "1.0.0",
+  "source": "capability.framework.loader",
+  "source_refs": [
+    "skills/framework/quality/capability-map.json"
+  ],
+  "status": "accepted",
+  "target": "gate.framework.capability-map-conformance",
+  "to": "gate.framework.capability-map-conformance",
+  "type": "validated_by"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "gate.framework.release-readiness",
+  "schema_version": "1.0.0",
+  "kind": "gate",
+  "title": "SIMAI Framework release readiness gate",
+  "summary": "Blocks completion until component/loader changes have working-set, validation and release-gate evidence.",
+  "owner": "framework",
+  "lifecycle": "active",
+  "readiness": "pilot",
+  "confidence": 0.88,
+  "confidence_method": "human_asserted_from_skill_contract",
+  "evidence_status": "asserted_by_human",
+  "source_refs": [
+    "skills/framework/SKILL.md",
+    "skills/framework/rules/change-gates.md",
+    "skills/framework/knowledge-packs/validation-hardening.md"
+  ],
+  "evidence_refs": [],
+  "tags": [
+    "skill",
+    "mirai-graph-runtime",
+    "capability-profile",
+    "framework",
+    "gate",
+    "gate"
+  ],
+  "subtype": "quality_gate"
+}

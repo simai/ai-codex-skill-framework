@@ -1,0 +1,33 @@
+{
+  "aliases": [
+    "SIMAI Framework ready component",
+    "framework component",
+    "компонент framework"
+  ],
+  "applicability": {
+    "editions": [],
+    "platform": "framework",
+    "required_modules": [],
+    "version_range": "exact-project-version-or-owner-contract"
+  },
+  "authority": "owner_capability_map",
+  "evidence": [],
+  "expansion_policy": "expandable",
+  "id": "capability.framework.ready_component",
+  "kind": "capability",
+  "lifecycle": "accepted",
+  "negative_boundaries": [
+    "Do not create a parallel data, access, status or notification subsystem."
+  ],
+  "owner": "framework",
+  "profile": "skill_runtime",
+  "readiness": "ready",
+  "schema_version": "1.0.0",
+  "source_refs": [
+    "skills/framework/quality/capability-map.json",
+    "skills/framework/references/framework-contract-registry.md"
+  ],
+  "subtype": "owner_capability_map_entry",
+  "summary": "Готовый компонент из точного registry",
+  "title": "Готовый компонент из точного registry"
+}

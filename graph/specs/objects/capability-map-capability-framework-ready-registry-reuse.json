@@ -1,0 +1,33 @@
+{
+  "aliases": [
+    "SIMAI Framework registry",
+    "ready record"
+  ],
+  "applicability": {
+    "editions": [],
+    "platform": "framework",
+    "required_modules": [],
+    "version_range": "exact-project-version-or-owner-contract"
+  },
+  "authority": "owner_capability_map",
+  "evidence": [],
+  "expansion_policy": "expandable",
+  "id": "capability.framework.ready_registry_reuse",
+  "kind": "capability",
+  "lifecycle": "accepted",
+  "negative_boundaries": [
+    "Do not create a parallel owner or duplicate an existing platform capability."
+  ],
+  "owner": "framework",
+  "profile": "skill_runtime",
+  "readiness": "ready",
+  "schema_version": "1.0.0",
+  "source_refs": [
+    "skills/framework/quality/capability-map.json",
+    "skills/framework/references/framework-contract-registry.md",
+    "skills/framework/references/vendor/framework-contract-registry.pointer.json"
+  ],
+  "subtype": "owner_capability_map_entry",
+  "summary": "Reuse only a ready SIMAI Framework registry record and return an upstream gap for discoverable-only entries.",
+  "title": "Reuse only a ready SIMAI Framework registry record and return an upstream gap for discoverable-only entries."
+}

@@ -1,0 +1,28 @@
+{
+  "id": "policy.framework.validation-hardening",
+  "schema_version": "1.0.0",
+  "kind": "policy",
+  "title": "SIMAI Framework validation hardening",
+  "summary": "Component/recipe changes need validation hardening, working-set coverage and release gate evidence.",
+  "owner": "framework",
+  "lifecycle": "active",
+  "readiness": "pilot",
+  "confidence": 0.88,
+  "confidence_method": "human_asserted_from_skill_contract",
+  "evidence_status": "asserted_by_human",
+  "source_refs": [
+    "skills/framework/SKILL.md",
+    "skills/framework/activities/validation-hardening.json",
+    "skills/framework/knowledge-packs/validation-hardening.md"
+  ],
+  "evidence_refs": [],
+  "tags": [
+    "skill",
+    "mirai-graph-runtime",
+    "capability-profile",
+    "framework",
+    "policy",
+    "policy"
+  ],
+  "subtype": "skill_policy"
+}

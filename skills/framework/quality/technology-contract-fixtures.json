@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "operation_id": "simai.owner_skill.technology_contract_fixture",
+  "skill": "framework",
+  "positive_cases": [
+    {
+      "id": "framework.paraphrase.ru",
+      "task": "Используй $framework. Выполни типовую задачу владельца framework в синтетическом проекте.",
+      "expected_process_model_id": "framework_frontend_delivery"
+    },
+    {
+      "id": "framework.paraphrase.en",
+      "task": "Use $framework to complete the owner's representative task in a synthetic project.",
+      "expected_process_model_id": "framework_frontend_delivery"
+    },
+    {
+      "id": "framework.component_design_evolution.ru",
+      "task": "Спроектируй новый компонент accordion по пользовательским сценариям и затем создай Smart Component без дублирования стилей.",
+      "expected_process_model_id": "framework_frontend_delivery",
+      "expected_activity_id": "component-design-evolution",
+      "expected_technology_id": "framework.component-design-evolution"
+    }
+  ],
+  "negative_cases": [
+    {
+      "id": "framework.owner_boundary",
+      "task": "Используй $dev для точечного backend bugfix в существующем API.",
+      "expected_primary_skill": "dev"
+    }
+  ],
+  "outcome_cases": [
+    {
+      "id": "framework.ready_registry_reuse.outcome",
+      "capability_id": "framework.ready_registry_reuse",
+      "prompt_ru": "Используй $framework. Выполни проверяемый синтетический сценарий framework.ready_registry_reuse и верни evidence без внешних или live-записей.",
+      "prompt_en": "Use $framework. Complete the synthetic framework.ready_registry_reuse scenario and return evidence without external or live writes.",
+      "fixture_repository": "graph/benchmarks/owner-outcomes/fixtures/framework/ready_registry_reuse",
+      "rubric_ref": "graph/benchmarks/owner-outcomes/rubrics/framework.json"
+    }
+  ]
+}

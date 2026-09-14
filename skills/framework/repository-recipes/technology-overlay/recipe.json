@@ -1,0 +1,69 @@
+{
+  "$schema": "https://simai.io/schemas/federation/repository-recipe.schema.json",
+  "schema_version": "2.0.0",
+  "id": "framework.technology-overlay",
+  "version": "2.0.0",
+  "kind": "technology_overlay",
+  "owner": "framework",
+  "title": "framework technology overlay",
+  "repository_family": "technology",
+  "repository_kind": "technology_repository",
+  "base_recipe": null,
+  "compatibility": {
+    "allowed_bases": [
+
+    ],
+    "allowed_overlays": [
+
+    ],
+    "incompatible_recipes": [
+
+    ]
+  },
+  "capabilities": [
+
+  ],
+  "requires_capabilities": [
+    "project_technology"
+  ],
+  "required_inputs": [
+
+  ],
+  "source_contract": {
+    "entrypoints": [
+      "skills/framework/SKILL.md"
+    ],
+    "processes": [
+      "skills/framework/activities/activity-registry.json"
+    ],
+    "checks": [
+      "graph/specs/index.json"
+    ]
+  },
+  "file_manifest": [
+
+  ],
+  "availability": {
+    "policy": "local_skill_override",
+    "default_state": "available"
+  },
+  "migrations": [
+
+  ],
+  "materialization": {
+    "mode": "declarative_manifest",
+    "generator_contract": "repository_factory.manifest.v1",
+    "template_root": null,
+    "template_files": [
+
+    ]
+  },
+  "validators": [
+    {
+      "id": "framework.source-check.1",
+      "type": "owner_source",
+      "ref": "graph/specs/index.json",
+      "required": true
+    }
+  ]
+}

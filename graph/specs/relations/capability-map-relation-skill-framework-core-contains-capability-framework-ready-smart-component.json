@@ -1,0 +1,18 @@
+{
+  "evidence": [],
+  "from": "skill.framework.core",
+  "id": "relation.skill-framework-core.contains.capability-framework-ready-smart-component",
+  "kind": "relation",
+  "profile": "skill_runtime",
+  "readiness": "accepted",
+  "relation_type": "contains",
+  "schema_version": "1.0.0",
+  "source": "skill.framework.core",
+  "source_refs": [
+    "skills/framework/quality/capability-map.json"
+  ],
+  "status": "accepted",
+  "target": "capability.framework.ready_smart_component",
+  "to": "capability.framework.ready_smart_component",
+  "type": "contains"
+}
