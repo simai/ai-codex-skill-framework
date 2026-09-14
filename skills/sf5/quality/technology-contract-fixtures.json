@@ -12,6 +12,11 @@
       "id": "sf5.paraphrase.en",
       "task": "Use $sf5 to complete the owner's representative task in a synthetic project.",
       "expected_process_model_id": "sf5_frontend_delivery"
+    },
+    {
+      "id": "sf5.interface.inventory",
+      "task": "Сделай страницу на SF5, сначала подбери существующий recipe, components и tokens.",
+      "expected_process_model_id": "ux_interface_design_sf5_delivery"
     }
   ],
   "negative_cases": [
@@ -19,6 +24,16 @@
       "id": "sf5.owner_boundary",
       "task": "Используй $dev для точечного backend bugfix в существующем API.",
       "expected_primary_skill": "dev"
+    },
+    {
+      "id": "sf5.standalone.html",
+      "task": "Сделай SF5 страницу произвольным standalone HTML без использования SF5.",
+      "expected_blocker": "standalone_html_for_sf5_forbidden"
+    },
+    {
+      "id": "sf5.new.primitive.no_inventory",
+      "task": "Создай новый primitive SF5 без inventory и no-fit.",
+      "expected_blocker": "new_capability_without_no_fit"
     }
   ],
   "outcome_cases": [

@@ -503,6 +503,24 @@
       "no_fit_conditions": [
         "A required outcome remains uncovered after checking the exact owner source and project version."
       ]
+    },
+    {
+      "id": "sf5.visual_product_mapping",
+      "aliases": ["SF5 platform mapping", "SF5 inventory", "подбор компонентов SF5", "новый компонент SF5"],
+      "user_outcome": "Map an interface to exact SF5 recipes, components and tokens before extending or creating platform capabilities.",
+      "readiness": "ready",
+      "canonical_source_refs": ["references/visual-product-platform-mapping.md", "references/framework-contract-registry.md"],
+      "extension_points": [{"id": "sf5.visual_product_mapping.extend", "kind": "extend", "source_ref": "references/visual-product-platform-mapping.md", "validator_ref": "federation://technology-conformance"}],
+      "constraints": ["Inventory exact platform capabilities first.", "A new capability requires a recorded no-fit decision.", "Visual grammar maps to semantic tokens."],
+      "non_goals": ["Do not deliver unrelated standalone HTML for an SF5 target."],
+      "validator_refs": ["federation://owner-capability-map", "federation://technology-conformance"],
+      "roles": ["discovery", "outcome_harness"],
+      "discovery": {"intent_signals": ["SF5 component", "SF5 block", "страница на SF5", "новый компонент SF5"], "requirement_signals": ["inventory", "no-fit", "token mapping"], "project_signals": ["sf5"], "dependency_signals": []},
+      "applicability": {"platform": "sf5", "editions": [], "version_range": "exact-project-version-or-owner-contract", "required_modules": []},
+      "coverage": {"provides": ["Reuse/extend/new decision and exact recipe, component, primitive and token mapping."], "does_not_provide": ["User-flow design", "Independent acceptance"]},
+      "ownership": {"data": "sf5", "access": "project", "lifecycle": "sf5", "interface": "sf5", "runtime": "sf5"},
+      "composition": {"requires": [], "compatible_with": ["ux.interface_design_sf5_delivery", "designer.brand_expression_concept"], "conflicts_with": []},
+      "no_fit_conditions": ["The target platform is not SF5."]
     }
   ]
 }

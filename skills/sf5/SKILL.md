@@ -33,6 +33,12 @@ Tailwind conversion, Bitrix integration or exhaustive reference routing.
 
 ## Core Workflow
 
+For visual product delivery, follow
+[Visual product platform mapping](./references/visual-product-platform-mapping.md):
+inventory exact SF5 capabilities before implementation, record `no_fit` before
+creating a token/primitive/component, and never replace an SF5 target with
+unrelated standalone HTML.
+
 1. Define goal, `Done When` and affected SF5 layer.
 2. Select an activity from `activities/activity-registry.json`; use
    `scripts/recommend_sf5_activity.py` when unclear.

@@ -45,7 +45,8 @@ echo "[sf5] Python syntax checks"
   skills/sf5/scripts/probe_html_runtime.py \
   skills/sf5/scripts/validate_tailwind_converter.py \
   skills/sf5/scripts/validate_page_recipes.py \
-  skills/sf5/scripts/validate_sf5_html_files.py
+  skills/sf5/scripts/validate_sf5_html_files.py \
+  skills/sf5/scripts/validate_visual_product_mapping.py
 
 echo "[sf5] Legacy class alias check"
 "$PYTHON_BIN" skills/sf5/scripts/migrate_recipe_classes_to_vendor.py --strict
@@ -88,6 +89,20 @@ fi
 
 echo "[sf5] Validate activity manifests"
 "$PYTHON_BIN" skills/sf5/scripts/validate_activity_manifests.py > /tmp/sf5-activity-manifests.json
+
+echo "[sf5] Validate visual product mapping guard"
+"$PYTHON_BIN" - <<'PY'
+import json, subprocess, sys, tempfile
+from pathlib import Path
+validator=Path("skills/sf5/scripts/validate_visual_product_mapping.py")
+valid={"platform":"sf5","platform_version":"exact","inventory_ref":"fixture://inventory","selected_layer":"component","selected_capability_ref":"sf5.ready_component","visual_grammar_ref":"fixture://grammar","candidate_identity":{"revision":"abc"},"delivery_kind":"sf5_project","creates_new":False,"unmapped_visual_literals":[]}
+with tempfile.TemporaryDirectory() as tmp:
+    p=Path(tmp)/"valid.json"; p.write_text(json.dumps(valid),encoding="utf-8")
+    assert subprocess.run([sys.executable,str(validator),str(p)],capture_output=True).returncode == 0
+    valid["delivery_kind"]="standalone_html"; p.write_text(json.dumps(valid),encoding="utf-8")
+    bad=subprocess.run([sys.executable,str(validator),str(p)],text=True,capture_output=True)
+    assert bad.returncode != 0 and "standalone_html_for_sf5_forbidden" in bad.stdout
+PY
 
 if [[ "$SF5_UPSTREAM_SOURCES_AVAILABLE" == "1" ]]; then
   echo "[sf5] Validate source-refresh contract"
