@@ -1,0 +1,41 @@
+{
+  "aliases": [
+    "SF5 platform mapping",
+    "SF5 inventory",
+    "подбор компонентов SF5",
+    "новый компонент SF5"
+  ],
+  "applicability": {
+    "platform": "sf5",
+    "editions": [
+
+    ],
+    "version_range": "exact-project-version-or-owner-contract",
+    "required_modules": [
+
+    ]
+  },
+  "authority": "owner_capability_map",
+  "evidence": [
+
+  ],
+  "expansion_policy": "expandable",
+  "id": "capability.sf5.visual_product_mapping",
+  "kind": "capability",
+  "lifecycle": "accepted",
+  "negative_boundaries": [
+    "Do not deliver unrelated standalone HTML for an SF5 target."
+  ],
+  "owner": "sf5",
+  "profile": "skill_runtime",
+  "readiness": "ready",
+  "schema_version": "1.0.0",
+  "source_refs": [
+    "skills/sf5/quality/capability-map.json",
+    "skills/sf5/references/visual-product-platform-mapping.md",
+    "skills/sf5/references/framework-contract-registry.md"
+  ],
+  "subtype": "owner_capability_map_entry",
+  "summary": "Map an interface to exact SF5 recipes, components and tokens before extending or creating platform capabilities.",
+  "title": "Map an interface to exact SF5 recipes, components and tokens before extending or creating platform capabilities."
+}
