@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "operation_id": "graph.skill-evolution.changed-source.report",
+  "created_at": "2026-09-14T19:09:24.413646+00:00",
+  "skill": "framework",
+  "owner": "framework",
+  "federation_control_plane": false,
+  "base": "origin/main",
+  "base_commit": "e7ffb5a34c427284e59c6f8ccdefc2e77a5fcbcf",
+  "comparison_mode": "baseline_to_worktree",
+  "detector_fingerprint": "372e5a9f0bc7a70c39756b25eaef2f435c192862fcd4d9b0bf98c6e834cc4e17",
+  "status": "success",
+  "source_change_evidence_ref": "graph/generated/mirai-graph/skill-source-changes/skill-graph-sync-framework-f918/skill-source-change-evidence.json",
+  "runtime_verify_ref": "graph.json",
+  "runtime_context_ref": "skills/framework/SKILL.md",
+  "federation_change_proposal_ref": "repo://ai-codex-skill-graph/graph/generated/mirai-graph/federation-change/skill-graph-sync-framework-f918-federation-proposal/federation-change-proposal.json",
+  "specialist_promotion_proposal_refs": [
+    "repo://ai-codex-skill-graph/graph/generated/mirai-graph/specialist-promotion/skill-graph-sync-framework-f918-specialist-framework-bitrix-integration/specialist-promotion-proposal.json",
+    "repo://ai-codex-skill-graph/graph/generated/mirai-graph/specialist-promotion/skill-graph-sync-framework-f918-specialist-framework-docs-learning/specialist-promotion-proposal.json",
+    "repo://ai-codex-skill-graph/graph/generated/mirai-graph/specialist-promotion/skill-graph-sync-framework-f918-specialist-framework-recipe-scaffold/specialist-promotion-proposal.json",
+    "repo://ai-codex-skill-graph/graph/generated/mirai-graph/specialist-promotion/skill-graph-sync-framework-f918-specialist-framework-routing-orchestrator/specialist-promotion-proposal.json",
+    "repo://ai-codex-skill-graph/graph/generated/mirai-graph/specialist-promotion/skill-graph-sync-framework-f918-specialist-framework-skill-maintainer/specialist-promotion-proposal.json",
+    "repo://ai-codex-skill-graph/graph/generated/mirai-graph/specialist-promotion/skill-graph-sync-framework-f918-specialist-framework-source-sync/specialist-promotion-proposal.json",
+    "repo://ai-codex-skill-graph/graph/generated/mirai-graph/specialist-promotion/skill-graph-sync-framework-f918-specialist-framework-tailwind-converter/specialist-promotion-proposal.json",
+    "repo://ai-codex-skill-graph/graph/generated/mirai-graph/specialist-promotion/skill-graph-sync-framework-f918-specialist-framework-task-goal/specialist-promotion-proposal.json",
+    "repo://ai-codex-skill-graph/graph/generated/mirai-graph/specialist-promotion/skill-graph-sync-framework-f918-specialist-framework-validation-qa/specialist-promotion-proposal.json",
+    "repo://ai-codex-skill-graph/graph/generated/mirai-graph/specialist-promotion/skill-graph-sync-framework-f918-specialist-framework-working-set/specialist-promotion-proposal.json"
+  ],
+  "required_actions": [
+    "evidence",
+    "federation-proposal",
+    "route-check",
+    "runtime-context",
+    "specialist-promotion"
+  ],
+  "blockers": [],
+  "canonical_write_allowed": false,
+  "sync_fingerprint": "2ac19be8c93d367eba1129699d5561eb54c7423fba224222ff6baf0dc1ca45e6",
+  "task_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "task_bytes": 0
+}
