@@ -28,12 +28,20 @@
     {
       "id": "sf5.standalone.html",
       "task": "Сделай SF5 страницу произвольным standalone HTML без использования SF5.",
-      "expected_blocker": "standalone_html_for_sf5_forbidden"
+      "expected_primary_skill": "ux",
+      "expected_process_model_id": "ux_interface_design_sf5_delivery",
+      "expected_invariants": [
+        "standalone_html_is_not_sf5_delivery"
+      ]
     },
     {
       "id": "sf5.new.primitive.no_inventory",
       "task": "Создай новый primitive SF5 без inventory и no-fit.",
-      "expected_blocker": "new_capability_without_no_fit"
+      "expected_primary_skill": "sf5",
+      "expected_process_model_id": "ux_interface_design_sf5_delivery",
+      "expected_invariants": [
+        "new_surface_without_inventory_and_no_fit_is_blocked"
+      ]
     }
   ],
   "outcome_cases": [
