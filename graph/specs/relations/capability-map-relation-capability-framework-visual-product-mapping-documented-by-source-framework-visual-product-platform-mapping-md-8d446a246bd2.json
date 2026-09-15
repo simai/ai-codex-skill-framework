@@ -1,0 +1,20 @@
+{
+  "evidence": [
+
+  ],
+  "from": "capability.framework.visual_product_mapping",
+  "id": "relation.capability-framework-visual-product-mapping.documented-by.source-framework-visual-product-platform-mapping-md-8d446a246bd2",
+  "kind": "relation",
+  "profile": "skill_runtime",
+  "readiness": "accepted",
+  "relation_type": "documented_by",
+  "schema_version": "1.0.0",
+  "source": "capability.framework.visual_product_mapping",
+  "source_refs": [
+    "skills/framework/quality/capability-map.json"
+  ],
+  "status": "accepted",
+  "target": "source.framework.visual-product-platform-mapping-md.8d446a246bd2",
+  "to": "source.framework.visual-product-platform-mapping-md.8d446a246bd2",
+  "type": "documented_by"
+}

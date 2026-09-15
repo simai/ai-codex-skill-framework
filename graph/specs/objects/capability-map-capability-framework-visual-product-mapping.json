@@ -1,0 +1,41 @@
+{
+  "aliases": [
+    "SIMAI Framework platform mapping",
+    "SIMAI Framework inventory",
+    "подбор компонентов SIMAI Framework",
+    "новый компонент SIMAI Framework"
+  ],
+  "applicability": {
+    "platform": "framework",
+    "editions": [
+
+    ],
+    "version_range": "exact-project-version-or-owner-contract",
+    "required_modules": [
+
+    ]
+  },
+  "authority": "owner_capability_map",
+  "evidence": [
+
+  ],
+  "expansion_policy": "expandable",
+  "id": "capability.framework.visual_product_mapping",
+  "kind": "capability",
+  "lifecycle": "accepted",
+  "negative_boundaries": [
+    "Do not deliver unrelated standalone HTML for an SIMAI Framework target."
+  ],
+  "owner": "framework",
+  "profile": "skill_runtime",
+  "readiness": "ready",
+  "schema_version": "1.0.0",
+  "source_refs": [
+    "skills/framework/quality/capability-map.json",
+    "skills/framework/references/visual-product-platform-mapping.md",
+    "skills/framework/references/framework-contract-registry.md"
+  ],
+  "subtype": "owner_capability_map_entry",
+  "summary": "Map an interface to exact SIMAI Framework recipes, components and tokens before extending or creating platform capabilities.",
+  "title": "Map an interface to exact SIMAI Framework recipes, components and tokens before extending or creating platform capabilities."
+}

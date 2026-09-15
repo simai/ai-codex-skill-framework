@@ -46,7 +46,8 @@ echo "[framework] Python syntax checks"
   skills/framework/scripts/probe_html_runtime.py \
   skills/framework/scripts/validate_tailwind_converter.py \
   skills/framework/scripts/validate_page_recipes.py \
-  skills/framework/scripts/validate_framework_html_files.py
+  skills/framework/scripts/validate_framework_html_files.py \
+  skills/framework/scripts/validate_visual_product_mapping.py
 
 echo "[framework] Legacy class alias check"
 "$PYTHON_BIN" skills/framework/scripts/migrate_recipe_classes_to_vendor.py --strict
@@ -89,6 +90,22 @@ fi
 
 echo "[framework] Validate activity manifests"
 "$PYTHON_BIN" skills/framework/scripts/validate_activity_manifests.py > /tmp/framework-activity-manifests.json
+
+echo "[framework] Validate visual product mapping guard"
+"$PYTHON_BIN" - <<'PY'
+import json, subprocess, sys, tempfile
+from pathlib import Path
+validator = Path("skills/framework/scripts/validate_visual_product_mapping.py")
+valid = {"platform":"framework","platform_version":"exact","inventory_ref":"fixture://inventory","selected_layer":"component","selected_capability_ref":"framework.ready_component","visual_grammar_ref":"fixture://grammar","candidate_identity":{"revision":"abc"},"delivery_kind":"framework_project","creates_new":False,"unmapped_visual_literals":[]}
+with tempfile.TemporaryDirectory() as tmp:
+    p = Path(tmp) / "valid.json"
+    p.write_text(json.dumps(valid), encoding="utf-8")
+    assert subprocess.run([sys.executable, str(validator), str(p)], capture_output=True).returncode == 0
+    valid["delivery_kind"] = "standalone_html"
+    p.write_text(json.dumps(valid), encoding="utf-8")
+    bad = subprocess.run([sys.executable, str(validator), str(p)], text=True, capture_output=True)
+    assert bad.returncode != 0 and "standalone_html_for_framework_forbidden" in bad.stdout
+PY
 
 echo "[framework] Validate Component design/evolution technology"
 "$PYTHON_BIN" skills/framework/scripts/validate_component_design_technology.py > /tmp/framework-component-design-technology.json

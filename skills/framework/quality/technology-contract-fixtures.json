@@ -19,6 +19,11 @@
       "expected_process_model_id": "framework_frontend_delivery",
       "expected_activity_id": "component-design-evolution",
       "expected_technology_id": "framework.component-design-evolution"
+    },
+    {
+      "id": "framework.interface.inventory",
+      "task": "Сделай страницу на SIMAI Framework, сначала подбери существующий recipe, components и tokens.",
+      "expected_process_model_id": "ux_interface_design_framework_delivery"
     }
   ],
   "negative_cases": [
@@ -26,6 +31,20 @@
       "id": "framework.owner_boundary",
       "task": "Используй $dev для точечного backend bugfix в существующем API.",
       "expected_primary_skill": "dev"
+    },
+    {
+      "id": "framework.standalone.html",
+      "task": "Сделай страницу SIMAI Framework произвольным standalone HTML без использования Framework.",
+      "expected_primary_skill": "ux",
+      "expected_process_model_id": "ux_interface_design_framework_delivery",
+      "expected_invariants": ["standalone_html_is_not_framework_delivery"]
+    },
+    {
+      "id": "framework.new.primitive.no_inventory",
+      "task": "Создай новый primitive Framework без inventory и no-fit.",
+      "expected_primary_skill": "framework",
+      "expected_process_model_id": "ux_interface_design_framework_delivery",
+      "expected_invariants": ["new_surface_without_inventory_and_no_fit_is_blocked"]
     }
   ],
   "outcome_cases": [

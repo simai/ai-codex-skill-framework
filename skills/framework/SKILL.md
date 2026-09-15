@@ -33,6 +33,12 @@ Tailwind conversion, Bitrix integration or exhaustive reference routing.
 
 ## Core Workflow
 
+For visual product delivery, follow
+[Visual product platform mapping](./references/visual-product-platform-mapping.md):
+inventory exact SIMAI Framework capabilities before implementation, record
+`no_fit` before creating a token/primitive/component, and never replace a
+Framework target with unrelated standalone HTML.
+
 1. Define goal, `Done When` and affected SIMAI Framework layer.
 2. Select an activity from `activities/activity-registry.json`; use
    `scripts/recommend_framework_activity.py` when unclear.

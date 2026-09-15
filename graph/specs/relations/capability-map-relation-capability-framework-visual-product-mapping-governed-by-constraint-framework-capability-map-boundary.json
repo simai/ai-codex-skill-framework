@@ -1,0 +1,20 @@
+{
+  "evidence": [
+
+  ],
+  "from": "capability.framework.visual_product_mapping",
+  "id": "relation.capability-framework-visual_product_mapping.governed-by.constraint-framework-capability-map-boundary",
+  "kind": "relation",
+  "profile": "skill_runtime",
+  "readiness": "accepted",
+  "relation_type": "governed_by",
+  "schema_version": "1.0.0",
+  "source": "capability.framework.visual_product_mapping",
+  "source_refs": [
+    "skills/framework/quality/capability-map.json"
+  ],
+  "status": "accepted",
+  "target": "constraint.framework.capability-map-boundary",
+  "to": "constraint.framework.capability-map-boundary",
+  "type": "governed_by"
+}

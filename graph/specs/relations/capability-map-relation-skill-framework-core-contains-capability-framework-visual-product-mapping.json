@@ -1,0 +1,20 @@
+{
+  "evidence": [
+
+  ],
+  "from": "skill.framework.core",
+  "id": "relation.skill-framework-core.contains.capability-framework-visual_product_mapping",
+  "kind": "relation",
+  "profile": "skill_runtime",
+  "readiness": "accepted",
+  "relation_type": "contains",
+  "schema_version": "1.0.0",
+  "source": "skill.framework.core",
+  "source_refs": [
+    "skills/framework/quality/capability-map.json"
+  ],
+  "status": "accepted",
+  "target": "capability.framework.visual_product_mapping",
+  "to": "capability.framework.visual_product_mapping",
+  "type": "contains"
+}

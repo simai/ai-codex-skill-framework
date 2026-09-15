@@ -503,6 +503,24 @@
       "no_fit_conditions": [
         "A required outcome remains uncovered after checking the exact owner source and project version."
       ]
+    },
+    {
+      "id": "framework.visual_product_mapping",
+      "aliases": ["SIMAI Framework platform mapping", "Framework inventory", "подбор компонентов SIMAI Framework", "новый компонент Framework"],
+      "user_outcome": "Map an interface to exact Framework recipes, components and tokens before extending or creating platform capabilities.",
+      "readiness": "ready",
+      "canonical_source_refs": ["references/visual-product-platform-mapping.md", "references/framework-contract-registry.md"],
+      "extension_points": [{"id": "framework.visual_product_mapping.extend", "kind": "extend", "source_ref": "references/visual-product-platform-mapping.md", "validator_ref": "federation://technology-conformance"}],
+      "constraints": ["Inventory exact platform capabilities first.", "A new capability requires a recorded no-fit decision.", "Visual grammar maps to semantic tokens."],
+      "non_goals": ["Do not deliver unrelated standalone HTML for a Framework target."],
+      "validator_refs": ["federation://owner-capability-map", "federation://technology-conformance"],
+      "roles": ["discovery", "outcome_harness"],
+      "discovery": {"intent_signals": ["Framework component", "Framework block", "страница на SIMAI Framework", "новый компонент Framework"], "requirement_signals": ["inventory", "no-fit", "token mapping"], "project_signals": ["framework"], "dependency_signals": []},
+      "applicability": {"platform": "framework", "editions": [], "version_range": "exact-project-version-or-owner-contract", "required_modules": []},
+      "coverage": {"provides": ["Reuse/extend/new decision and exact recipe, component, primitive and token mapping."], "does_not_provide": ["User-flow design", "Independent acceptance"]},
+      "ownership": {"data": "framework", "access": "project", "lifecycle": "framework", "interface": "framework", "runtime": "framework"},
+      "composition": {"requires": [], "compatible_with": ["ux.interface_design_framework_delivery", "designer.brand_expression_concept"], "conflicts_with": []},
+      "no_fit_conditions": ["The target platform is not SIMAI Framework."]
     }
   ]
 }
