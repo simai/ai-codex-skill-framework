@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "operation_id": "simai.skill-change.detect",
+  "created_at": "2026-09-22T19:33:31.815693+00:00",
+  "repo": "repo://ai-codex-skill-framework",
+  "skill": "framework",
+  "owner": "framework",
+  "federation_control_plane": false,
+  "base": "ba4adb1114e577fe2bf55086fdda228b9490a33b",
+  "base_commit": "ba4adb1114e577fe2bf55086fdda228b9490a33b",
+  "comparison_mode": "baseline_to_worktree",
+  "git": {
+    "dirty": false,
+    "ahead": 1,
+    "head": "eb06c9e"
+  },
+  "changed_files": [
+    {
+      "path": "skills/framework/SKILL.md",
+      "source_path": "SKILL.md",
+      "change_types": [
+        "capability",
+        "federation-impact",
+        "routing-impact"
+      ],
+      "routing_impact": true,
+      "federation_impact": true,
+      "status": "M",
+      "old_path": "",
+      "source_mode": "100644",
+      "source_sha256": "571fcaec1aff87fb2fa04e37d333f68db34c530fb2322b76522e14a6a8911a0f",
+      "source_bytes": 4295,
+      "baseline_path": "skills/framework/SKILL.md",
+      "baseline_mode": "100644",
+      "baseline_sha256": "d1b9cd3dce0ed78bf1415478b55c302b9a8498442b99be050e2d641632282bdf",
+      "baseline_bytes": 4370
+    }
+  ],
+  "changed_skill_count": 1,
+  "change_types": [
+    "capability",
+    "federation-impact",
+    "routing-impact"
+  ],
+  "detected_specialists": [],
+  "required_actions": [
+    "evidence",
+    "federation-proposal",
+    "route-check",
+    "runtime-context"
+  ],
+  "specialist_promotion_required": false,
+  "route_check_required": true,
+  "federation_proposal_required": true,
+  "blockers": [],
+  "status": "changed",
+  "detector_fingerprint": "58bce144e4a14c503ccc4cffbf083383bf9d942063bc3c92ccb27cb2d7ea592f"
+}
