@@ -1,6 +1,6 @@
 ---
 name: framework
-description: Build, refactor, and maintain SIMAI Framework projects with frontend-first workflows for core, loader, utilities, components, smart-components, and blocks. Use when tasks involve SIMAI Framework architecture decisions, implementation patterns, code reviews, migration planning, or staged backend planning for Bitrix and Laravel.
+description: "SIMAI Framework: core, loader, utilities, components, smart-components, blocks. Frontend-first разработка, архитектура, паттерны, code review, план миграции, поэтапный backend для Bitrix и Laravel."
 metadata:
   display-name: "SIMAI Framework"
   short-description: "SIMAI Framework workflows, architecture, frontend and component work"
