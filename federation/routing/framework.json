@@ -1,0 +1,41 @@
+{
+  "routing": {
+    "capabilities": [
+      "simai framework",
+      "frontend",
+      "loader",
+      "smart-component"
+    ],
+    "companion_skills": [
+      "ux",
+      "tester"
+    ],
+    "evidence_refs": [
+      "graph/generated/mirai-graph/gga10-owner-approved-apply-plans/framework-owner-approved-apply-plan-20260530/owner-approved-apply-plan.json",
+      "graph/generated/mirai-graph/gga10-apply-verdicts/framework-owner-approved-gga10-apply-validated-20260530/apply-verdict.json"
+    ],
+    "gga_status": "GGA10",
+    "graph_context_ref": "/Users/rim/Documents/GitHub/ai-codex-skill-framework/graph",
+    "keywords": [
+      "simai framework",
+      "simai ui",
+      "frontend",
+      "loader",
+      "smart-component"
+    ],
+    "owner_boundary": "framework owns its domain methodology and judgement; federation graph owns routing/contracts/readiness/evidence only.",
+    "raw_fallback_required": true,
+    "required_gates": [
+      "frontend_contract"
+    ],
+    "skill": "framework",
+    "task_types": [
+      "simai framework",
+      "frontend",
+      "loader",
+      "smart-component"
+    ]
+  },
+  "schema": "simai.skill_routing.v1",
+  "skill": "framework"
+}
