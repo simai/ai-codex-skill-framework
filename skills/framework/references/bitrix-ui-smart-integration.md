@@ -73,8 +73,8 @@ When a user provides local release folders or unpacked archives, build the modul
 Input examples:
 
 ```text
-/Users/rim/Downloads/ui-5.0.1
-/Users/rim/Downloads/ui-5.0.1/distr
+~/Downloads/ui-5.0.1
+~/Downloads/ui-5.0.1/distr
 ```
 
 Find the distributable root that contains:
@@ -100,8 +100,8 @@ The `<ui-version>` is normally derived from the release folder name, tag, or rel
 Input examples:
 
 ```text
-/Users/rim/Downloads/ui-smart-5.0.0
-/Users/rim/Downloads/ui-smart-5.0.0/ui-smart-5.0.0/smart
+~/Downloads/ui-smart-5.0.0
+~/Downloads/ui-smart-5.0.0/ui-smart-5.0.0/smart
 ```
 
 Find the release `smart/` directory and copy it into:
@@ -224,8 +224,8 @@ Preferred checks:
 
 The observed pair:
 
-- `ui` payload: `/Users/rim/Downloads/ui-5.0.1/distr`
-- `ui-smart` payload: `/Users/rim/Downloads/ui-smart-5.0.0/ui-smart-5.0.0/smart`
+- `ui` payload: `~/Downloads/ui-5.0.1/distr`
+- `ui-smart` payload: `~/Downloads/ui-smart-5.0.0/ui-smart-5.0.0/smart`
 
 The UI loader `rule.json` has 35 smart rules. The smart payload has 34 matching smart directories. The missing package is:
 

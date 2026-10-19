@@ -1,7 +1,7 @@
 # SIMAI Framework Project Conventions
 
 Source snapshot:
-`/Users/rim/Downloads/ui-doc-main (2)/ui-doc-main/source/docs/ru`
+`~/Downloads/ui-doc-main (2)/ui-doc-main/source/docs/ru`
 
 This file contains conventions extracted from the snapshot. If a rule is absent in snapshot docs, it is marked explicitly.
 

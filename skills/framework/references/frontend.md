@@ -2,7 +2,7 @@
 
 Use this file as the entry point for frontend work. It is based on the documentation snapshot located at:
 
-`/Users/rim/Documents/GitHub/ai-codex-skill-framework/source/simai/ui-doc/source/docs/ru`
+`repo://ai-codex-skill-framework/source/simai/ui-doc/source/docs/ru`
 
 ## Scope
 

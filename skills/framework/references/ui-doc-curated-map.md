@@ -2,7 +2,7 @@
 
 Source snapshot root:
 
-`/Users/rim/Downloads/ui-doc-main (2)/ui-doc-main/source/docs/ru`
+`~/Downloads/ui-doc-main (2)/ui-doc-main/source/docs/ru`
 
 This map lists the pages that were reviewed and prioritized for this skill.
 

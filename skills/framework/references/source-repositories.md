@@ -11,7 +11,7 @@ This file explains which `simai/*` repositories feed the `framework` skill, what
 ## Local Layout
 
 - External repositories are synced into the repo-local ignored directory:
-  `/Users/rim/Documents/GitHub/ai-codex-skill-framework/source/simai`
+  `repo://ai-codex-skill-framework/source/simai`
 - Source sync configuration lives in:
   `references/vendor/source-repos.json`
 - Last sync result is written to:
@@ -139,8 +139,8 @@ python3 skills/framework/scripts/sync_source_repos.py
 
 ```bash
 python3 skills/framework/scripts/build_ui_doc_atlas.py \
-  --docs-root /Users/rim/Documents/GitHub/ai-codex-skill-framework/source/simai/ui-doc/source/docs/ru \
-  --skill-root /Users/rim/Documents/GitHub/ai-codex-skill-framework/skills/framework
+  --docs-root repo://ai-codex-skill-framework/source/simai/ui-doc/source/docs/ru \
+  --skill-root repo://ai-codex-skill-framework/skills/framework
 ```
 
 3. Run local checks:
@@ -153,11 +153,11 @@ Optional but recommended for source-backed discovery:
 
 ```bash
 python3 skills/framework/scripts/build_source_inventory.py \
-  --repo-root /Users/rim/Documents/GitHub/ai-codex-skill-framework \
-  --skill-root /Users/rim/Documents/GitHub/ai-codex-skill-framework/skills/framework
+  --repo-root repo://ai-codex-skill-framework \
+  --skill-root repo://ai-codex-skill-framework/skills/framework
 python3 skills/framework/scripts/build_component_smart_catalog.py \
-  --repo-root /Users/rim/Documents/GitHub/ai-codex-skill-framework \
-  --skill-root /Users/rim/Documents/GitHub/ai-codex-skill-framework/skills/framework
+  --repo-root repo://ai-codex-skill-framework \
+  --skill-root repo://ai-codex-skill-framework/skills/framework
 ```
 
 ## Practical Search Shortcuts
