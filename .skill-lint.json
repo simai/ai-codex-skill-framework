@@ -1,0 +1,12 @@
+{
+  "allow_large": [
+    "skills/framework/references/ui-doc-manifest.json",
+    "skills/framework/references/vendor/component-smart-catalog.json",
+    "skills/framework/references/vendor/source/catalog-lite.sf-only.json"
+  ],
+  "reasons": {
+    "skills/framework/references/ui-doc-manifest.json": "Атлас документации UI: генерируется build_ui_doc_atlas.py из source/simai/ui-doc (source/ не хранится в git и отсутствует в чистом клоне); читают query_ui_doc_manifest.py, recommend_page_recipe.py, run_local_checks.sh. Без него навык не находит страницы документации.",
+    "skills/framework/references/vendor/component-smart-catalog.json": "Каталог компонентов и smart-компонентов: генерируется build_component_smart_catalog.py из source/simai/*; читают convert_tailwind_to_framework.py, validate_source_refresh_contract.py, validate_tailwind_conversion_contract.py.",
+    "skills/framework/references/vendor/source/catalog-lite.sf-only.json": "Vendored каталог CSS-классов SIMAI Framework (upstream simai/ui, генератора в навыке нет); читают validate_framework_html_files.py, validate_page_recipes.py, validate_tailwind_mapping_artifacts.py, convert_tailwind_to_framework.py, framework-lint.php. Без него валидация вёрстки не работает."
+  }
+}

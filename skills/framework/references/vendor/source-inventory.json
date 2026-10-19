@@ -72,7 +72,7 @@
       "remote": "git@github.com:simai/ui-components.git",
       "priority": "optional",
       "kind": "components-source",
-      "error": "Cloning into '/Users/rim/Documents/GitHub/ai-codex-skill-framework/source/simai/ui-components'...\nfatal: Remote branch main not found in upstream origin"
+      "error": "Cloning into 'source/simai/ui-components'...\nfatal: Remote branch main not found in upstream origin"
     }
   },
   "summary": {

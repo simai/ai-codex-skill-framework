@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-07-26T12:10:44.609303+00:00",
-  "repoRoot": "/Users/rim/Documents/GitHub/ai-codex-skill-framework",
-  "manifest": "/Users/rim/Documents/GitHub/ai-codex-skill-framework/skills/framework/references/vendor/source-repos.json",
+  "repoRoot": ".",
+  "manifest": "skills/framework/references/vendor/source-repos.json",
   "results": [
     {
       "name": "ui",
@@ -72,7 +72,7 @@
       "remote": "git@github.com:simai/ui-components.git",
       "priority": "optional",
       "kind": "components-source",
-      "error": "Cloning into '/Users/rim/Documents/GitHub/ai-codex-skill-framework/source/simai/ui-components'...\nfatal: Remote branch main not found in upstream origin"
+      "error": "Cloning into 'source/simai/ui-components'...\nfatal: Remote branch main not found in upstream origin"
     }
   ]
 }

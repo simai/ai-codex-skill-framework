@@ -36,6 +36,18 @@ def repo_root_from_script() -> Path:
     return Path(__file__).resolve().parents[3]
 
 
+def portable(value: str, repo_root: Path) -> str:
+    """Strip the machine-specific checkout prefix so the lock file stays portable."""
+    return value.replace(str(repo_root) + "/", "").replace(str(repo_root), ".")
+
+
+def portable_path(path: Path, repo_root: Path) -> str:
+    try:
+        return path.relative_to(repo_root).as_posix()
+    except ValueError:
+        return path.name
+
+
 def error_payload(spec: dict, branch: str, message: str) -> dict:
     return {
         "name": spec["name"],
@@ -117,12 +129,15 @@ def main() -> int:
 
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     results = [sync_repo(repo_root, spec) for spec in manifest.get("repos", [])]
+    for item in results:
+        if "error" in item:
+            item["error"] = portable(item["error"], repo_root)
 
     lock_payload = {
         "schemaVersion": 1,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
-        "repoRoot": str(repo_root),
-        "manifest": str(manifest_path),
+        "repoRoot": ".",
+        "manifest": portable_path(manifest_path, repo_root),
         "results": results,
     }
     lock_path.write_text(
