@@ -19,7 +19,8 @@ Before substantial work load the required kernel and rules:
 - [rules/routing.md](./rules/routing.md);
 - [rules/decision-policy.md](./rules/decision-policy.md);
 - [rules/change-gates.md](./rules/change-gates.md);
-- [rules/skill-mesh-balance.md](./rules/skill-mesh-balance.md).
+- [rules/skill-mesh-balance.md](./rules/skill-mesh-balance.md);
+- [rules/coordinator.md](./rules/coordinator.md).
 
 ## Mirai Graph Runtime Entry
 
@@ -27,9 +28,9 @@ Use current graph context for capability, route, gates and evidence. Raw SIMAI F
 sources remain authoritative; platform playbooks do not move into the central
 graph. Graph-only runtime is forbidden.
 
-Load [FULL_RUNTIME_PLAYBOOK.md](./FULL_RUNTIME_PLAYBOOK.md) for the complete
-activity/specialist registry, source inventory, recipe/scaffold tools,
-Tailwind conversion, Bitrix integration or exhaustive reference routing.
+Load [references/resource-routing.md](./references/resource-routing.md) for the
+specialist list, source inventory, recipe/scaffold tools, Tailwind conversion,
+Bitrix integration or exhaustive reference routing.
 
 ## Core Workflow
 
@@ -45,7 +46,9 @@ Framework target with unrelated standalone HTML.
 3. For a new or substantially changed Component/Smart Component, execute
    `component-design-evolution` and load
    `references/component-design-evolution.md` before editing implementation.
-4. Load only the selected activity, specialist and directly required reference.
+4. For non-trivial work select specialists via `rules/routing.md` and assign roles
+   via `rules/specialist-engagement-model.md`; load only the selected activity,
+   specialist profiles and directly required references.
 5. Separate source refresh, routing, recipes and working-set changes into
    explicit batches.
 6. Implement the nearest reversible slice with stated assumptions.
@@ -53,6 +56,8 @@ Framework target with unrelated standalone HTML.
 8. Run `scripts/run_local_checks.sh` before delivery for repository-wide SIMAI Framework
    changes.
 9. Update source-backed inventories/references only when their inputs changed.
+10. If a reusable lesson was learned, apply `rules/learning.md` and update the
+    narrowest owner.
 
 ## Layer Boundaries
 
