@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0.0",
+  "operation_id": "simai.skill-change.detect",
+  "created_at": "2026-10-20T15:54:22.998825+00:00",
+  "repo": "repo://ai-skill-framework",
+  "skill": "framework",
+  "owner": "framework",
+  "federation_control_plane": false,
+  "base": "8ea0534251268802ee38a0209da50a1c40b15b8a",
+  "base_commit": "8ea0534251268802ee38a0209da50a1c40b15b8a",
+  "comparison_mode": "baseline_to_worktree",
+  "git": {
+    "dirty": false,
+    "ahead": 1,
+    "head": "6b9614f"
+  },
+  "changed_files": [
+    {
+      "path": "README.md",
+      "source_path": "README.md",
+      "change_types": [
+        "documentation",
+        "routing-impact"
+      ],
+      "routing_impact": true,
+      "federation_impact": false,
+      "status": "M",
+      "old_path": "",
+      "source_mode": "100644",
+      "source_sha256": "b13ffddaafdc380bb26b31ed06e92c23aef4316cac4e67cee412bc3f3e338e19",
+      "source_bytes": 10013,
+      "baseline_path": "README.md",
+      "baseline_mode": "100644",
+      "baseline_sha256": "a03796cd659dd2d418e9baa97d73578b8994fb1b54190f9d269f5052f84e0a25",
+      "baseline_bytes": 10037
+    },
+    {
+      "path": "skills/framework/references/framework-fast-start.md",
+      "source_path": "references/framework-fast-start.md",
+      "change_types": [
+        "methodology",
+        "routing-impact"
+      ],
+      "routing_impact": true,
+      "federation_impact": false,
+      "status": "M",
+      "old_path": "",
+      "source_mode": "100644",
+      "source_sha256": "bce6b56dfc88f3f610d5644cd74d451094baee09bbad91c0b2cfb45f8b11841e",
+      "source_bytes": 4100,
+      "baseline_path": "skills/framework/references/framework-fast-start.md",
+      "baseline_mode": "100644",
+      "baseline_sha256": "b79ded7880a65e61711b294d205a5cf085067221af620ade5e26c9b9c4aa56de",
+      "baseline_bytes": 4106
+    },
+    {
+      "path": "skills/framework/references/frontend.md",
+      "source_path": "references/frontend.md",
+      "change_types": [
+        "methodology",
+        "routing-impact"
+      ],
+      "routing_impact": true,
+      "federation_impact": false,
+      "status": "M",
+      "old_path": "",
+      "source_mode": "100644",
+      "source_sha256": "a4fd085084306a5d6d88c98cf5764939edf6f026bb5c0d7928ef5c93e81ad16f",
+      "source_bytes": 4796,
+      "baseline_path": "skills/framework/references/frontend.md",
+      "baseline_mode": "100644",
+      "baseline_sha256": "27a51b61671a9b1e180d40697ab6b14956cb693151564ee24dd7934c8f12ecaf",
+      "baseline_bytes": 4802
+    },
+    {
+      "path": "skills/framework/references/source-inventory.md",
+      "source_path": "references/source-inventory.md",
+      "change_types": [
+        "methodology"
+      ],
+      "routing_impact": false,
+      "federation_impact": false,
+      "status": "M",
+      "old_path": "",
+      "source_mode": "100644",
+      "source_sha256": "a3a018526563525811ae60dc8aa23aea25e44bb9266fb61503e0109ee7901e40",
+      "source_bytes": 6724,
+      "baseline_path": "skills/framework/references/source-inventory.md",
+      "baseline_mode": "100644",
+      "baseline_sha256": "b25b41b42bbf8727d72507aaa6d64a5f1544315ab92f0147cba84f4cfb91dafb",
+      "baseline_bytes": 6730
+    },
+    {
+      "path": "skills/framework/references/source-repositories.md",
+      "source_path": "references/source-repositories.md",
+      "change_types": [
+        "methodology",
+        "routing-impact"
+      ],
+      "routing_impact": true,
+      "federation_impact": false,
+      "status": "M",
+      "old_path": "",
+      "source_mode": "100644",
+      "source_sha256": "ff72625447e97b8ab01bcaa1ca3c5968277ec8d2f92d47434682ac6c1878272d",
+      "source_bytes": 5976,
+      "baseline_path": "skills/framework/references/source-repositories.md",
+      "baseline_mode": "100644",
+      "baseline_sha256": "62204fc4bc666aad372ed8fa909aa76344e0041f8c35074a15cf0ede11eefc67",
+      "baseline_bytes": 6018
+    },
+    {
+      "path": "skills/framework/references/ui-doc-atlas-usage.md",
+      "source_path": "references/ui-doc-atlas-usage.md",
+      "change_types": [
+        "methodology",
+        "routing-impact"
+      ],
+      "routing_impact": true,
+      "federation_impact": false,
+      "status": "M",
+      "old_path": "",
+      "source_mode": "100644",
+      "source_sha256": "ae1d06837624aa1f3074d6541a010ddd0854acabe66d36830eae555f59a1356d",
+      "source_bytes": 3726,
+      "baseline_path": "skills/framework/references/ui-doc-atlas-usage.md",
+      "baseline_mode": "100644",
+      "baseline_sha256": "d8fd27af3f773e994269a368470b7af504edab84687b207807ac806bd27976c0",
+      "baseline_bytes": 3750
+    },
+    {
+      "path": "skills/framework/references/ui-doc-full-map.md",
+      "source_path": "references/ui-doc-full-map.md",
+      "change_types": [
+        "methodology"
+      ],
+      "routing_impact": false,
+      "federation_impact": false,
+      "status": "M",
+      "old_path": "",
+      "source_mode": "100644",
+      "source_sha256": "56c183e91645eb1467a276b8433f3252d0340ca6ff523b370f6f229f9b6f43ac",
+      "source_bytes": 42831,
+      "baseline_path": "skills/framework/references/ui-doc-full-map.md",
+      "baseline_mode": "100644",
+      "baseline_sha256": "2a86ff91b8dd49e117300b953be3fd846c7f764349a1990b5dff17fde167bf9d",
+      "baseline_bytes": 42837
+    },
+    {
+      "path": "skills/framework/references/ui-doc-utility-atlas.md",
+      "source_path": "references/ui-doc-utility-atlas.md",
+      "change_types": [
+        "methodology"
+      ],
+      "routing_impact": false,
+      "federation_impact": false,
+      "status": "M",
+      "old_path": "",
+      "source_mode": "100644",
+      "source_sha256": "a4209a96f7eb25172e852c444af1c8d5d847568266dc2c9c366f23ecd934c5a0",
+      "source_bytes": 49356,
+      "baseline_path": "skills/framework/references/ui-doc-utility-atlas.md",
+      "baseline_mode": "100644",
+      "baseline_sha256": "3a45677e5d63717dbce7282324e3a849ab07b390a45824c7427d28a63a090468",
+      "baseline_bytes": 49362
+    }
+  ],
+  "changed_skill_count": 1,
+  "change_types": [
+    "documentation",
+    "methodology",
+    "routing-impact"
+  ],
+  "detected_specialists": [],
+  "required_actions": [
+    "evidence",
+    "federation-proposal",
+    "route-check",
+    "runtime-context"
+  ],
+  "specialist_promotion_required": false,
+  "route_check_required": true,
+  "federation_proposal_required": true,
+  "blockers": [],
+  "status": "changed",
+  "detector_fingerprint": "ecfbaf6876e523a7b33a60dee703df7928a6371665413829eddab10dad597230"
+}
