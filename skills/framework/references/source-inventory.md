@@ -10,7 +10,7 @@ Generated from synced upstream repositories under `source/simai`.
 - `ui-play`: `master` @ `bdd253aaa3418bee7f51b4b69d8e5c08af49ee58`
 - `ui-smart`: `main` @ `ab896dc7cd33f151377e3992ffb286769beee7f7`
 - `ui-vscode`: `main` @ `a8fd4a8dcd75ce53d2af0c07186fb0ef3b907058`
-- `ui-components`: `error` - Cloning into 'repo://ai-codex-skill-framework/source/simai/ui-components'...
+- `ui-components`: `error` - Cloning into 'repo://ai-skill-framework/source/simai/ui-components'...
 fatal: Remote branch main not found in upstream origin
 
 ## Summary

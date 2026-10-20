@@ -11,10 +11,10 @@
       "tester"
     ],
     "evidence_refs": [
-      "repo://ai-codex-skill-framework/skills/framework/quality/capability-map.json"
+      "repo://ai-skill-framework/skills/framework/quality/capability-map.json"
     ],
     "gga_status": "GGA10",
-    "graph_context_ref": "repo://ai-codex-skill-framework/graph",
+    "graph_context_ref": "repo://ai-skill-framework/graph",
     "keywords": [
       "simai framework",
       "simai ui",

@@ -1,7 +1,7 @@
 # SIMAI Framework UI Docs Full Map
 
 Generated from:
-`repo://ai-codex-skill-framework/source/simai/ui-doc/source/docs/ru`
+`repo://ai-skill-framework/source/simai/ui-doc/source/docs/ru`
 
 ## Contents
 

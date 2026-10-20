@@ -35,7 +35,7 @@ Install target:
 Copy:
 
 ```bash
-SRC="/path/to/ai-codex-skill-framework/skills/framework"
+SRC="/path/to/ai-skill-framework/skills/framework"
 DST="$HOME/.codex/skills/framework"
 mkdir -p "$HOME/.codex/skills"
 rm -rf "$DST"
@@ -45,7 +45,7 @@ cp -R "$SRC" "$DST"
 Symlink (recommended for active development):
 
 ```bash
-SRC="/path/to/ai-codex-skill-framework/skills/framework"
+SRC="/path/to/ai-skill-framework/skills/framework"
 DST="$HOME/.codex/skills/framework"
 mkdir -p "$HOME/.codex/skills"
 rm -rf "$DST"
@@ -57,7 +57,7 @@ ln -s "$SRC" "$DST"
 Copy:
 
 ```powershell
-$src = "C:\path\to\ai-codex-skill-framework\skills\framework"
+$src = "C:\path\to\ai-skill-framework\skills\framework"
 $dstRoot = "$env:USERPROFILE\.codex\skills"
 $dst = "$dstRoot\framework"
 New-Item -ItemType Directory -Force $dstRoot | Out-Null
@@ -68,7 +68,7 @@ Copy-Item -Recurse -Force $src $dst
 Symlink (recommended for active development, may require admin/developer mode):
 
 ```powershell
-$src = "C:\path\to\ai-codex-skill-framework\skills\framework"
+$src = "C:\path\to\ai-skill-framework\skills\framework"
 $dstRoot = "$env:USERPROFILE\.codex\skills"
 $dst = "$dstRoot\framework"
 New-Item -ItemType Directory -Force $dstRoot | Out-Null

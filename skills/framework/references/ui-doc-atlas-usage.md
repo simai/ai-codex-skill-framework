@@ -26,8 +26,8 @@ Run when docs snapshot changes:
 
 ```bash
 skills/framework/scripts/build_ui_doc_atlas.py \
-  --docs-root 'repo://ai-codex-skill-framework/source/simai/ui-doc/source/docs/ru' \
-  --skill-root repo://ai-codex-skill-framework/skills/framework
+  --docs-root 'repo://ai-skill-framework/source/simai/ui-doc/source/docs/ru' \
+  --skill-root repo://ai-skill-framework/skills/framework
 ```
 
 ## Query Atlas
@@ -36,7 +36,7 @@ Search relevant pages before implementation:
 
 ```bash
 skills/framework/scripts/query_ui_doc_manifest.py \
-  --manifest repo://ai-codex-skill-framework/skills/framework/references/ui-doc-manifest.json \
+  --manifest repo://ai-skill-framework/skills/framework/references/ui-doc-manifest.json \
   grid container --top utilities --limit 12
 ```
 
@@ -49,7 +49,7 @@ Route prompt to page recipe:
 
 ```bash
 skills/framework/scripts/recommend_page_recipe.py \
-  --manifest repo://ai-codex-skill-framework/skills/framework/references/ui-doc-manifest.json \
+  --manifest repo://ai-skill-framework/skills/framework/references/ui-doc-manifest.json \
   'Сверстай checkout: форма клиента, доставка, оплата, summary, валидация'
 ```
 

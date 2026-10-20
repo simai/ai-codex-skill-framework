@@ -1,6 +1,6 @@
 # SIMAI Framework Utility Atlas
 
-Generated from utility pages in the SIMAI Framework docs snapshot at `repo://ai-codex-skill-framework/source/simai/ui-doc/source/docs/ru`.
+Generated from utility pages in the SIMAI Framework docs snapshot at `repo://ai-skill-framework/source/simai/ui-doc/source/docs/ru`.
 
 ## Contents
 

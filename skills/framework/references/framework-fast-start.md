@@ -14,7 +14,7 @@ python3 skills/framework/scripts/sync_source_repos.py
 
 ```bash
 python3 skills/framework/scripts/query_ui_doc_manifest.py \
-  --manifest repo://ai-codex-skill-framework/skills/framework/references/ui-doc-manifest.json \
+  --manifest repo://ai-skill-framework/skills/framework/references/ui-doc-manifest.json \
   grid spacing button --limit 12
 ```
 
