@@ -9,7 +9,17 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL = ROOT.name.removeprefix("ai-codex-skill-")
+SKILL_REPO_PREFIXES = ("ai-skill-", "ai-codex-skill-")  # current name first, legacy prefix kept
+
+
+def skill_name(repo_name: str) -> str:
+    for prefix in SKILL_REPO_PREFIXES:
+        if repo_name.startswith(prefix):
+            return repo_name[len(prefix):]
+    return repo_name
+
+
+SKILL = skill_name(ROOT.name)
 # This dated pilot evidence was issued under the former repository identity.
 # Keep its immutable archive paths; this does not register an executable sf5 route.
 ARCHIVE_ID = "sf5"
