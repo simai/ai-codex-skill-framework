@@ -12,7 +12,7 @@ patterns for Bitrix/Laravel alignment.
 - General repository delivery owned by `$dev`.
 - Documentation methodology/content owned by `$docs`.
 - UX design decisions owned by `$ux`.
-- SEO Contract decisions owned by `$seo`.
+- SEO Contract decisions owned by `$marketing`.
 - QA evidence owned by `$tester`.
 - Runtime/deploy incidents owned by `$ops`.
 
@@ -22,7 +22,7 @@ patterns for Bitrix/Laravel alignment.
   or registration flows.
 - Use `$bitrix`, `$sf4`, or `$orgportal` when SIMAI Framework contracts must align with
   those platforms.
-- Use `$ux` and `$seo` as contract owners for interface and public/search
+- Use `$ux` and `$marketing` as contract owners for interface and public/search
   surfaces.
 - Use `$docs` for substantial documentation and `$tester` for validation
   evidence.

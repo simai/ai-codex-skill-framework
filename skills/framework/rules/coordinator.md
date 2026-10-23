@@ -27,11 +27,11 @@ activity with `activity_id`, `title`, `triggers`, `required_specialists`,
 
 ## Owner handoffs
 
-- Implementing an SEO Contract from `$seo`: `$seo` stays the contract owner;
+- Implementing an SEO Contract from `$marketing`: `$marketing` stays the contract owner;
   implement through SIMAI Framework surfaces (semantic HTML, layout, components,
   smart-components, blocks, loader behavior, renderability, headings, internal
   links, media behavior, visible content order). If SIMAI Framework constraints
-  conflict with the contract, report a blocker to `$seo` instead of silently
+  conflict with the contract, report a blocker to `$marketing` instead of silently
   changing URL/canonical/meta/content decisions.
 - Substantial documentation, docs maps, screenshots, developer usage docs or
   documentation audits: `$docs` owns technical writing; `$framework` stays

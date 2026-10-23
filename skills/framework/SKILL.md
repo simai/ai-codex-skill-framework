@@ -84,7 +84,7 @@ Framework target with unrelated standalone HTML.
 - Smart-components: state, data and explicit side effects.
 - Blocks: composition with explicit input/output and extension contracts.
 
-Preserve backward compatibility unless explicitly waived. `seo`, `ux`, `docs`,
+Preserve backward compatibility unless explicitly waived. `marketing`, `ux`, `docs`,
 `tester`, `bitrix` and `larena` retain their owner decisions; SIMAI Framework implements
 them through its own surfaces.
 
