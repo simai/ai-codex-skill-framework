@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0.0",
+  "operation_id": "simai.skill-change.detect",
+  "created_at": "2026-10-23T13:31:17.750323+00:00",
+  "repo": "repo://ai-skill-framework",
+  "skill": "framework",
+  "owner": "framework",
+  "federation_control_plane": false,
+  "base": "cea3c91552c7e33f8d4505866cfa255de4d159d8",
+  "base_commit": "cea3c91552c7e33f8d4505866cfa255de4d159d8",
+  "comparison_mode": "baseline_to_worktree",
+  "git": {
+    "dirty": false,
+    "ahead": 2,
+    "head": "251ff03"
+  },
+  "changed_files": [
+    {
+      "path": "skills/framework/SKILL.md",
+      "source_path": "SKILL.md",
+      "change_types": [
+        "capability",
+        "federation-impact",
+        "routing-impact"
+      ],
+      "routing_impact": true,
+      "federation_impact": true,
+      "status": "M",
+      "old_path": "",
+      "source_mode": "100644",
+      "source_sha256": "4734dbd96c711a23ec0cb44fcaf09cc5d24cb355b27c40163e3c14d9a97082b3",
+      "source_bytes": 6825,
+      "baseline_path": "skills/framework/SKILL.md",
+      "baseline_mode": "100644",
+      "baseline_sha256": "3ef45e80679eb1abacc5b6ebc3123c71d9fe1f71a8a9188255d6b06fb1536e99",
+      "baseline_bytes": 6819
+    },
+    {
+      "path": "skills/framework/references/bitrix-ui-smart-integration.md",
+      "source_path": "references/bitrix-ui-smart-integration.md",
+      "change_types": [
+        "methodology",
+        "routing-impact"
+      ],
+      "routing_impact": true,
+      "federation_impact": false,
+      "status": "M",
+      "old_path": "",
+      "source_mode": "100644",
+      "source_sha256": "23b6c988a1335d2134753f841d0d50236875fada9a9726b8d8c002a442c66aba",
+      "source_bytes": 26953,
+      "baseline_path": "skills/framework/references/bitrix-ui-smart-integration.md",
+      "baseline_mode": "100644",
+      "baseline_sha256": "a5d91bae0dd757003fe5d270c38ebb74c0e95d08e8c64e6196628754fb04c849",
+      "baseline_bytes": 26950
+    },
+    {
+      "path": "skills/framework/rules/coordinator.md",
+      "source_path": "rules/coordinator.md",
+      "change_types": [
+        "methodology",
+        "routing-impact"
+      ],
+      "routing_impact": true,
+      "federation_impact": false,
+      "status": "M",
+      "old_path": "",
+      "source_mode": "100644",
+      "source_sha256": "7e295486607d1b170e0828ff63cd29ecb691ab624cbf7e348fc30904908dcf35",
+      "source_bytes": 2352,
+      "baseline_path": "skills/framework/rules/coordinator.md",
+      "baseline_mode": "100644",
+      "baseline_sha256": "9f654236ea44de3727cd5cd9a0a283670d1e07077c362bc7439d411d5471b7c3",
+      "baseline_bytes": 2334
+    },
+    {
+      "path": "skills/framework/rules/skill-mesh-balance.md",
+      "source_path": "rules/skill-mesh-balance.md",
+      "change_types": [
+        "methodology",
+        "routing-impact"
+      ],
+      "routing_impact": true,
+      "federation_impact": false,
+      "status": "M",
+      "old_path": "",
+      "source_mode": "100644",
+      "source_sha256": "b3075f0f31899a1f8628d22d9980486f07639e9e5aaabfc269e09dd0f38ecb1b",
+      "source_bytes": 1935,
+      "baseline_path": "skills/framework/rules/skill-mesh-balance.md",
+      "baseline_mode": "100644",
+      "baseline_sha256": "17ed0d20c89d009fc16f53891a6e3f1e86e6f8c8ad2e3455093d27ec15bc14f2",
+      "baseline_bytes": 1923
+    }
+  ],
+  "changed_skill_count": 1,
+  "change_types": [
+    "capability",
+    "federation-impact",
+    "methodology",
+    "routing-impact"
+  ],
+  "detected_specialists": [],
+  "required_actions": [
+    "evidence",
+    "federation-proposal",
+    "route-check",
+    "runtime-context"
+  ],
+  "specialist_promotion_required": false,
+  "route_check_required": true,
+  "federation_proposal_required": true,
+  "blockers": [],
+  "status": "changed",
+  "detector_fingerprint": "3e16ae025ee3837977441d3fc55e8ef50182425a7bc99b8f6241f5f1f4846ee8"
+}
