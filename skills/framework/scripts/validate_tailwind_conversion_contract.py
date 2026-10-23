@@ -63,9 +63,6 @@ def main() -> int:
         "activities/tailwind-conversion.json",
         "specialists/tailwind-converter/profile.md",
         "knowledge-packs/tailwind-to-framework-conversion.md",
-        "roadmap/tailwind-to-framework-learning-plan.md",
-        "roadmap/tailwind-to-framework-stage-1-2-tz.md",
-        "roadmap/future-specialties-and-tailwind-conversion.md",
         "references/vendor/tailwind-to-framework.class-groups.json",
         "references/vendor/tailwind-to-framework.utility-map.json",
         "references/vendor/tailwind-to-framework.fixtures.json",
@@ -107,10 +104,6 @@ def main() -> int:
             failures.append(f"tailwind-conversion manifest misses required specialist: {specialist}")
     if "knowledge-packs/tailwind-to-framework-conversion.md" not in manifest.get("knowledge_packs", []):
         failures.append("tailwind-conversion manifest misses conversion knowledge pack")
-    if "roadmap/tailwind-to-framework-learning-plan.md" not in manifest.get("knowledge_packs", []):
-        failures.append("tailwind-conversion manifest misses Tailwind learning plan")
-    if "roadmap/tailwind-to-framework-stage-1-2-tz.md" not in manifest.get("knowledge_packs", []):
-        failures.append("tailwind-conversion manifest misses Stage 1-2 TZ")
     if not any("unmapped Tailwind" in item for item in manifest.get("required_outputs", [])):
         failures.append("tailwind-conversion manifest must require unmapped Tailwind report")
 
@@ -124,10 +117,6 @@ def main() -> int:
         failures.append("activity router payload misses tailwind-converter")
     if "knowledge-packs/tailwind-to-framework-conversion.md" not in payload.get("knowledge_packs", []):
         failures.append("activity router payload misses Tailwind conversion knowledge pack")
-    if "roadmap/tailwind-to-framework-learning-plan.md" not in payload.get("knowledge_packs", []):
-        failures.append("activity router payload misses Tailwind conversion learning plan")
-    if "roadmap/tailwind-to-framework-stage-1-2-tz.md" not in payload.get("knowledge_packs", []):
-        failures.append("activity router payload misses Tailwind conversion Stage 1-2 TZ")
 
     mapping_payload = run_mapping_validator(skill_root)
     if not mapping_payload.get("ok"):

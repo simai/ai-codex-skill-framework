@@ -11,9 +11,6 @@ Focus:
 Default artifacts:
 
 - `specialists/tailwind-converter/profile.md`
-- `roadmap/tailwind-to-framework-learning-plan.md`
-- `roadmap/tailwind-to-framework-stage-1-2-tz.md`
-- `roadmap/future-specialties-and-tailwind-conversion.md`
 - `references/vendor/tailwind-to-framework.class-groups.json`
 - `references/vendor/tailwind-to-framework.utility-map.json`
 - `references/vendor/tailwind-to-framework.fixtures.json`
@@ -38,7 +35,7 @@ Default artifacts:
 
 Learning route:
 
-- use `roadmap/tailwind-to-framework-learning-plan.md` as the staged development plan for this specialist;
+- the former staged plan and TZ are archived outside the skill in `repo://ai-skill-framework/archive/roadmap/`; current plans and priorities live in `ui-control` (`control/ROADMAP.md`), not in the skill;
 - move from utility taxonomy and direct class mapping to responsive/state handling, component recognition, smart-component recognition, full project migration, and converter tooling;
 - each stage must leave a reusable artifact: mapping manifest, fixture, recipe, validator, or conversion report template.
 

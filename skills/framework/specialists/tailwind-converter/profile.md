@@ -4,7 +4,7 @@ Owns Tailwind CSS to SIMAI Framework conversion strategy, mapping quality, and c
 
 Learning plan:
 
-- follow `roadmap/tailwind-to-framework-learning-plan.md` when developing this specialty from basic utility mapping to complex project migration and smart-component conversion.
+- develop the specialty from basic utility mapping to complex project migration and smart-component conversion; current plans live in `ui-control`, the former plan is archived in `repo://ai-skill-framework/archive/roadmap/`.
 
 Use when:
 

@@ -31,8 +31,6 @@
   ],
   "knowledge_packs": [
     "knowledge-packs/tailwind-to-framework-conversion.md",
-    "roadmap/tailwind-to-framework-learning-plan.md",
-    "roadmap/tailwind-to-framework-stage-1-2-tz.md",
     "knowledge-packs/recipe-routing.md",
     "references/frontend-modifiers.md",
     "references/frontend-components-smart.md"
