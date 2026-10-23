@@ -14,7 +14,7 @@
       "repo://ai-skill-framework/skills/framework/quality/capability-map.json"
     ],
     "gga_status": "GGA10",
-    "graph_context_ref": "repo://ai-skill-framework/graph",
+    "graph_context_ref": "repo://ai-skill-framework/mirai/graph",
     "keywords": [
       "simai framework",
       "simai ui",

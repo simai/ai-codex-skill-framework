@@ -28,22 +28,22 @@ RUN_DATE = "20260529"
 
 REQUIRED_ARTIFACTS = {
     "semantic": Path(
-        f"graph/generated/mirai-graph/semantic-preservation/"
+        f"mirai/graph/generated/mirai-graph/semantic-preservation/"
         f"{ARCHIVE_ID}-repo-local-semantic-review-{RUN_DATE}/semantic-preservation-verdict.json"
     ),
     "effectiveness": Path(
-        f"graph/generated/mirai-graph/effectiveness-reports/"
+        f"mirai/graph/generated/mirai-graph/effectiveness-reports/"
         f"{ARCHIVE_ID}-repo-local-effectiveness-{RUN_DATE}/effectiveness-report.json"
     ),
     "adoption": Path(
-        f"graph/generated/mirai-graph/adoption-reports/"
+        f"mirai/graph/generated/mirai-graph/adoption-reports/"
         f"{ARCHIVE_ID}-repo-local-adoption-gga9-active-gate-{RUN_DATE}/mirai-graph-adoption-report.json"
     ),
     "federation": Path(
-        f"graph/federation/exports/{ARCHIVE_ID}-repo-local-federation-export-{RUN_DATE}/federation-export.json"
+        f"mirai/graph/federation/exports/{ARCHIVE_ID}-repo-local-federation-export-{RUN_DATE}/federation-export.json"
     ),
     "integration": Path(
-        f"graph/generated/mirai-graph/integration-reviews/"
+        f"mirai/graph/generated/mirai-graph/integration-reviews/"
         f"{ARCHIVE_ID}-repo-local-integration-review-active-gate-{RUN_DATE}/mirai-graph-integration-review.json"
     ),
 }
