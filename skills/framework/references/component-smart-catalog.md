@@ -1,5 +1,7 @@
 # SIMAI Framework Component And Smart-Component Catalog
 
+> Источник: github.com/simai/ui, github.com/simai/ui-play · Проверено: 2026-10-23 · Версия: ui 3d9bf903a590, ui-play e062a00367aa
+
 Generated from local source mirrors. Refresh with:
 
 ```bash

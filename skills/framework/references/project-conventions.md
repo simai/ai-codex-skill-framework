@@ -1,7 +1,8 @@
 # SIMAI Framework Project Conventions
 
-Source snapshot:
-`~/Downloads/ui-doc-main (2)/ui-doc-main/source/docs/ru`
+> Источник: github.com/simai/ui-doc (исторический снимок source/docs/ru) · Проверено: 2026-10-23 · Версия: ui-doc ae2c38b8b1ab (правила не сверены постранично)
+
+Исторический снимок документации до 2026-10 (структура `source/docs/ru`). Актуальные страницы — `source/simai/ui-doc/content/ru`, поиск по ним — `references/ui-doc-manifest.json` (атлас пересобран 2026-10-23). Пути ниже могли переехать.
 
 This file contains conventions extracted from the snapshot. If a rule is absent in snapshot docs, it is marked explicitly.
 

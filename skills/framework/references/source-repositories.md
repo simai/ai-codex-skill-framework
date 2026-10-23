@@ -1,193 +1,103 @@
-# SIMAI Framework Source Repositories
+# Источники SIMAI Framework
 
-This file explains which `simai/*` repositories feed the `framework` skill, what each repository is authoritative for, and how to refresh local source snapshots safely.
+> Источник: github.com/simai/ui-source, github.com/simai/ui (README, contracts/releases) · Проверено: 2026-10-23 · Версия: ui-source aa81305b14f1, ui 3d9bf903a590 (выпуск ui-720203c5b5e5)
 
-## Why This Exists
+Какой репозиторий считать истиной на какой вопрос и как обновлять снимок
+источников навыка. Продукты и пакеты семейства — в
+[framework-family.md](framework-family.md).
 
-- Keep `SKILL.md` compact and route-heavy.
-- Keep external source ingestion reproducible instead of relying on ad-hoc local folders.
-- Make it clear which repository to trust for docs, shipped assets, smart components, and runnable examples.
+## Модель «источник → выпуск»
 
-## Local Layout
+- `simai/ui-source` — **редактируемый источник** Framework: Core, Loader (один
+  модуль внутри, бывший `simai/ui-loader`, имя сохранено редиректом GitHub),
+  утилиты, компоненты, Smart Components, их контракты и тесты. Папки:
+  `src/core`, `src/utility`, `src/component`, `src/smart`, `contracts/`.
+  Лицензия Apache-2.0 (код до смены лицензии остаётся под MIT).
+- `simai/ui-builder` — воспроизводимая сборка (Webpack) из ui-source в ui.
+- `simai/ui` — **сгенерированный выпуск**, руками не правится: `distr/core`,
+  `distr/component`, `distr/utility`, `distr/smart`, `distr/rule`. Выпуск — это
+  коммит `Build: …`, имя `ui-<12 hex>`; тегов и номеров версий больше нет
+  (последний тег `v5.6.4`). Что из чего собрано —
+  `contracts/releases/ui-<id>.lock.json`. Подключать только закреплённый коммит,
+  не `main`. Apache-2.0.
+- `simai/ui-smart` — **архив** (только чтение): был зеркалом `ui/distr/smart`,
+  пока потребители переезжали. `window.sfSmartPath` нужен только страницам,
+  которые всё ещё грузят Smart из архива.
+- `simai/ui-doc` — публичная документация https://ui.simai.io/ (Docara,
+  исходник — `content/ru`, английский — перевод по мере приёмки).
+- `simai/ui-play` — playground и живые примеры (`examples/`, ветка `main`).
+- `simai/ui-vscode` — расширение VS Code (подсказки классов и `sf-*`), MIT.
+- `simai/ui-components` — пустая заглушка; `ui-doc-core`, `ui-doc-template` —
+  бывшие тема и шаблон документации, для новой работы не используются.
 
-- External repositories are synced into the repo-local ignored directory:
-  `repo://ai-skill-framework/source/simai`
-- Source sync configuration lives in:
-  `references/vendor/source-repos.json`
-- Last sync result is written to:
-  `references/vendor/source-repos.lock.json`
-- Aggregated source inventory is written to:
-  `references/vendor/source-inventory.json` and `references/source-inventory.md`
+## Кому верить
 
-## Repository Roles
+| Вопрос | Источник |
+|---|---|
+| Как это работает и как поменять | `ui-source` (`src/…`, `contracts/`, `tests/`) |
+| Что реально поставляется в выпуске | `ui/distr/…` на закреплённом коммите |
+| Есть ли такой Smart Component | `ui/distr/smart/<имя>` (не `ui-smart`) |
+| Из каких ревизий собран выпуск | `ui/contracts/releases/ui-<id>.lock.json` |
+| Что изменилось | `ui/CHANGELOG.md`, журнал `ui-source/contracts/changes/journal.json` |
+| Как описано для людей | `ui-doc/content/ru` |
+| Рабочий пример разметки | `ui-play/examples` |
+| Компонент продукта (sf-table и т. п.) | репозиторий-владелец пакета, см. [framework-family.md](framework-family.md) |
 
-### `simai/ui`
+Старое имя или значение работает через псевдоним до даты удаления; чистка —
+1-го числа месяца (решение владельца 2026-10-09, `ui-control`
+`control/FRAMEWORK-LIFECYCLE.md`). Поэтому сверяйте имена по журналу
+изменений, а не по памяти.
 
-Use as the source of truth for shipped SF runtime assets.
+## Снимок навыка
 
-- Local path: `source/simai/ui`
-- Trust for:
-  - loader runtime paths in `distr/core`
-  - shipped component inventory in `distr/component`
-  - final asset folder names that templates must target
-- Use when:
-  - validating whether a component name is actually shipped
-  - checking loader-facing asset paths
-  - verifying final distribution layout rather than documentation wording
+Навык держит машинный снимок источников для подбора компонентов, рецептов и
+проверки классов:
 
-### `simai/ui-doc`
+- список источников — `references/vendor/source-repos.json`;
+- ревизии последнего снимка — `references/vendor/source-repos.lock.json`;
+- производные: `references/vendor/source-inventory.json`,
+  `references/source-inventory.md`, `references/vendor/component-smart-catalog.json`,
+  `references/component-smart-catalog.md`, `references/ui-doc-manifest.json` и
+  атласы `ui-doc-*`.
 
-Use as the source of truth for official documentation pages.
+Снимок от 2026-10-23: 72 компонента, 55 Smart Components, 228 групп утилит в
+выпуске. С июльского снимка из свободного выпуска ушли Smart `table` и
+`admin-menu` (теперь `sf-table`, `sf-admin-menu` в SIMAI Pro), появились
+`button-group`, `copy-button`, `empty-state`, `page-header`, `popover`,
+`theme-generator` и другие. Таблица в конвертере Tailwind поэтому остаётся
+статической разметкой.
 
-- Local path: `source/simai/ui-doc`
-- Trust for:
-  - `start/loader/*`
-  - utility docs taxonomy
-  - quickstart/project setup wording
-- Use when:
-  - building or refreshing `ui-doc-manifest.json`
-  - mapping task keywords to docs pages
-  - extracting loader/cache semantics into references
-- Caveat:
-  component and smart-component sections are still sparse; treat them as intent, not full implementation contracts
+`references/vendor/source/catalog-lite.sf-only.json` (каталог CSS-классов)
+генератора в навыке не имеет и этим обновлением не пересобран.
 
-### `simai/ui-play`
+## Обновление снимка
 
-Use as the source of truth for runnable examples and real integration wiring.
+Зеркало лежит в игнорируемой папке `source/simai/` репозитория навыка.
 
-- Local path: `source/simai/ui-play`
-- Trust for:
-  - actual HTML examples under `examples/`
-  - host/runner setup
-  - how `window.sfPath` and `window.sfSmartPath` are wired in practice
-  - deploy expectations for playground-hosted smart assets
-- Use when:
-  - searching for working markup faster than reading docs
-  - checking if a component or smart-component already has a runnable example
-  - understanding how a standalone or demo environment boots SIMAI Framework
-
-### `simai/ui-loader`
-
-Use as the source of truth for framework source and utility semantics.
-
-- Local path: `source/simai/ui-loader`
-- Trust for:
-  - utility source groups under `src/utility/*`
-  - utility rule, state and responsive semantics
-  - inputs that produce the shipped `ui` distribution
-- Use when:
-  - checking whether a current utility is implemented at source level
-  - inspecting rule and state behavior behind a shipped utility
-  - diagnosing source/distribution drift together with `simai/ui`
-
-### `simai/ui-smart`
-
-Use as the source of truth for available smart runtime artifacts.
-
-- Local path: `source/simai/ui-smart`
-- Trust for:
-  - smart component names under `smart/*`
-  - smart JS/CSS/template folder structure
-  - deploy shape for publishing `/smart/`
-- Use when:
-  - checking whether a smart component actually exists
-  - deriving inventory for `smart-codes` or related registries
-  - verifying template/js/css co-location conventions
-
-### `simai/ui-vscode`
-
-Use as a secondary tooling source.
-
-- Local path: `source/simai/ui-vscode`
-- Trust for:
-  - editor-facing metadata generation
-  - modifier hinting workflows
-- Use when:
-  - improving developer ergonomics
-  - extracting autocomplete-oriented utility metadata
-
-### `simai/ui-components`
-
-Treat as optional until access is confirmed.
-
-- Local path target: `source/simai/ui-components`
-- Current state:
-  visible in the organization listing shared by the user, but current sync sees no usable `main` branch and no published heads
-- Use when:
-  - access is granted later
-  - raw component source needs to be reconciled against shipped `simai/ui` distribution
-
-## Trust Order By Question
-
-- "How do I find the right docs page?" -> `ui-doc`
-- "What actually ships in the runtime?" -> `ui`
-- "Where is a utility implemented and which states does it support?" -> `ui-loader`
-- "How is this used in a working example?" -> `ui-play`
-- "Does this smart-component really exist?" -> `ui-smart`
-- "Which utility groups ship in the current runtime?" -> `ui`
-- "How can we improve editor support?" -> `ui-vscode`
-
-## Refresh Workflow
-
-1. Sync repositories:
+1. Получить источники: `python3 skills/framework/scripts/sync_source_repos.py`
+   (клонирует или обновляет репозитории из `source-repos.json`). Если рядом
+   есть свежие локальные копии, можно скопировать в зеркало только нужные
+   папки (`ui/distr`, `ui/contracts`, `ui-source/src`, `ui-play/examples`,
+   `ui-play/packages`, `ui-doc/content`) и записать ревизии в lock вручную —
+   так сделан снимок 2026-10-23.
+2. Пересобрать производные:
 
 ```bash
-python3 skills/framework/scripts/sync_source_repos.py
+python3 skills/framework/scripts/build_source_inventory.py --repo-root . --skill-root skills/framework
+python3 skills/framework/scripts/build_component_smart_catalog.py --repo-root . --skill-root skills/framework
+python3 skills/framework/scripts/build_ui_doc_atlas.py --docs-root source/simai/ui-doc/content/ru --skill-root skills/framework
 ```
 
-2. Rebuild docs atlas from the freshly synced docs repo:
+3. Проверить: `bash skills/framework/scripts/run_local_checks.sh`. Ссылки
+   рецептов на страницы документации лежат в
+   `references/vendor/working-set.section-variants.json`; если страницы
+   переехали, проверка `validate_working_set_sources.py` их назовёт.
+
+## Быстрый поиск в зеркале
 
 ```bash
-python3 skills/framework/scripts/build_ui_doc_atlas.py \
-  --docs-root repo://ai-skill-framework/source/simai/ui-doc/source/docs/ru \
-  --skill-root repo://ai-skill-framework/skills/framework
-```
-
-3. Run local checks:
-
-```bash
-bash skills/framework/scripts/run_local_checks.sh
-```
-
-Optional but recommended for source-backed discovery:
-
-```bash
-python3 skills/framework/scripts/build_source_inventory.py \
-  --repo-root repo://ai-skill-framework \
-  --skill-root repo://ai-skill-framework/skills/framework
-python3 skills/framework/scripts/build_component_smart_catalog.py \
-  --repo-root repo://ai-skill-framework \
-  --skill-root repo://ai-skill-framework/skills/framework
-```
-
-## Practical Search Shortcuts
-
-Find a runnable example:
-
-```bash
-rg -n "sf-button|sf-code|<smart" source/simai/ui-play/examples
-```
-
-List shipped components:
-
-```bash
-find source/simai/ui/distr/component -maxdepth 1 -mindepth 1 -type d | sort
-```
-
-List shipped smart components:
-
-```bash
-find source/simai/ui-smart/smart -maxdepth 1 -mindepth 1 -type d | sort
-```
-
-List shipped utility groups:
-
-```bash
-find source/simai/ui/distr/utility -maxdepth 1 -mindepth 1 -type d | sort
-```
-
-List utility source groups:
-
-```bash
-find source/simai/ui-loader/src/utility -maxdepth 1 -mindepth 1 -type d | sort
+find source/simai/ui/distr/component -mindepth 1 -maxdepth 1 -type d | sort
+find source/simai/ui/distr/smart -mindepth 1 -maxdepth 1 -type d | sort
+find source/simai/ui-source/src/utility -mindepth 1 -maxdepth 1 -type d | sort
+rg -n "sf-button|sf-code" source/simai/ui-play/examples
 ```

@@ -1,5 +1,7 @@
 # SIMAI Framework Fast Start
 
+> Источник: github.com/simai/ui (README), github.com/simai/ui-source · Проверено: 2026-10-23 · Версия: ui-source aa81305b14f1, ui 3d9bf903a590
+
 Use this file when the goal is simple and fast: connect SIMAI Framework, find a known pattern, assemble markup, and validate it without rediscovering the whole ecosystem.
 
 ## Fastest Working Route
@@ -37,18 +39,19 @@ python3 skills/framework/scripts/validate_framework_html_files.py --strict --cat
 
 ## Minimal Runtime Connection
 
-For standalone HTML/testing, the actual runtime pattern seen in `ui` and `ui-play` is:
+For standalone HTML/testing, the pattern from the `simai/ui` README (checked
+2026-10-23): pin a release commit, never `main`; `core.css` is linked by the
+page; `sfPath` is set before `core.js`; Smart Components are found in
+`distr/smart` under `sfPath` without extra configuration (`window.sfSmartPath`
+only for pages that still serve the archived `simai/ui-smart`).
 
 ```html
-<script>
-  window.sfPath = "/simai/";
-  window.sfSmartPath = window.location.origin;
-</script>
-<link rel="stylesheet" href="/simai/core/css/core.css" />
-<script type="module" src="/simai/core/js/core.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/simai/ui@<release-commit>/distr/core/css/core.css">
+<script>window.sfPath = 'https://cdn.jsdelivr.net/gh/simai/ui@<release-commit>/distr/';</script>
+<script src="https://cdn.jsdelivr.net/gh/simai/ui@<release-commit>/distr/core/js/core.js"></script>
 ```
 
-Utility classes are part of the current Simai Framework runtime. Load the
+Utility classes are part of the current SIMAI Framework runtime. Load the
 normal current runtime rather than a separate utility-only legacy bundle.
 
 ## Choosing Between Utilities, Components, And Smart Components
@@ -60,7 +63,7 @@ normal current runtime rather than a separate utility-only legacy bundle.
 ## Fast Source Lookup
 
 - Docs and terminology:
-  `source/simai/ui-doc/source/docs/ru`
+  `source/simai/ui-doc/content/ru`
 - Working examples:
   `source/simai/ui-play/examples`
 - Aggregated source coverage:
@@ -88,11 +91,11 @@ normal current runtime rather than a separate utility-only legacy bundle.
 - Shipped components:
   `source/simai/ui/distr/component`
 - Shipped smart runtime:
-  `source/simai/ui-smart/smart`
+  `source/simai/ui/distr/smart`
 - Shipped utility groups:
   `source/simai/ui/distr/utility`
 - Utility source, rule and state semantics:
-  `source/simai/ui-loader/src/utility`
+  `source/simai/ui-source/src/utility`
 
 ## Smart-Component Practical Notes
 
@@ -102,7 +105,7 @@ normal current runtime rather than a separate utility-only legacy bundle.
 - In practice, verify both:
   - docs contract in `ui-doc`
   - real examples in `ui-play/examples/smart-components`
-  - runtime existence in `ui-smart/smart`
+  - runtime existence in `ui/distr/smart`
 
 ## When To Escalate Beyond Fast Start
 

@@ -1,5 +1,7 @@
 # SIMAI Framework Execution Workflow
 
+> Источник: github.com/simai/ui-doc, repo://ai-skill-framework/skills/framework/scripts · Проверено: 2026-10-23 · Версия: ui-doc ae2c38b8b1ab
+
 Use this file as the default execution order for real SIMAI Framework tasks.
 
 ## Goal
@@ -73,7 +75,7 @@ python3 skills/framework/scripts/build_source_inventory.py \
 
 ```bash
 python3 skills/framework/scripts/build_ui_doc_atlas.py \
-  --docs-root "$PWD/source/simai/ui-doc/source/docs/ru" \
+  --docs-root "$PWD/source/simai/ui-doc/content/ru" \
   --skill-root "$PWD/skills/framework"
 ```
 

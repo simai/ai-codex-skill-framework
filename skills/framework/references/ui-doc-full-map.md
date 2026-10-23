@@ -1,5 +1,7 @@
 # SIMAI Framework UI Docs Full Map
 
+> Источник: github.com/simai/ui-doc · Проверено: 2026-10-23 · Версия: ui-doc ae2c38b8b1ab
+
 Generated from:
 `source/simai/ui-doc/content/ru`
 

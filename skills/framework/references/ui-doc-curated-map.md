@@ -1,8 +1,8 @@
 # UI Docs Curated Map (SIMAI Framework Skill)
 
-Source snapshot root:
+> Источник: github.com/simai/ui-doc (исторический снимок source/docs/ru) · Проверено: 2026-10-23 · Версия: ui-doc ae2c38b8b1ab (пути не сверены постранично)
 
-`~/Downloads/ui-doc-main (2)/ui-doc-main/source/docs/ru`
+Исторический снимок документации до 2026-10 (структура `source/docs/ru`). Актуальные страницы — `source/simai/ui-doc/content/ru`, поиск по ним — `references/ui-doc-manifest.json` (атлас пересобран 2026-10-23). Пути ниже могли переехать.
 
 This map lists the pages that were reviewed and prioritized for this skill.
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Sync external SIMAI SIMAI Framework source repositories into the local ignored source tree.
+Sync external SIMAI Framework source repositories into the local ignored source tree.
 """
 
 from __future__ import annotations

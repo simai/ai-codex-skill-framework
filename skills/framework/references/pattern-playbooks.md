@@ -1,5 +1,7 @@
 # SIMAI Framework Pattern Playbooks
 
+> Источник: github.com/simai/ui, github.com/simai/ui-play, github.com/simai/ui-doc · Проверено: 2026-10-23 · Версия: ui 3d9bf903a590, ui-play e062a00367aa, ui-doc ae2c38b8b1ab
+
 Use this file as the entry point for recurring UI tasks that should map quickly to known SIMAI Framework markup and smart-component flows.
 
 ## When To Use
@@ -34,8 +36,8 @@ Use this file as the entry point for recurring UI tasks that should map quickly 
 1. `source/simai/ui-play/examples/components/*`
 2. `source/simai/ui-play/examples/smart-components/*`
 3. `source/simai/ui/distr/component/*`
-4. `source/simai/ui-smart/smart/*`
-5. `source/simai/ui-doc/source/docs/ru/start/loader/*` for loader semantics
+4. `source/simai/ui/distr/smart/*`
+5. `source/simai/ui-doc/content/ru` (loader and connection pages) for loader semantics
 
 ## Validation Rule
 

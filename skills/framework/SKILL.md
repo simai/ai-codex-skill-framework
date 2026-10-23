@@ -22,6 +22,21 @@ Before substantial work load the required kernel and rules:
 - [rules/skill-mesh-balance.md](./rules/skill-mesh-balance.md);
 - [rules/coordinator.md](./rules/coordinator.md).
 
+## Семейство и источники (проверено 2026-10-23)
+
+- Правка Framework — только в `simai/ui-source`; `simai/ui` — сгенерированный
+  выпуск (`distr/`, включая `distr/smart`), собирается `ui-builder`, руками не
+  правится; потребители закрепляют коммит выпуска, не `main`.
+- `simai/ui-smart` архивирован; `ui-loader` теперь `ui-source`.
+- Треды Framework живут в `simai/ui-control`: диспетчер раскладывает цель по
+  репозиториям-владельцам и принимает доказательства.
+- Компоненты продуктов — пакетами у владельца: `sf-table`, `sf-data-view`,
+  `sf-property-view`, `sf-admin-menu` — SIMAI Pro в `simai/ui-pro` (пакет `larena`).
+- Продукты на Framework: `ui-admin`, `ui-chat`, `ui-mail`, `larena-ui`.
+
+Подробно: [source-repositories.md](./references/source-repositories.md) и
+[framework-family.md](./references/framework-family.md).
+
 ## Mirai Graph Runtime Entry
 
 Use current graph context for capability, route, gates and evidence. Raw SIMAI Framework
@@ -43,9 +58,10 @@ Framework target with unrelated standalone HTML.
 1. Define goal, `Done When` and affected SIMAI Framework layer.
 2. Select an activity from `activities/activity-registry.json`; use
    `scripts/recommend_framework_activity.py` when unclear.
-3. For a new or substantially changed Component/Smart Component, execute
-   `component-design-evolution` and load
-   `references/component-design-evolution.md` before editing implementation.
+3. For a new or substantially changed Component/Smart Component, execute the
+   technology `technologies/component-design-evolution.json` (pick its
+   scenario) and load `references/component-design-evolution.md` before
+   editing implementation.
 4. For non-trivial work select specialists via `rules/routing.md` and assign roles
    via `rules/specialist-engagement-model.md`; load only the selected activity,
    specialist profiles and directly required references.
@@ -89,6 +105,18 @@ them through its own surfaces.
   `scripts/generate_framework_working_set.py`;
 - strict HTML/recipe validation: `scripts/validate_page_recipes.py` and
   `scripts/validate_framework_html_files.py`.
+
+## Чем навык не занимается
+
+- не владеет репозиториями: работу в `ui-source`, `ui-admin`, `ui-chat` и др.
+  организует тред репозитория (`dev`, `teamlead`), навык даёт знание и проверки;
+- сценарий и структура экрана — `ux`; макет, Figma, визуальный паритет и
+  оформление презентаций — `designer`;
+- приложение Larena и его пакеты — `larena`; Bitrix-модули — `bitrix`;
+  сайт документации на Docara — `docara`; вердикт о выпуске — `tester`;
+- выпуск, push, публикация и деплой — только по подтверждённой задаче
+  владельца; имена, новые пакеты и репозитории решает человек;
+- правила и маршрутизация Федерации — `federation`; упорядочивание данных — `mirai`.
 
 ## Output
 

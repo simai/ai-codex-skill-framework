@@ -1,5 +1,7 @@
 # SIMAI Framework Utility Atlas
 
+> Источник: github.com/simai/ui-doc · Проверено: 2026-10-23 · Версия: ui-doc ae2c38b8b1ab
+
 Generated from utility pages in the SIMAI Framework docs snapshot at `source/simai/ui-doc/content/ru`.
 
 ## Contents

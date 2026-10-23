@@ -1,5 +1,7 @@
 # SIMAI Framework Source Inventory
 
+> Источник: github.com/simai/ui, github.com/simai/ui-source, github.com/simai/ui-doc, github.com/simai/ui-play, github.com/simai/ui-vscode · Проверено: 2026-10-23 · Версия: ui 3d9bf903a590, ui-source aa81305b14f1, ui-doc ae2c38b8b1ab, ui-play e062a00367aa, ui-vscode 352cd897bb63
+
 Generated from synced upstream repositories under `source/simai`.
 
 ## Source Revisions

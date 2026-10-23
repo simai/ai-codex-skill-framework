@@ -1,4 +1,6 @@
-# Simai Framework Contract Registry
+# SIMAI Framework Contract Registry
+
+> Источник: github.com/simai/ui-source, github.com/simai/ui · Проверено: 2026-10-23 · Версия: ui-source aa81305b14f1, ui 3d9bf903a590
 
 Use the exact consumer pointer in
 `references/vendor/framework-contract-registry.pointer.json` before choosing

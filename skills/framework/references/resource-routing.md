@@ -1,5 +1,7 @@
 # Resource Routing
 
+> Источник: repo://ai-skill-framework/skills/framework · Проверено: 2026-10-23 · Версия: снимок источников 2026-10-23 (ui 3d9bf903a590, ui-source aa81305b14f1)
+
 Exhaustive map of SIMAI Framework references, knowledge packs and scripts. Load
 narrowly: pick the entry for the current activity, not the whole list.
 Activities live in [activity-registry.json](../activities/activity-registry.json);
@@ -24,17 +26,21 @@ specialist profiles live in `specialists/<id>/profile.md`.
 
 - `references/frontend.md` first: scope, source map, global rules.
 - `references/project-conventions.md`: team naming, layout, compatibility.
-- `references/source-repositories.md`: before source-backed discovery or upstream refresh.
+- `references/source-repositories.md`: model ui-source (editable) → ui (generated release),
+  trust order, snapshot refresh.
+- `references/framework-family.md`: ui-control hub and task cycle, component packages
+  (SIMAI Pro `sf-table`/`sf-admin-menu` in `ui-pro`), products ui-admin, ui-chat,
+  ui-mail, larena-ui, licences.
 - `references/source-inventory.md`: shipped coverage and runnable examples.
 - `scripts/sync_source_repos.py`: sync the ignored mirror in `source/simai/`;
   then `scripts/build_source_inventory.py` and `scripts/build_component_smart_catalog.py`.
 - Topic truth in source mirrors:
-  - `source/simai/ui-doc/source/docs/ru` docs pages;
+  - `source/simai/ui-doc/content/ru` docs pages;
   - `source/simai/ui-play/examples` runnable examples;
   - `source/simai/ui/distr/component` shipped components;
-  - `source/simai/ui-smart/smart` shipped smart-components;
+  - `source/simai/ui/distr/smart` shipped Smart Components (`ui-smart` is archived);
   - `source/simai/ui/distr/utility` shipped utility groups;
-  - `source/simai/ui-loader/src/utility` utility source, rule and state semantics.
+  - `source/simai/ui-source/src/utility` utility source, rule and state semantics.
 - Vendor data is the truth for strict class/state/smart validation:
   `references/vendor/source/catalog-lite.sf-only.json`,
   `references/vendor/source-repos.json`, `references/vendor/source-inventory.json`,

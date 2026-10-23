@@ -1,6 +1,15 @@
 # Bitrix UI + Smart Integration Reference
 
+> Источник: github.com/simai/ui (README), github.com/simai/ui-smart (архив) · Проверено: 2026-10-23 · Версия: ui 3d9bf903a590, ui-smart 2938b6d02cbc
+
 Use this reference when SIMAI Framework frontend assets are shipped through a Bitrix module or a Bitrix site starter.
+
+> Актуальность (2026-10-23): раздельная поставка `simai.ui` + `simai.ui.smart`
+> описывает уже установленные модули с отдельным Smart-пакетом. В текущих
+> выпусках `simai/ui` Smart Components лежат в `distr/smart` того же выпуска,
+> а `simai/ui-smart` архивирован. Для новой поставки кладите один выпуск `ui`
+> целиком (с `distr/smart`) и задавайте только `sfPath`; `sfSmartPath` нужен
+> лишь страницам, которые ещё грузят Smart из старого пакета.
 
 ## Package Boundary
 

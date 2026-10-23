@@ -1,11 +1,13 @@
 # Knowledge Pack: Source Refresh
 
+> Источник: github.com/simai/ui-source, github.com/simai/ui · Проверено: 2026-10-23 · Версия: ui-source aa81305b14f1, ui 3d9bf903a590
+
 Use this pack when the activity is `source-refresh`.
 
 Focus:
 
 - sync `source/simai/*` mirrors safely;
-- detect upstream path drift in `ui`, `ui-loader`, `ui-play`, `ui-smart`, and `ui-doc`;
+- detect upstream path drift in `ui`, `ui-source`, `ui-play` and `ui-doc` (`ui-smart` is archived, `ui-loader` is now `ui-source`);
 - rebuild source-backed inventories and docs atlases only where needed;
 - keep derived manifests aligned with real upstream layout.
 

@@ -2,9 +2,9 @@
   "routing": {
     "capabilities": [
       "simai framework",
-      "frontend",
-      "loader",
-      "smart-component"
+      "smart-component",
+      "component package",
+      "framework family coordination"
     ],
     "companion_skills": [
       "ux",
@@ -18,11 +18,23 @@
     "keywords": [
       "simai framework",
       "simai ui",
-      "frontend",
-      "loader",
-      "smart-component"
+      "ui-source",
+      "ui-control",
+      "ui-doc",
+      "ui-admin",
+      "ui-chat",
+      "ui-mail",
+      "larena-ui",
+      "simai pro",
+      "smart component",
+      "smart-component",
+      "component package",
+      "sf-table",
+      "sf-компонент",
+      "смарт-компонент",
+      "loader"
     ],
-    "owner_boundary": "framework owns its domain methodology and judgement; federation graph owns routing/contracts/readiness/evidence only.",
+    "owner_boundary": "framework brings SIMAI Framework knowledge and judgement; repositories are organised by dev/teamlead threads; routing, contracts and readiness belong to Federation (skill federation).",
     "raw_fallback_required": true,
     "required_gates": [
       "frontend_contract"
@@ -30,9 +42,9 @@
     "skill": "framework",
     "task_types": [
       "simai framework",
-      "frontend",
-      "loader",
-      "smart-component"
+      "smart-component",
+      "component design",
+      "framework source refresh"
     ]
   },
   "schema": "simai.skill_routing.v1",

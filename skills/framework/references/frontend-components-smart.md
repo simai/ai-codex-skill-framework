@@ -1,5 +1,7 @@
 # SIMAI Framework Components, Smart-Components, And Blocks
 
+> Источник: github.com/simai/ui-source, github.com/simai/ui (distr/smart), github.com/simai/ui-pro · Проверено: 2026-10-23 · Версия: ui-source aa81305b14f1, ui 3d9bf903a590, ui-pro f827be81dda4
+
 This file defines practical boundaries using the current docs snapshot.
 
 ## Documentation Status
@@ -16,7 +18,7 @@ Use the rules below as the working contract until dedicated component docs are c
 - Use `source/simai/ui-play/examples/components` for runnable static component markup.
 - Use `source/simai/ui-play/examples/smart-components` for runnable smart markup.
 - Use `source/simai/ui/distr/component` to confirm a component exists in the shipped runtime.
-- Use `source/simai/ui-smart/smart` to confirm a smart component exists in the smart runtime.
+- Use `source/simai/ui/distr/smart` to confirm a smart component exists in the released runtime (`ui-smart` is an archived mirror).
 - Use `references/vendor/registries/smart-codes.json` and `references/vendor/manifest/framework.smart.json` for strict validation-oriented registries.
 
 ## Layer Boundaries
@@ -63,7 +65,7 @@ Smart = how that unit is rendered and made interactive.
 
 ## Portable Smart Artifact ABI
 
-Simai Framework owns the host-neutral Smart artifact contract identified as:
+SIMAI Framework owns the host-neutral Smart artifact contract identified as:
 
 ```text
 contract_id: sf.smart_artifact_abi
@@ -99,15 +101,15 @@ identities.
 
 Ownership boundaries:
 
-- Simai Framework owns this neutral contract and its conformance fixtures.
+- SIMAI Framework owns this neutral contract and its conformance fixtures.
 - `bx-simai.main` implements the current Bitrix host adapter and exposes the
   `Simai\Main\UI\Smart` facade.
 - Docara implements a standalone host adapter and consumes the same artifact
   ABI; it does not define a separate dialect.
 - Larena is a consumer boundary for a future Laravel host adapter. Until it has
   a conforming implementation, no runtime-support claim is allowed.
-- `ui-smart` remains the generated frontend behavior and assets distribution;
-  it does not own the portable backend ABI and must not be edited manually.
+- `ui/distr/smart` (built from `ui-source/src/smart`; the old `ui-smart` mirror is archived)
+  is the generated frontend behavior and assets distribution; it does not own the portable backend ABI and must not be edited manually.
 - Products may own product-specific Smart artifacts. Those artifacts remain
   portable when they conform to this ABI and declare their own dependencies;
   product ownership does not create a new framework contract.
@@ -195,7 +197,7 @@ skills/framework/scripts/build_component_smart_catalog.py
 - Source-backed component renderers are declared in `references/vendor/tailwind-to-framework.component-renderers.json`; current first-class renderers cover buttons, dropdowns, inputs, pagination, and modals.
 - Use `scripts/convert_tailwind_to_framework.py --render-smart` only as an advisory starter when the source behavior needs state, events, data loading, or widget lifecycle.
 - Do not replace static markup with `sf-code` or a custom smart element until `data`, `property`, `events`, and `modify` payloads are known or deliberately left as placeholders for implementation.
-- For tables, the current source-backed SIMAI Framework contract is static semantic markup with utilities such as `table`, `table-sm`, `table-border`, `table-hover`, `table-auto`, `table-fixed`, `table-stripe`, and `table-stripe-col`. `sf-code="table"` exists in the registry, but no source-backed `ui-smart/smart/table` runtime contract is present in the current mirror, so automatic smart-table promotion must remain blocked.
+- For tables, the current source-backed SIMAI Framework contract is static semantic markup with utilities such as `table`, `table-sm`, `table-border`, `table-hover`, `table-auto`, `table-fixed`, `table-stripe`, and `table-stripe-col`. `sf-code="table"` exists in the registry, but the free release has no `ui/distr/smart/table` runtime: `sf-table` belongs to SIMAI Pro (`simai/ui-pro`, component package `larena`), so automatic smart-table promotion must remain blocked.
 
 Validation commands:
 

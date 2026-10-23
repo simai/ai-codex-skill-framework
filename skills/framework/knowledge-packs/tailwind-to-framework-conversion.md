@@ -1,5 +1,7 @@
 # Knowledge Pack: Tailwind CSS to SIMAI Framework Conversion
 
+> Источник: github.com/simai/ui (distr/smart), github.com/simai/ui-pro · Проверено: 2026-10-23 · Версия: ui 3d9bf903a590, ui-pro f827be81dda4
+
 Use this pack when the activity is `tailwind-conversion`.
 
 Focus:
@@ -69,7 +71,7 @@ Converter usage:
 - runtime component previews currently cover `sf-dropdown`, `sf-pagination`, and `sf-modal` under `output/tailwind-to-framework-tailadmin-pages/runtime-components/`.
 - `sf-pagination` promotion is source-backed only for the full SIMAI Framework pagination contract: selected count, numeric page list, page-size control, last-page control, and explicit `current`/`total`. Compact previous/next-only pagers should stay as static markup or a manual recipe until a separate compact contract exists.
 - Do not compare pagination against handcrafted approximations. The runtime lab must record the exact ui-play source path, load source-backed component CSS, and keep promotion blocked when the real source/runtime preview is visually broken or clipped.
-- `sf-code="table"` is currently registry-only in the source mirror: use static semantic `<table class="table ...">` utilities for SIMAI Framework-ready output, and keep smart-table auto-promotion blocked until a real `ui-smart` runtime/data contract is found.
+- `sf-code="table"` is currently registry-only in the source mirror: use static semantic `<table class="table ...">` utilities for SIMAI Framework-ready output, and keep smart-table auto-promotion blocked because the free release has no table runtime (`sf-table` is in SIMAI Pro, `simai/ui-pro`).
 - use `scripts/build_component_smart_catalog.py` after source sync to refresh the source-backed component/smart-component catalog used by component and smart rendering decisions.
 - use `scripts/capture_html_screenshot.py <html> --output <png>` as a local Chrome/Chromium screenshot fallback when browser-use screenshot capture times out.
 - use `scripts/probe_html_runtime.py <html> --output <json>` to verify that runtime-aware preview pages actually define expected custom elements through real JS assets, not CSS fallbacks.

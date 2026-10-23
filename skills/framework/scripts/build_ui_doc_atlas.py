@@ -113,6 +113,26 @@ def extract_example_class_tokens(body: str) -> List[str]:
     return sorted(tokens)
 
 
+def freshness_header(lock_path: Path, repo_names: list[str]) -> str:
+    """Freshness header line (Federation knowledge standard) from the source lock."""
+    import datetime as _dt
+    import json as _json
+
+    revisions: list[str] = []
+    try:
+        lock = _json.loads(lock_path.read_text(encoding="utf-8"))
+        by_name = {item.get("name"): item for item in lock.get("results", [])}
+        for name in repo_names:
+            commit = str(by_name.get(name, {}).get("commit") or "")
+            if commit:
+                revisions.append(f"{name} {commit[:12]}")
+    except (OSError, ValueError):
+        pass
+    sources = ", ".join(f"github.com/simai/{name}" for name in repo_names)
+    version = ", ".join(revisions) or "unknown"
+    return f"> Источник: {sources} · Проверено: {_dt.date.today().isoformat()} · Версия: {version}"
+
+
 def portable_docs_root(docs_root: Path) -> str:
     """Render the docs root without the machine-specific checkout prefix."""
     parts = docs_root.as_posix().split("/source/simai/", 1)
@@ -176,6 +196,8 @@ def write_full_map(records: List[Dict], out_file: Path, docs_root: Path) -> None
     lines: List[str] = []
     lines.append("# SIMAI Framework UI Docs Full Map")
     lines.append("")
+    lines.append(freshness_header(out_file.parent / "vendor" / "source-repos.lock.json", ["ui-doc"]))
+    lines.append("")
     lines.append("Generated from:")
     lines.append(f"`{portable_docs_root(docs_root)}`")
     lines.append("")
@@ -228,6 +250,8 @@ def write_utility_atlas(records: List[Dict], out_file: Path, docs_root: Path) ->
 
     lines: List[str] = []
     lines.append("# SIMAI Framework Utility Atlas")
+    lines.append("")
+    lines.append(freshness_header(out_file.parent / "vendor" / "source-repos.lock.json", ["ui-doc"]))
     lines.append("")
     lines.append(f"Generated from utility pages in the SIMAI Framework docs snapshot at `{portable_docs_root(docs_root)}`.")
     lines.append("")

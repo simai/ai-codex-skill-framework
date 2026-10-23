@@ -1,7 +1,10 @@
 # Smart Component Implementation
 
+> Источник: github.com/simai/ui-source (src/smart), github.com/simai/ui · Проверено: 2026-10-23 · Версия: ui-source aa81305b14f1, ui 3d9bf903a590
+
 Use this knowledge pack when creating, syncing, or reviewing SIMAI Framework smart
-components across backend Smart artifacts and the frontend `ui-smart` package.
+components across backend Smart artifacts and the frontend Smart layer
+(`ui-source/src/smart`, released in `ui/distr/smart`).
 It is especially relevant for overlay/navigation primitives such as `drawer`,
 `modal`, `sidebar`, `side-menu`, and navigation shells.
 
@@ -106,33 +109,29 @@ Backend templates should:
 
 ## Frontend Package Workflow
 
-The frontend smart repository can be a static distribution repository. Do not
-assume a build pipeline exists unless it is present in the repo.
+Since 2026-10 the frontend Smart layer is source code in `simai/ui-source`
+(`src/smart/<code>/`, with `smart.manifest.json`, `contract.json`, `js/` and
+studio fixtures) and is released only through `simai/ui-builder` into
+`simai/ui` (`distr/smart/<code>/`). `simai/ui-smart` is an archived read-only
+mirror: never add or edit components there, and never edit generated `ui`.
 
-For `ui-smart` static components:
+For a frontend Smart Component:
 
-1. Create a feature branch from `origin/main`.
-2. Add the component under:
-
-```text
-smart/<code>/js/<code>.js
-smart/<code>/js/<code>.js.gz
-```
-
-3. Keep the component self-contained unless the repo has an explicit shared
-runtime package for the behavior.
-4. Update the component list in `README.md`.
-5. Add a short `CHANGELOG.md` entry.
-6. Validate syntax and gzip:
-
-```bash
-node --check smart/<code>/js/<code>.js
-gzip -t smart/<code>/js/<code>.js.gz
-```
-
-7. Run a browser smoke that creates the element, exercises the public API, and
-checks the expected DOM state.
-8. Commit, push, and open a PR with behavior, API, and validation notes.
+1. Work in the owner thread of `ui-source` (one writer per repository); file
+   the task as an issue there or take it from the `ui-control` assignment.
+2. Add or change the component under `src/smart/<code>/` following the
+   neighbouring components (manifest, contract, JS, docs, studio fixture).
+3. Keep it a thin projection of the base Component: no second CSS, no local
+   override of a Component defect.
+4. Run the source checks (`yarn test:unit`, `yarn lint`, the related contract
+   tests) and a browser smoke that creates the element, exercises the public
+   API and checks the DOM state.
+5. Record old names in the change journal (`contracts/changes/journal.json`)
+   with a removal date; do not delete a public name silently.
+6. The release (`Build: …` commit in `ui`) is produced by `ui-builder`; consumers
+   pin that commit. Documentation in `ui-doc` follows the pinned release.
+7. Commit locally with behavior, API and validation notes; remote push, PR and
+   release follow the owner's confirmed task.
 
 If the repo ships compressed artifacts, generate them from the checked source:
 
@@ -312,11 +311,11 @@ python3 docs/developer/specifications/tools/validate_smart_artifacts.py --format
 python3 docs/developer/specifications/tools/build_backend_smart_coverage.py --format markdown
 ```
 
-For `ui-smart` frontend components:
+For frontend Smart Components in `ui-source`:
 
 ```bash
-node --check smart/<code>/js/<code>.js
-gzip -t smart/<code>/js/<code>.js.gz
+yarn test:unit
+yarn lint
 ```
 
 Use Playwright or the browser plugin for interaction checks when the component

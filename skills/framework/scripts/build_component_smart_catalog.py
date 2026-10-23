@@ -190,11 +190,33 @@ def build_smart_entry(
     }
 
 
+def freshness_header(lock_path: Path, repo_names: list[str]) -> str:
+    """Freshness header line (Federation knowledge standard) from the source lock."""
+    import datetime as _dt
+    import json as _json
+
+    revisions: list[str] = []
+    try:
+        lock = _json.loads(lock_path.read_text(encoding="utf-8"))
+        by_name = {item.get("name"): item for item in lock.get("results", [])}
+        for name in repo_names:
+            commit = str(by_name.get(name, {}).get("commit") or "")
+            if commit:
+                revisions.append(f"{name} {commit[:12]}")
+    except (OSError, ValueError):
+        pass
+    sources = ", ".join(f"github.com/simai/{name}" for name in repo_names)
+    version = ", ".join(revisions) or "unknown"
+    return f"> Источник: {sources} · Проверено: {_dt.date.today().isoformat()} · Версия: {version}"
+
+
 def write_catalog_markdown(path: Path, catalog: dict[str, Any]) -> None:
     components = catalog["components"]
     smart = catalog["smartComponents"]
     lines = [
         "# SIMAI Framework Component And Smart-Component Catalog",
+        "",
+        freshness_header(path.parent / "vendor" / "source-repos.lock.json", ["ui", "ui-play"]),
         "",
         "Generated from local source mirrors. Refresh with:",
         "",

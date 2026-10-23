@@ -1,5 +1,7 @@
 # UI Doc Atlas Usage
 
+> Источник: github.com/simai/ui-doc (content/ru) · Проверено: 2026-10-23 · Версия: ui-doc ae2c38b8b1ab
+
 This file describes how to use the exhaustive docs atlas resources.
 
 ## Contents
@@ -26,7 +28,7 @@ Run when docs snapshot changes:
 
 ```bash
 skills/framework/scripts/build_ui_doc_atlas.py \
-  --docs-root 'repo://ai-skill-framework/source/simai/ui-doc/source/docs/ru' \
+  --docs-root 'repo://ai-skill-framework/source/simai/ui-doc/content/ru' \
   --skill-root repo://ai-skill-framework/skills/framework
 ```
 

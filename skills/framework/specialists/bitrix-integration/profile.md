@@ -5,7 +5,7 @@ Owns SIMAI Framework usage inside Bitrix modules and projects.
 Use when:
 
 - packaging SIMAI Framework UI assets into a Bitrix module or site starter;
-- wiring `window.sfPath`, `window.sfSmartPath`, core CSS/JS, loader config, fonts, and icon behavior;
+- wiring `window.sfPath`, core CSS/JS, loader config, fonts, and icon behavior (`window.sfSmartPath` only for installs that still ship the archived separate Smart package; current `ui` releases carry `distr/smart`);
 - creating installable demo pages under a Bitrix public path;
 - validating that Bitrix runtime loads SIMAI Framework locally without CDN;
 - aligning SIMAI Framework frontend packages with `simai.main`, `simai.data`, or other Bitrix project layers.

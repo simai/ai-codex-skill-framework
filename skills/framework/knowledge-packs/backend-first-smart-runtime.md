@@ -1,6 +1,8 @@
 # Backend-First Smart Runtime
 
-Use this knowledge pack when implementing or reviewing the Simai Framework backend Smart API,
+> Источник: github.com/simai/ui (distr/smart), bx-simai.main · Проверено: 2026-10-23 · Версия: ui 3d9bf903a590 (бэкенд-часть не перепроверялась)
+
+Use this knowledge pack when implementing or reviewing the SIMAI Framework backend Smart API,
 smart manifests, smart templates, composite smart components, or smart runtime
 proofs.
 
@@ -62,7 +64,7 @@ The manifest render contract can carry:
 
 ## Contract Identity And Ownership
 
-The portable Smart artifact ABI is owned by Simai Framework, not by a backend
+The portable Smart artifact ABI is owned by SIMAI Framework, not by a backend
 facade or host repository:
 
 ```text
@@ -83,7 +85,8 @@ Host boundaries are explicit:
 - `bx-simai.main` is the Bitrix adapter and current facade implementation;
 - Docara is a standalone adapter and consumer of the same ABI;
 - Larena is a future consumer-adapter boundary until it has conformance proof;
-- `ui-smart` is the generated frontend behavior/assets distribution and is not
+- `ui/distr/smart` (built from `ui-source/src/smart`; `ui-smart` is an archived
+  mirror) is the generated frontend behavior/assets distribution and is not
   the portable backend contract owner;
 - product repositories may own product-specific conforming Smart artifacts
   without creating a new ABI dialect.

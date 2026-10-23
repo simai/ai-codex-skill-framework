@@ -1,8 +1,10 @@
 # SIMAI Framework Frontend Reference
 
+> Источник: github.com/simai/ui-doc (content/ru) · Проверено: 2026-10-23 · Версия: ui-doc ae2c38b8b1ab
+
 Use this file as the entry point for frontend work. It is based on the documentation snapshot located at:
 
-`repo://ai-skill-framework/source/simai/ui-doc/source/docs/ru`
+`repo://ai-skill-framework/source/simai/ui-doc/content/ru` (до 2026-10 — `source/docs/ru`)
 
 ## Scope
 

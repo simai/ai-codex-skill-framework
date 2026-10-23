@@ -174,6 +174,10 @@ def write_markdown(inventory: dict, out_path: Path) -> None:
     lines: list[str] = []
     lines.append("# SIMAI Framework Source Inventory")
     lines.append("")
+    lines.append(f"> Источник: {', '.join('github.com/simai/' + name for name in repos)} · "
+                 f"Проверено: {__import__('datetime').date.today().isoformat()} · "
+                 f"Версия: {', '.join(name + ' ' + str(item.get('commit', ''))[:12] for name, item in repos.items())}")
+    lines.append("")
     lines.append("Generated from synced upstream repositories under `source/simai`.")
     lines.append("")
     lines.append("## Source Revisions")
