@@ -140,7 +140,7 @@
   "entrypoint_digests": {
     "mirai/components": "sha256:0bcdf2e80057f6348dd29d4c6378308d1c60f894d6f3759694a2906d90f5e547",
     "mirai/context": "sha256:21df775001eec7208a9710460d39ff3d8c5afb6385b89e66b9211f4154242e50",
-    "mirai/graph": "sha256:bb0373927cb548181f799654524d730ab7bf0120c6c481528f830418d9c271ea",
+    "mirai/graph": "sha256:c07a30f909b60e9acd04f55e1f1b790ccafd239c27e21fd234774a8f576d3ed6",
     "mirai/graph/specs/objects/capability-framework-frontend-components.json": "sha256:f17d697848981a5260a132bc28ac10097deeef60fa5ecc16c4da8143b6b94445",
     "mirai/graph/specs/objects/capability-framework-loader-runtime.json": "sha256:707c8f7de6d4f09ad26e2846c3c44399dd4162ec46adc148a7bca19088a86def",
     "mirai/graph/specs/objects/capability-framework-page-recipes.json": "sha256:1c135a4a958b92b4ee6dabeb2702128061c153a735a5f87b6445ed5d5207a857",
@@ -226,5 +226,5 @@
   },
   "source_reference_digest": "sha256:38e2a55a701b83a73ffafb7ea501aa3bb8e9b2ea8eeca71157798822f7804bfc",
   "canonical_write_allowed": false,
-  "digest": "sha256:c792072c1d4eea9947ea1a13647dcd3190495b4905e2f13ee5f69731482b92a9"
+  "digest": "sha256:632098a001ca30a277809e805249cf3e14c95d59e30a856468122083a74feddc"
 }
