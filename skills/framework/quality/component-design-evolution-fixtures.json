@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "technology_id": "framework.component-design-evolution",
+  "technology_id": "technology.framework.component-design-evolution",
   "cases": [
     {
       "id": "accordion-component-evolution",

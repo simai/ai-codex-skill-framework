@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CONTRACT = ROOT / "technologies" / "component-design-evolution.process.json"
+CONTRACT = ROOT / "technologies" / "component-design-evolution.json"
 FIXTURES = ROOT / "quality" / "component-design-evolution-fixtures.json"
 REFERENCE = ROOT / "references" / "component-design-evolution.md"
 
@@ -23,13 +23,36 @@ def main() -> int:
     contract = load(CONTRACT)
     fixtures = load(FIXTURES)
 
-    required_stages = [
-        "discover", "design", "compare", "implement_component",
-        "project_smart", "document", "accept",
+    required_operations = [
+        "operation.discover", "operation.design", "operation.compare",
+        "operation.implement_component", "operation.project_smart",
+        "operation.document", "operation.accept",
     ]
-    stages = [item.get("id") for item in contract.get("stages", [])]
-    if stages != required_stages:
-        failures.append(f"stage order mismatch: {stages!r}")
+    operations = contract.get("operations", [])
+    stages = [item.get("id") for item in operations]
+    if stages != required_operations:
+        failures.append(f"operation order mismatch: {stages!r}")
+    operation_ids = set(stages)
+    for operation in operations:
+        for field in ("input_refs", "output_refs", "check_refs", "stop_condition_refs", "source_refs"):
+            if field != "stop_condition_refs" and not operation.get(field):
+                failures.append(f"{operation.get('id')}: {field} is empty")
+        for prerequisite in operation.get("prerequisites", []):
+            if prerequisite not in operation_ids:
+                failures.append(f"{operation.get('id')}: unknown prerequisite {prerequisite}")
+    scenarios = contract.get("scenarios", [])
+    expected_scenarios = {
+        "scenario.create_component", "scenario.evolve_component",
+        "scenario.create_smart_projection", "scenario.evolve_component_and_smart_projection",
+    }
+    if {item.get("id") for item in scenarios} != expected_scenarios:
+        failures.append("scenario set mismatch")
+    for scenario in scenarios:
+        unknown = [item for item in scenario.get("operation_ids", []) if item not in operation_ids]
+        if unknown:
+            failures.append(f"{scenario.get('id')}: unknown operations {unknown}")
+        if "operation.accept" not in scenario.get("operation_ids", []):
+            failures.append(f"{scenario.get('id')}: must end with acceptance")
 
     required_evidence = {
         "component_brief", "scenario_matrix", "target_contract", "gap_matrix",
@@ -44,17 +67,23 @@ def main() -> int:
         "browser_accessibility_responsive_theme_evidence",
         "technology_quality_feedback",
     }
-    evidence = set(contract.get("evidence_requirements", []))
+    evidence = {
+        ref.removeprefix("evidence.")
+        for operation in operations
+        for ref in operation.get("output_refs", [])
+    }
     missing = sorted(required_evidence - evidence)
     if missing:
         failures.append(f"missing evidence: {', '.join(missing)}")
 
-    if contract.get("owner_skill") != "framework":
-        failures.append("owner_skill must be framework")
+    if contract.get("id") != "technology.framework.component-design-evolution":
+        failures.append("id must be technology.framework.component-design-evolution")
+    if contract.get("owner") != "skill.framework":
+        failures.append("owner must be skill.framework")
     if contract.get("parent_process_model_id") != "framework_frontend_delivery":
         failures.append("parent_process_model_id must reuse framework_frontend_delivery")
-    if contract.get("lifecycle_curator") != "teamlead":
-        failures.append("lifecycle_curator must be teamlead")
+    if contract.get("lifecycle_curator_skill") != "teamlead":
+        failures.append("lifecycle_curator_skill must be teamlead")
     if contract.get("canonical_write_allowed") is not False:
         failures.append("canonical_write_allowed must be false")
     if contract.get("owner_review_required") is not True:
@@ -120,8 +149,8 @@ def main() -> int:
 
     payload = {
         "ok": not failures,
-        "technology_id": contract.get("technology_id"),
-        "stage_count": len(stages),
+        "technology_id": contract.get("id"),
+        "operation_count": len(stages),
         "fixture_count": len(cases),
         "failures": failures,
     }

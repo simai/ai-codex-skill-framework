@@ -18,7 +18,7 @@
       "task": "Спроектируй новый компонент accordion по пользовательским сценариям и затем создай Smart Component без дублирования стилей.",
       "expected_process_model_id": "framework_frontend_delivery",
       "expected_activity_id": "component-design-evolution",
-      "expected_technology_id": "framework.component-design-evolution"
+      "expected_technology_id": "technology.framework.component-design-evolution"
     },
     {
       "id": "framework.interface.inventory",

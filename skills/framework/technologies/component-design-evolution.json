@@ -1,0 +1,316 @@
+{
+  "schema_version": "1.0.0",
+  "id": "technology.framework.component-design-evolution",
+  "title": "Проектирование и эволюция Component и Smart Component SIMAI Framework",
+  "owner": "skill.framework",
+  "lifecycle_curator_skill": "teamlead",
+  "outcome": "Component или Smart Component с проверенным контрактом из реальных сценариев: согласованный внешний вид, доступность, совместимость, документация и браузерные доказательства; Smart не дублирует визуальную реализацию.",
+  "lifecycle": "reviewed",
+  "version": "2.0.0",
+  "parent_process_model_id": "framework_frontend_delivery",
+  "source_refs": [
+    "repo://ai-skill-framework/skills/framework/references/component-design-evolution.md",
+    "repo://ai-skill-framework/skills/framework/activities/component-design-evolution.json",
+    "repo://ai-skill-framework/skills/framework/quality/component-design-evolution-fixtures.json",
+    "repo://ai-skill-framework/skills/framework/rules/change-gates.md"
+  ],
+  "scenarios": [
+    {
+      "id": "scenario.create_component",
+      "title": "Новый Component",
+      "outcome": "Новый базовый Component с контрактом и тестами; Smart-проекция решена явно.",
+      "operation_ids": [
+        "operation.discover",
+        "operation.design",
+        "operation.compare",
+        "operation.implement_component",
+        "operation.project_smart",
+        "operation.document",
+        "operation.accept"
+      ],
+      "required_inputs": [
+        "input.component_request"
+      ]
+    },
+    {
+      "id": "scenario.evolve_component",
+      "title": "Доработка Component",
+      "outcome": "Изменённый Component с gap matrix и решением о совместимости.",
+      "operation_ids": [
+        "operation.discover",
+        "operation.design",
+        "operation.compare",
+        "operation.implement_component",
+        "operation.project_smart",
+        "operation.document",
+        "operation.accept"
+      ],
+      "required_inputs": [
+        "input.component_request"
+      ]
+    },
+    {
+      "id": "scenario.create_smart_projection",
+      "title": "Smart поверх существующего Component",
+      "outcome": "Smart Component как тонкая проекция проверенного базового контракта.",
+      "operation_ids": [
+        "operation.discover",
+        "operation.design",
+        "operation.compare",
+        "operation.project_smart",
+        "operation.document",
+        "operation.accept"
+      ],
+      "required_inputs": [
+        "input.component_request"
+      ]
+    },
+    {
+      "id": "scenario.evolve_component_and_smart_projection",
+      "title": "Доработка Component и его Smart",
+      "outcome": "Согласованно изменённые Component и Smart без расхождения стилей и состояний.",
+      "operation_ids": [
+        "operation.discover",
+        "operation.design",
+        "operation.compare",
+        "operation.implement_component",
+        "operation.project_smart",
+        "operation.document",
+        "operation.accept"
+      ],
+      "required_inputs": [
+        "input.component_request"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "operation.discover",
+      "title": "Источник, граница и сценарии",
+      "summary": "Найти авторитетный исходник в simai/ui-source (src/component, src/smart, контракты, тесты), выпуск в simai/ui (distr/) и документацию ui-doc; зафиксировать слой (utility, Component, Smart Component, Block), назначение, non-goals и матрицу пользовательских сценариев. Пакетные компоненты (SIMAI Pro, пакет larena) ищутся у их владельца, а не в свободном дистрибутиве.",
+      "owner": "skill.framework",
+      "prerequisites": [],
+      "input_refs": [
+        "input.component_request"
+      ],
+      "output_refs": [
+        "evidence.component_brief",
+        "evidence.source_provenance",
+        "evidence.scenario_matrix"
+      ],
+      "check_refs": [
+        "check.authoritative_source_found",
+        "check.layer_boundary_explicit",
+        "check.scenarios_are_user_tasks"
+      ],
+      "stop_condition_refs": [
+        "stop.no_authoritative_source",
+        "stop.unclear_layer_boundary"
+      ],
+      "rollback_refs": [],
+      "source_refs": [
+        "repo://ai-skill-framework/skills/framework/references/component-design-evolution.md",
+        "repo://ai-skill-framework/skills/framework/references/source-repositories.md",
+        "repo://ai-skill-framework/skills/framework/references/framework-family.md"
+      ]
+    },
+    {
+      "id": "operation.design",
+      "title": "Целевой контракт до изменения кода",
+      "summary": "Спроектировать семантику, состояния, клавиатуру и фокус, токены и геометрию поверхностей, БЭМ-структуру, публичные data-атрибуты, семантику индикаторов, адаптацию (responsive, RTL, темы, reduced motion) и решение о совместимости.",
+      "owner": "skill.framework",
+      "prerequisites": [
+        "operation.discover"
+      ],
+      "input_refs": [
+        "input.component_request"
+      ],
+      "output_refs": [
+        "evidence.target_contract",
+        "evidence.token_map_and_design_literal_audit",
+        "evidence.surface_geometry_matrix",
+        "evidence.component_structure_map",
+        "evidence.public_data_attribute_contract",
+        "evidence.state_geometry_matrix",
+        "evidence.focus_contract",
+        "evidence.indicator_semantics_contract_when_applicable",
+        "evidence.adaptation_contract",
+        "evidence.compatibility_decision"
+      ],
+      "check_refs": [
+        "check.no_raw_design_literals",
+        "check.default_covers_common_scenario",
+        "check.focus_owner_is_perceived_control",
+        "check.native_state_before_data_attribute"
+      ],
+      "stop_condition_refs": [
+        "stop.breaking_change_without_permission",
+        "stop.design_conflicts_with_accessibility"
+      ],
+      "rollback_refs": [],
+      "source_refs": [
+        "repo://ai-skill-framework/skills/framework/references/component-design-evolution.md"
+      ]
+    },
+    {
+      "id": "operation.compare",
+      "title": "Gap matrix против текущей реализации",
+      "summary": "Сравнить целевой контракт с текущим исходником и выпуском; каждое отличие получает решение keep, fix, add, deprecate или defer. Исправное не переписывается ради единообразия.",
+      "owner": "skill.framework",
+      "prerequisites": [
+        "operation.design"
+      ],
+      "input_refs": [
+        "input.component_request"
+      ],
+      "output_refs": [
+        "evidence.gap_matrix"
+      ],
+      "check_refs": [
+        "check.every_gap_has_decision",
+        "check.breaking_change_has_migration_path"
+      ],
+      "stop_condition_refs": [
+        "stop.breaking_change_without_permission"
+      ],
+      "rollback_refs": [],
+      "source_refs": [
+        "repo://ai-skill-framework/skills/framework/references/component-design-evolution.md"
+      ]
+    },
+    {
+      "id": "operation.implement_component",
+      "title": "Реализация базового Component",
+      "summary": "В владельческом репозитории ui-source: семантика и публичный контракт, состояния и токены, слой совместимости, unit/contract/accessibility-тесты. Сгенерированный simai/ui руками не правится; выпуск собирает ui-builder.",
+      "owner": "skill.framework",
+      "prerequisites": [
+        "operation.compare"
+      ],
+      "input_refs": [
+        "input.component_request"
+      ],
+      "output_refs": [
+        "evidence.base_component_verification"
+      ],
+      "check_refs": [
+        "check.tests_pass_in_owner_repository",
+        "check.generated_distribution_not_edited"
+      ],
+      "stop_condition_refs": [
+        "stop.second_writer_in_owner_repository"
+      ],
+      "rollback_refs": [
+        "rollback.revert_owner_commit"
+      ],
+      "source_refs": [
+        "repo://ai-skill-framework/skills/framework/references/component-design-evolution.md"
+      ]
+    },
+    {
+      "id": "operation.project_smart",
+      "title": "Решение о Smart-проекции",
+      "summary": "Smart Component — тонкая проекция базового контракта: данные, управляемое состояние, события, без второго CSS и локальных override. Решение фиксируется как implemented, not_needed или deferred.",
+      "owner": "skill.framework",
+      "prerequisites": [
+        "operation.implement_component"
+      ],
+      "input_refs": [
+        "input.component_request"
+      ],
+      "output_refs": [
+        "evidence.smart_projection_decision"
+      ],
+      "check_refs": [
+        "check.smart_reuses_base_markup_and_styles",
+        "check.projection_status_recorded"
+      ],
+      "stop_condition_refs": [
+        "stop.smart_duplicates_component_styles"
+      ],
+      "rollback_refs": [
+        "rollback.revert_owner_commit"
+      ],
+      "source_refs": [
+        "repo://ai-skill-framework/skills/framework/references/component-design-evolution.md"
+      ]
+    },
+    {
+      "id": "operation.document",
+      "title": "Живые примеры, документация и машинный контракт",
+      "summary": "Примеры без постороннего CSS из фактического исходника, страница ui-doc по стандарту справочной страницы, manifest/registry и AI/source contract.",
+      "owner": "skill.framework",
+      "prerequisites": [
+        "operation.project_smart"
+      ],
+      "input_refs": [
+        "input.component_request"
+      ],
+      "output_refs": [
+        "evidence.live_examples",
+        "evidence.documentation_and_machine_contract"
+      ],
+      "check_refs": [
+        "check.examples_use_real_source",
+        "check.documentation_matches_pinned_release"
+      ],
+      "stop_condition_refs": [
+        "stop.documentation_ahead_of_release"
+      ],
+      "rollback_refs": [
+        "rollback.revert_documentation_commit"
+      ],
+      "source_refs": [
+        "repo://ai-skill-framework/skills/framework/references/component-design-evolution.md"
+      ]
+    },
+    {
+      "id": "operation.accept",
+      "title": "Браузерная приёмка и обратная связь по технологии",
+      "summary": "Проверка в браузере (DOM, computed styles, события, клавиатура, размеры, темы, доступность), визуальная согласованность с соседними компонентами; вердикт о готовности даёт tester. Записать, что улучшить в самой технологии.",
+      "owner": "skill.framework",
+      "prerequisites": [
+        "operation.document"
+      ],
+      "input_refs": [
+        "input.component_request"
+      ],
+      "output_refs": [
+        "evidence.browser_accessibility_responsive_theme_evidence",
+        "evidence.visual_coherence_evidence",
+        "evidence.technology_quality_feedback"
+      ],
+      "check_refs": [
+        "check.browser_evidence_not_only_screenshot",
+        "check.tester_verdict_separate",
+        "check.technology_feedback_recorded"
+      ],
+      "stop_condition_refs": [
+        "stop.release_or_live_deploy_requested"
+      ],
+      "rollback_refs": [],
+      "source_refs": [
+        "repo://ai-skill-framework/skills/framework/references/component-design-evolution.md"
+      ]
+    }
+  ],
+  "participants": {
+    "required": [
+      "framework",
+      "tester"
+    ],
+    "conditional": [
+      "ux",
+      "designer",
+      "dev",
+      "docs",
+      "docara",
+      "teamlead"
+    ]
+  },
+  "technology_quality_feedback_policy": {
+    "required": true,
+    "required_before_terminal_state": true
+  },
+  "owner_review_required": true,
+  "canonical_write_allowed": false
+}
