@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "operation_id": "graph.skill-evolution.changed-source.report",
+  "created_at": "2026-10-23T11:59:38.053195+00:00",
+  "skill": "framework",
+  "owner": "framework",
+  "federation_control_plane": false,
+  "base": "fc08f4effd016037eb45822430f8928f56b76fe9",
+  "base_commit": "fc08f4effd016037eb45822430f8928f56b76fe9",
+  "comparison_mode": "baseline_to_worktree",
+  "detector_fingerprint": "73b80e99eba00faf4fff0944e2aac72be393cee01418cc3ddc9fb3adf5b5cfe0",
+  "status": "success",
+  "source_change_evidence_ref": "graph/generated/mirai-graph/skill-source-changes/skill-graph-sync-framework-20261023115936/skill-source-change-evidence.json",
+  "runtime_verify_ref": "graph.json",
+  "runtime_context_ref": "skills/framework/SKILL.md",
+  "federation_change_proposal_ref": "repo://ai-skill-graph/graph/generated/mirai-graph/federation-change/skill-graph-sync-framework-20261023115936-federation-proposal/federation-change-proposal.json",
+  "specialist_promotion_proposal_refs": [
+    "repo://ai-skill-graph/graph/generated/mirai-graph/specialist-promotion/skill-graph-sync-framework-20261023115936-specialist-framework-bitrix-integration/specialist-promotion-proposal.json",
+    "repo://ai-skill-graph/graph/generated/mirai-graph/specialist-promotion/skill-graph-sync-framework-20261023115936-specialist-framework-tailwind-converter/specialist-promotion-proposal.json"
+  ],
+  "required_actions": [
+    "evidence",
+    "federation-proposal",
+    "route-check",
+    "runtime-context",
+    "specialist-promotion"
+  ],
+  "blockers": [],
+  "canonical_write_allowed": false,
+  "sync_fingerprint": "75a08bb2fe22a03ba29f082519b96d71f7200cae44fee0ad78fde24f290945bc",
+  "task_sha256": "db3ea513c99eaa072c6cb5149b29143018febdb98c43358f2bcb0ff04c9460a9",
+  "task_bytes": 104
+}
