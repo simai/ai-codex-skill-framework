@@ -2,6 +2,10 @@
   "schemaVersion": 1,
   "organization": "simai",
   "sourceRoot": "source/simai",
+  "notes": [
+    "Модель с 2026-10: ui-source — редактируемый источник, ui — сгенерированный выпуск (distr/, включая distr/smart).",
+    "simai/ui-smart архивирован (только чтение), simai/ui-loader переименован в ui-source (GitHub-редирект), ui-components — пустая заглушка; в зеркало не синхронизируются."
+  ],
   "repos": [
     {
       "name": "ui",
@@ -11,22 +15,25 @@
       "kind": "runtime-distribution",
       "priority": "primary",
       "authoritativeFor": [
-        "shipped loader assets",
+        "shipped core and loader under distr/core",
         "component inventory under distr/component",
-        "core runtime paths under distr/core"
+        "Smart Component inventory under distr/smart",
+        "utility groups under distr/utility",
+        "release locks under contracts/releases"
       ]
     },
     {
-      "name": "ui-loader",
-      "remote": "git@github.com:simai/ui-loader.git",
+      "name": "ui-source",
+      "remote": "git@github.com:simai/ui-source.git",
       "defaultBranch": "main",
-      "localPath": "source/simai/ui-loader",
+      "localPath": "source/simai/ui-source",
       "kind": "framework-source",
       "priority": "primary",
       "authoritativeFor": [
         "utility source groups under src/utility",
-        "utility rule and state semantics",
-        "core and component build inputs"
+        "component and Smart Component source under src/component and src/smart",
+        "core and loader source under src/core",
+        "source contracts and tests"
       ]
     },
     {
@@ -37,35 +44,20 @@
       "kind": "documentation",
       "priority": "primary",
       "authoritativeFor": [
-        "official docs pages",
-        "loader semantics",
-        "utility and component docs structure"
+        "official documentation pages under content/ru",
+        "guide and reference page structure"
       ]
     },
     {
       "name": "ui-play",
       "remote": "git@github.com:simai/ui-play.git",
-      "defaultBranch": "master",
+      "defaultBranch": "main",
       "localPath": "source/simai/ui-play",
       "kind": "playground-and-examples",
       "priority": "primary",
       "authoritativeFor": [
         "runnable examples",
-        "real host/runner wiring",
-        "smart asset publishing assumptions"
-      ]
-    },
-    {
-      "name": "ui-smart",
-      "remote": "git@github.com:simai/ui-smart.git",
-      "defaultBranch": "main",
-      "localPath": "source/simai/ui-smart",
-      "kind": "smart-components-runtime",
-      "priority": "primary",
-      "authoritativeFor": [
-        "available smart component names",
-        "smart js/css/template structure",
-        "smart deploy artifact layout"
+        "real host/runner wiring"
       ]
     },
     {
@@ -78,22 +70,6 @@
       "authoritativeFor": [
         "modifier autocomplete hints",
         "editor-facing utility metadata generation"
-      ]
-    },
-    {
-      "name": "ui-components",
-      "remote": "git@github.com:simai/ui-components.git",
-      "defaultBranch": "main",
-      "localPath": "source/simai/ui-components",
-      "kind": "components-source",
-      "priority": "optional",
-      "authoritativeFor": [
-        "raw component source code if repository access is available"
-      ],
-      "notes": [
-        "Repository is visible in organization listing provided by the user.",
-        "Current workspace sees the remote, but the repository does not expose a usable main branch during sync.",
-        "Treat it as unresolved until a concrete default branch or populated refs are confirmed."
       ]
     }
   ]

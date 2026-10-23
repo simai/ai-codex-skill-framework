@@ -113,6 +113,12 @@ def extract_example_class_tokens(body: str) -> List[str]:
     return sorted(tokens)
 
 
+def portable_docs_root(docs_root: Path) -> str:
+    """Render the docs root without the machine-specific checkout prefix."""
+    parts = docs_root.as_posix().split("/source/simai/", 1)
+    return f"source/simai/{parts[1]}" if len(parts) == 2 else docs_root.name
+
+
 def build_records(docs_root: Path) -> List[Dict]:
     records: List[Dict] = []
     for md_file in sorted(docs_root.rglob("*.md")):
@@ -171,7 +177,7 @@ def write_full_map(records: List[Dict], out_file: Path, docs_root: Path) -> None
     lines.append("# SIMAI Framework UI Docs Full Map")
     lines.append("")
     lines.append("Generated from:")
-    lines.append(f"`{docs_root.as_posix()}`")
+    lines.append(f"`{portable_docs_root(docs_root)}`")
     lines.append("")
     lines.append("## Contents")
     lines.append("")
@@ -223,7 +229,7 @@ def write_utility_atlas(records: List[Dict], out_file: Path, docs_root: Path) ->
     lines: List[str] = []
     lines.append("# SIMAI Framework Utility Atlas")
     lines.append("")
-    lines.append(f"Generated from utility pages in the SIMAI Framework docs snapshot at `{docs_root.as_posix()}`.")
+    lines.append(f"Generated from utility pages in the SIMAI Framework docs snapshot at `{portable_docs_root(docs_root)}`.")
     lines.append("")
     lines.append("## Contents")
     lines.append("")

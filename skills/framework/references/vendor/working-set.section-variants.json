@@ -37,7 +37,7 @@
       "title": "Auth Help Row",
       "description": "Secondary recovery and trust actions under the main form.",
       "source_refs": [
-        "source/simai/ui-doc/source/docs/ru/utilities/links/links-default-parameters.md",
+        "source/simai/ui-doc/content/ru/utilities/links/links-formatting.md",
         "source/simai/ui-play/examples/links/links-formatting/index.html"
       ],
       "upstream_extracts": [
@@ -59,7 +59,7 @@
       "source_refs": [
         "source/simai/ui-play/examples/components/buttons/all/index.html",
         "source/simai/ui-play/examples/links/links-default-parameters/index.html",
-        "source/simai/ui-doc/source/docs/ru/utilities/grid/grid-template-columns.md"
+        "source/simai/ui-doc/content/ru/utilities/grid/grid-template-columns.md"
       ],
       "upstream_extracts": [
         {
@@ -115,7 +115,7 @@
       "description": "Static sidebar with checkbox filters and reset action.",
       "source_refs": [
         "source/simai/ui-play/examples/components/checkbox/all/index.html",
-        "source/simai/ui-doc/source/docs/ru/utilities/forms/accent-color.md"
+        "source/simai/ui-doc/content/ru/utilities/forms/accent-color.md"
       ],
       "upstream_extracts": [
         {
@@ -134,7 +134,7 @@
       "source_refs": [
         "source/simai/ui-play/examples/grid/grid-template-columns/index.html",
         "source/simai/ui-play/examples/components/buttons/all/index.html",
-        "source/simai/ui-doc/source/docs/ru/utilities/grid/grid-template-columns.md"
+        "source/simai/ui-doc/content/ru/utilities/grid/grid-template-columns.md"
       ],
       "upstream_extracts": [
         {
@@ -231,7 +231,7 @@
       "description": "Responsive metrics row for overview pages.",
       "source_refs": [
         "source/simai/ui-play/examples/grid/grid-template-columns/index.html",
-        "source/simai/ui-doc/source/docs/ru/utilities/grid/grid-template-columns.md"
+        "source/simai/ui-doc/content/ru/utilities/grid/grid-template-columns.md"
       ],
       "upstream_extracts": [
         {
@@ -250,8 +250,8 @@
       "source_refs": [
         "source/simai/ui-play/examples/tables/tables-default-parameters/index.html",
         "source/simai/ui-play/examples/tables/tables-formatting/index.html",
-        "source/simai/ui-doc/source/docs/ru/utilities/tables/tables-default-parameters.md",
-        "source/simai/ui-doc/source/docs/ru/utilities/tables/tables-formatting.md"
+        "source/simai/ui-doc/content/ru/utilities/tables/tables-default-parameters.md",
+        "source/simai/ui-doc/content/ru/utilities/tables/index.md"
       ],
       "upstream_extracts": [
         {
@@ -290,7 +290,7 @@
       "source_refs": [
         "source/simai/ui-play/examples/tables/tables-default-parameters/index.html",
         "source/simai/ui-play/examples/tables/table-layout/index.html",
-        "source/simai/ui-doc/source/docs/ru/utilities/tables/table-layout.md"
+        "source/simai/ui-doc/content/ru/utilities/tables/table-layout.md"
       ],
       "upstream_extracts": [
         {
@@ -427,7 +427,7 @@
       "description": "Sticky-style summary block for totals and CTA.",
       "source_refs": [
         "source/simai/ui-play/examples/components/buttons/all/index.html",
-        "source/simai/ui-doc/source/docs/ru/utilities/grid-and-flexbox-utilities/justify-content.md"
+        "source/simai/ui-doc/content/ru/utilities/grid-and-flexbox-utilities/justify-content.md"
       ],
       "upstream_extracts": [
         {

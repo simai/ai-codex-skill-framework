@@ -57,7 +57,7 @@ echo "[framework] Build working-set coverage report"
 
 SIMAI_FRAMEWORK_UPSTREAM_SOURCES_AVAILABLE=0
 if [[ -d "$ROOT_DIR/source/simai/ui/distr/component" \
-  && -d "$ROOT_DIR/source/simai/ui-smart/smart" \
+  && -d "$ROOT_DIR/source/simai/ui/distr/smart" \
   && -d "$ROOT_DIR/source/simai/ui-play/examples" ]]; then
   SIMAI_FRAMEWORK_UPSTREAM_SOURCES_AVAILABLE=1
 fi

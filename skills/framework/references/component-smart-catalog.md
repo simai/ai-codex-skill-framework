@@ -9,10 +9,10 @@ python3 skills/framework/scripts/build_component_smart_catalog.py
 
 ## Summary
 
-- Components: 77
-- Components with examples: 34
-- Smart-components: 50
-- Smart-components with examples: 43
+- Components: 72
+- Components with examples: 35
+- Smart-components: 55
+- Smart-components with examples: 37
 
 ## Use In Conversion
 
@@ -29,6 +29,7 @@ python3 skills/framework/scripts/build_component_smart_catalog.py
 - `avatars`: roots `sf-avatar, sf-avatar-card, sf-avatar-card-content, sf-avatar-card-image, sf-avatar-card-portrait`; examples: source/simai/ui-play/examples/components/avatar/card/index.html, source/simai/ui-play/examples/components/avatar/default/index.html
 - `badges`: roots `sf-badge, sf-badge-icon-container, sf-badge-text, sf-badge-text-container, sf-icon`; examples: source/simai/ui-play/examples/components/badges/all/index.html
 - `breadcrumbs`: roots `sf-breadcrumbs, sf-breadcrumbs-item, sf-breadcrumbs-item-container, sf-icon`; examples: source/simai/ui-play/examples/components/breadcrumbs/default/index.html
+- `button-group`: roots `sf-button-group`; examples: source/simai/ui-play/examples/components/button-group/default/index.html
 - `buttons`: roots `sf-button, sf-button-text-container, sf-card, sf-icon, sf-text-2`; examples: source/simai/ui-play/examples/components/buttons/all/index.html, source/simai/ui-play/examples/components/buttons/segments/index.html
 - `checkbox`: roots `sf-checkbox, sf-checkbox-box, sf-checkbox-container, sf-checkbox-description, sf-checkbox-label`; examples: source/simai/ui-play/examples/components/checkbox/all/index.html
 - `close`: roots `sf-close, sf-close-icon, sf-text-1, sf-weight-medium`; examples: source/simai/ui-play/examples/components/close/default/index.html
@@ -60,27 +61,23 @@ python3 skills/framework/scripts/build_component_smart_catalog.py
 
 ## High-Value Smart-Components
 
-- `admin-menu`: elements `sf-admin-menu, sf-admin-menu-item`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/admin-menu/default/index.html
 - `alert`: elements `sf-alert, sf-button`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/alert/default/index.html
 - `avatar`: elements `sf-avatar, sf-button, sf-icon-button, sf-tooltip`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/avatar/element/index.html, source/simai/ui-play/examples/smart-components/avatar/group/index.html
 - `avatars`: elements `sf-avatar, sf-icon-button, sf-tooltip`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/avatar/group/index.html
 - `badges`: elements `sf-badge`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/badges/element/index.html
 - `breadcrumbs`: elements `sf-breadcrumbs`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/breadcrumbs/default/index.html
+- `button-group`: elements `sf-button-group`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/button-group/default/index.html
 - `buttons`: elements `sf-button`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/buttons/element/index.html, source/simai/ui-play/examples/smart-components/buttons/events/index.html
 - `checkbox`: elements `sf-button, sf-checkbox`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/checkbox/all/index.html
 - `context-menu`: elements `sf-button, sf-context-menu`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/context-menu/default/index.html
 - `country-code`: elements `sf-country-code`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/inputs/country-code/index.html
 - `download-file`: elements `sf-download-file`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/download-file/element/index.html
 - `dropdown`: elements `sf-button, sf-dropdown, sf-list-item`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/dropdown/element/index.html
-- `editor`: elements `sf-editor`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/editor/default/index.html
-- `fab`: elements `sf-fab`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/fab/default/index.html
 - `file-upload`: elements `sf-button, sf-file-upload`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/file-upload/element/index.html
-- `flags`: elements `sf-flags`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/flags/default/index.html
 - `gallery`: elements `sf-button, sf-gallery`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/gallery/default/index.html, source/simai/ui-play/examples/smart-components/gallery/images/index.html
 - `icon-buttons`: elements `sf-button, sf-icon-button`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/icon-buttons/element/index.html
 - `icons`: elements `sf-icon`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/icons/default/index.html
 - `inputs`: elements `sf-button, sf-country-code, sf-input`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/inputs/country-code/index.html, source/simai/ui-play/examples/smart-components/inputs/element/index.html
-- `link`: elements `sf-link`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/link/default/index.html
 - `list-item`: elements `sf-button, sf-list-item`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/list-item/element/index.html
 - `modal`: elements `sf-button, sf-input, sf-modal`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/modal/element/index.html
 - `pagination`: elements `sf-pagination`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/pagination/default/index.html
@@ -88,14 +85,12 @@ python3 skills/framework/scripts/build_component_smart_catalog.py
 - `progress-scale`: elements `sf-progress-scale`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/progress/progress-scale/index.html
 - `radio`: elements `sf-radio`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/radio/all/index.html
 - `range-slider`: elements `sf-range-slider`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/range-slider/default/index.html
-- `rating`: elements `sf-rating`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/rating/default/index.html
 - `reference-link`: elements `sf-reference-link`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/reference-link/default/index.html
 - `skeleton`: elements `sf-skeleton`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/skeleton/default/index.html
 - `slider`: elements `sf-slider`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/slider/default/index.html
 - `spinner`: elements `sf-spinner`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/spinner/default/index.html
 - `steps`: elements `sf-steps`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/steps/default/index.html
 - `switch`: elements `sf-switch`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/switch/default/index.html
-- `table`: elements `sf-table`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/table/default/index.html
 - `tabs`: elements `sf-tabs`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/tabs/default/index.html
 - `tags`: elements `sf-button, sf-tag`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/tags/element/index.html
 - `textarea`: elements `sf-textarea`; sf-code `-`; examples: source/simai/ui-play/examples/smart-components/textarea/element/index.html

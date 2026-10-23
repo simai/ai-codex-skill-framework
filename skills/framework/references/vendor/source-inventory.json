@@ -8,83 +8,68 @@
       "name": "ui",
       "status": "ok",
       "branch": "main",
-      "commit": "ff47bd694b6c0ed61b7ad4824f986d99b150cbea",
+      "commit": "3d9bf903a590fc7c21e5ea14983742b0225edbe7",
       "localPath": "source/simai/ui",
       "remote": "git@github.com:simai/ui.git",
       "priority": "primary",
-      "kind": "runtime-distribution"
+      "kind": "runtime-distribution",
+      "syncMethod": "local-checkout-read"
     },
-    "ui-loader": {
-      "name": "ui-loader",
+    "ui-source": {
+      "name": "ui-source",
       "status": "ok",
       "branch": "main",
-      "commit": "3ca31c6c2c50ca099b51ce3c25251c71d4860317",
-      "localPath": "source/simai/ui-loader",
-      "remote": "git@github.com:simai/ui-loader.git",
+      "commit": "aa81305b14f103def02dead1ffc0b0451c877f0f",
+      "localPath": "source/simai/ui-source",
+      "remote": "git@github.com:simai/ui-source.git",
       "priority": "primary",
-      "kind": "framework-source"
+      "kind": "framework-source",
+      "syncMethod": "local-checkout-read"
     },
     "ui-doc": {
       "name": "ui-doc",
       "status": "ok",
       "branch": "main",
-      "commit": "85148eb2c0ba0b21d497ecb912085337a37a7d88",
+      "commit": "ae2c38b8b1abcc56a62221cbbf3b19679475542a",
       "localPath": "source/simai/ui-doc",
       "remote": "git@github.com:simai/ui-doc.git",
       "priority": "primary",
-      "kind": "documentation"
+      "kind": "documentation",
+      "syncMethod": "local-checkout-read"
     },
     "ui-play": {
       "name": "ui-play",
       "status": "ok",
-      "branch": "master",
-      "commit": "bdd253aaa3418bee7f51b4b69d8e5c08af49ee58",
+      "branch": "main",
+      "commit": "e062a00367aa5ee1af6266d6416b8ba59c2ca21f",
       "localPath": "source/simai/ui-play",
       "remote": "git@github.com:simai/ui-play.git",
       "priority": "primary",
-      "kind": "playground-and-examples"
-    },
-    "ui-smart": {
-      "name": "ui-smart",
-      "status": "ok",
-      "branch": "main",
-      "commit": "ab896dc7cd33f151377e3992ffb286769beee7f7",
-      "localPath": "source/simai/ui-smart",
-      "remote": "git@github.com:simai/ui-smart.git",
-      "priority": "primary",
-      "kind": "smart-components-runtime"
+      "kind": "playground-and-examples",
+      "syncMethod": "local-checkout-read"
     },
     "ui-vscode": {
       "name": "ui-vscode",
       "status": "ok",
       "branch": "main",
-      "commit": "a8fd4a8dcd75ce53d2af0c07186fb0ef3b907058",
+      "commit": "352cd897bb63711ff600dbd06dbea923c14dfe6a",
       "localPath": "source/simai/ui-vscode",
       "remote": "git@github.com:simai/ui-vscode.git",
       "priority": "secondary",
-      "kind": "editor-tooling"
-    },
-    "ui-components": {
-      "name": "ui-components",
-      "status": "error",
-      "branch": "main",
-      "localPath": "source/simai/ui-components",
-      "remote": "git@github.com:simai/ui-components.git",
-      "priority": "optional",
-      "kind": "components-source",
-      "error": "Cloning into 'source/simai/ui-components'...\nfatal: Remote branch main not found in upstream origin"
+      "kind": "editor-tooling",
+      "syncMethod": "local-ref-read"
     }
   },
   "summary": {
-    "shippedComponentCount": 77,
-    "shippedSmartCount": 50,
-    "shippedUtilityGroupCount": 225,
-    "sourceUtilityGroupCount": 226,
+    "shippedComponentCount": 72,
+    "shippedSmartCount": 55,
+    "shippedUtilityGroupCount": 228,
+    "sourceUtilityGroupCount": 229,
     "utilityExampleGroupCount": 29,
-    "componentExampleGroupCount": 37,
-    "smartExampleGroupCount": 42,
-    "componentsWithoutExamplesCount": 43,
-    "smartWithoutExamplesCount": 7
+    "componentExampleGroupCount": 38,
+    "smartExampleGroupCount": 44,
+    "componentsWithoutExamplesCount": 36,
+    "smartWithoutExamplesCount": 18
   },
   "components": {
     "shipped": [
@@ -96,6 +81,7 @@
       "avatars",
       "badges",
       "breadcrumbs",
+      "button-group",
       "buttons",
       "carousel",
       "checkbox",
@@ -111,24 +97,21 @@
       "dropdown",
       "emoji",
       "fab",
-      "fancybox",
       "featured-icon",
       "file-preview",
       "file-upload",
-      "flags",
+      "flag",
       "hideShow",
       "highlight",
-      "icon",
       "icon-buttons",
       "icons",
       "inputs",
-      "jquery",
+      "kbd",
       "lazy-load",
       "link",
-      "list",
       "menu",
       "modal",
-      "monaco",
+      "outline",
       "overbox",
       "overcard",
       "pagination",
@@ -138,7 +121,6 @@
       "quantity",
       "radio",
       "range-slider",
-      "rating",
       "reference-link",
       "scrollbar",
       "sf-system",
@@ -155,7 +137,6 @@
       "tags",
       "textarea",
       "theme",
-      "theme-builder",
       "toast",
       "toggle",
       "tooltip",
@@ -163,7 +144,6 @@
       "tree-item",
       "verification",
       "viewbox",
-      "waves",
       "wow"
     ],
     "playExampleGroups": {
@@ -185,6 +165,9 @@
         "all"
       ],
       "breadcrumbs": [
+        "default"
+      ],
+      "button-group": [
         "default"
       ],
       "buttons": [
@@ -301,6 +284,7 @@
       "avatar",
       "badges",
       "breadcrumbs",
+      "button-group",
       "buttons",
       "checkbox",
       "close",
@@ -354,6 +338,9 @@
       "breadcrumbs": [
         "components/breadcrumbs/default"
       ],
+      "button-group": [
+        "components/button-group/default"
+      ],
       "buttons": [
         "components/buttons/all",
         "components/buttons/segments",
@@ -387,7 +374,6 @@
       ],
       "emoji": [],
       "fab": [],
-      "fancybox": [],
       "featured-icon": [
         "components/featured-icon/all"
       ],
@@ -398,10 +384,9 @@
         "components/file-upload/default",
         "components/file-upload/interactive"
       ],
-      "flags": [],
+      "flag": [],
       "hideShow": [],
       "highlight": [],
-      "icon": [],
       "icon-buttons": [
         "components/icon-buttons/icon-buttons"
       ],
@@ -413,17 +398,18 @@
         "components/inputs/textarea",
         "components/inputs/verification"
       ],
-      "jquery": [],
+      "kbd": [],
       "lazy-load": [],
       "link": [],
-      "list": [],
       "menu": [
         "components/menu/default"
       ],
       "modal": [
         "components/modal/all"
       ],
-      "monaco": [],
+      "outline": [
+        "examples/outline"
+      ],
       "overbox": [],
       "overcard": [],
       "pagination": [
@@ -440,7 +426,6 @@
       "range-slider": [
         "components/range-slider/default"
       ],
-      "rating": [],
       "reference-link": [
         "components/reference-link/default"
       ],
@@ -473,7 +458,6 @@
       ],
       "textarea": [],
       "theme": [],
-      "theme-builder": [],
       "toast": [
         "components/toast/default"
       ],
@@ -487,7 +471,6 @@
       "tree-item": [],
       "verification": [],
       "viewbox": [],
-      "waves": [],
       "wow": []
     },
     "withoutPlayExamples": [
@@ -501,24 +484,19 @@
       "dot",
       "emoji",
       "fab",
-      "fancybox",
-      "flags",
+      "flag",
       "hideShow",
       "highlight",
-      "icon",
       "icons",
-      "jquery",
+      "kbd",
       "lazy-load",
       "link",
-      "list",
-      "monaco",
       "overbox",
       "overcard",
       "progress-bar",
       "progress-scale",
       "quantity",
       "radio",
-      "rating",
       "scrollbar",
       "sf-system",
       "share",
@@ -527,62 +505,65 @@
       "tab",
       "textarea",
       "theme",
-      "theme-builder",
       "tree",
       "tree-item",
       "verification",
       "viewbox",
-      "waves",
       "wow"
     ]
   },
   "smartComponents": {
     "shipped": [
-      "admin-menu",
       "alert",
       "avatar",
       "avatars",
       "badges",
       "breadcrumbs",
+      "button-group",
       "buttons",
       "checkbox",
       "close",
+      "color",
+      "composition-overlay",
       "context-menu",
+      "copy-button",
       "country-code",
       "datepicker",
       "download-file",
       "drawer",
       "dropdown",
-      "editor",
-      "fab",
+      "empty-state",
+      "field-renderers",
       "file-preview",
       "file-upload",
-      "flags",
-      "form",
       "gallery",
+      "help-mark",
       "icon-buttons",
       "icons",
+      "inline-editor",
       "inputs",
-      "link",
-      "list",
       "list-item",
       "modal",
+      "page-header",
       "pagination",
+      "popover",
+      "profile-picker",
       "progress-bar",
       "progress-scale",
       "radio",
       "range-slider",
-      "rating",
       "reference-link",
+      "resizer",
       "skeleton",
       "slider",
+      "sortable",
       "spinner",
       "steps",
       "switch",
-      "table",
       "tabs",
       "tags",
       "textarea",
+      "theme-generator",
       "toast",
       "toggle",
       "tooltip",
@@ -604,6 +585,9 @@
         "element"
       ],
       "breadcrumbs": [
+        "default"
+      ],
+      "button-group": [
         "default"
       ],
       "buttons": [
@@ -660,6 +644,9 @@
       ],
       "list-item": [
         "element"
+      ],
+      "menu": [
+        "default"
       ],
       "modal": [
         "element"
@@ -730,6 +717,7 @@
       "avatar",
       "badges",
       "breadcrumbs",
+      "button-group",
       "buttons",
       "checkbox",
       "context-menu",
@@ -747,6 +735,7 @@
       "inputs",
       "link",
       "list-item",
+      "menu",
       "modal",
       "pagination",
       "progress",
@@ -769,9 +758,6 @@
       "tree"
     ],
     "coverageRefs": {
-      "admin-menu": [
-        "smart-components/admin-menu/default"
-      ],
       "alert": [
         "smart-components/alert/default"
       ],
@@ -788,6 +774,9 @@
       "breadcrumbs": [
         "smart-components/breadcrumbs/default"
       ],
+      "button-group": [
+        "smart-components/button-group/default"
+      ],
       "buttons": [
         "smart-components/buttons/element",
         "smart-components/buttons/events"
@@ -796,9 +785,12 @@
         "smart-components/checkbox/all"
       ],
       "close": [],
+      "color": [],
+      "composition-overlay": [],
       "context-menu": [
         "smart-components/context-menu/default"
       ],
+      "copy-button": [],
       "country-code": [
         "inputs/country-code"
       ],
@@ -810,48 +802,41 @@
       "dropdown": [
         "smart-components/dropdown/element"
       ],
-      "editor": [
-        "smart-components/editor/default"
-      ],
-      "fab": [
-        "smart-components/fab/default"
-      ],
+      "empty-state": [],
+      "field-renderers": [],
       "file-preview": [],
       "file-upload": [
         "smart-components/file-upload/element"
       ],
-      "flags": [
-        "smart-components/flags/default"
-      ],
-      "form": [],
       "gallery": [
         "smart-components/gallery/default",
         "smart-components/gallery/images"
       ],
+      "help-mark": [],
       "icon-buttons": [
         "smart-components/icon-buttons/element"
       ],
       "icons": [
         "smart-components/icons/default"
       ],
+      "inline-editor": [],
       "inputs": [
         "smart-components/inputs/country-code",
         "smart-components/inputs/element",
         "smart-components/inputs/password"
       ],
-      "link": [
-        "smart-components/link/default"
-      ],
-      "list": [],
       "list-item": [
         "smart-components/list-item/element"
       ],
       "modal": [
         "smart-components/modal/element"
       ],
+      "page-header": [],
       "pagination": [
         "smart-components/pagination/default"
       ],
+      "popover": [],
+      "profile-picker": [],
       "progress-bar": [
         "progress/progress-bar"
       ],
@@ -864,18 +849,17 @@
       "range-slider": [
         "smart-components/range-slider/default"
       ],
-      "rating": [
-        "smart-components/rating/default"
-      ],
       "reference-link": [
         "smart-components/reference-link/default"
       ],
+      "resizer": [],
       "skeleton": [
         "smart-components/skeleton/default"
       ],
       "slider": [
         "smart-components/slider/default"
       ],
+      "sortable": [],
       "spinner": [
         "smart-components/spinner/default"
       ],
@@ -884,9 +868,6 @@
       ],
       "switch": [
         "smart-components/switch/default"
-      ],
-      "table": [
-        "smart-components/table/default"
       ],
       "tabs": [
         "smart-components/tabs/default"
@@ -897,6 +878,7 @@
       "textarea": [
         "smart-components/textarea/element"
       ],
+      "theme-generator": [],
       "toast": [
         "smart-components/toast/default"
       ],
@@ -914,11 +896,22 @@
     },
     "withoutPlayExamples": [
       "close",
+      "color",
+      "composition-overlay",
+      "copy-button",
       "datepicker",
       "drawer",
+      "empty-state",
+      "field-renderers",
       "file-preview",
-      "form",
-      "list",
+      "help-mark",
+      "inline-editor",
+      "page-header",
+      "popover",
+      "profile-picker",
+      "resizer",
+      "sortable",
+      "theme-generator",
       "tree-item"
     ]
   },
@@ -945,7 +938,6 @@
       "background-clip",
       "background-color",
       "background-color-brand",
-      "background-fake",
       "background-gradient",
       "background-origin",
       "background-position",
@@ -982,6 +974,7 @@
       "drop-shadow-color",
       "element-position",
       "element-position-ext",
+      "elevation",
       "fill",
       "fill-brand",
       "fill-rule",
@@ -1078,6 +1071,8 @@
       "placeholder-opacity",
       "pointer-events",
       "position",
+      "query-container",
+      "query-layout",
       "resize",
       "ring-color",
       "ring-inset",
@@ -1127,6 +1122,7 @@
       "text-indent",
       "text-max-width",
       "text-overflow",
+      "text-wrap",
       "theme",
       "title",
       "touch-action",
@@ -1172,7 +1168,6 @@
       "background-clip",
       "background-color",
       "background-color-brand",
-      "background-fake",
       "background-gradient",
       "background-origin",
       "background-position",
@@ -1210,6 +1205,7 @@
       "editor",
       "element-position",
       "element-position-ext",
+      "elevation",
       "fill",
       "fill-brand",
       "fill-rule",
@@ -1306,6 +1302,8 @@
       "placeholder-opacity",
       "pointer-events",
       "position",
+      "query-container",
+      "query-layout",
       "resize",
       "ring-color",
       "ring-inset",
@@ -1355,6 +1353,7 @@
       "text-indent",
       "text-max-width",
       "text-overflow",
+      "text-wrap",
       "theme",
       "title",
       "touch-action",

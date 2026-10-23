@@ -157,7 +157,7 @@ def build_smart_entry(
     source_root: Path,
     inventory: dict[str, Any],
 ) -> dict[str, Any]:
-    runtime_path = source_root / "ui-smart" / "smart" / name
+    runtime_path = source_root / "ui" / "distr" / "smart" / name
     play_root = source_root / "ui-play" / "examples" / "smart-components"
     coverage_refs = inventory.get("smartComponents", {}).get("coverageRefs", {}).get(name, [])
     example_files: list[Path] = []

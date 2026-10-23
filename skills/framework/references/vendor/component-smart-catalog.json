@@ -4,10 +4,10 @@
   "sourceInventory": "skills/framework/references/vendor/source-inventory.json",
   "smartCodeRegistry": "skills/framework/references/vendor/registries/smart-codes.json",
   "summary": {
-    "componentCount": 77,
-    "componentsWithExamples": 34,
-    "smartComponentCount": 50,
-    "smartComponentsWithExamples": 43
+    "componentCount": 72,
+    "componentsWithExamples": 35,
+    "smartComponentCount": 55,
+    "smartComponentsWithExamples": 37
   },
   "components": [
     {
@@ -365,6 +365,36 @@
       },
       "sourceRefs": [
         "source/simai/ui/distr/component/breadcrumbs"
+      ]
+    },
+    {
+      "id": "button-group",
+      "surface": "component",
+      "shipped": true,
+      "runtimePath": "source/simai/ui/distr/component/button-group",
+      "runtime": {
+        "hasCss": true,
+        "hasJs": true,
+        "hasJson": true,
+        "hasTemplate": false
+      },
+      "playExamples": [
+        "source/simai/ui-play/examples/components/button-group/default/index.html"
+      ],
+      "coverageRefs": [
+        "components/button-group/default"
+      ],
+      "contract": {
+        "rootClassCandidates": [
+          "sf-button-group"
+        ],
+        "modifierClassExamples": [
+          "sf-button-group"
+        ],
+        "stateClassExamples": []
+      },
+      "sourceRefs": [
+        "source/simai/ui/distr/component/button-group"
       ]
     },
     {
@@ -916,28 +946,6 @@
       ]
     },
     {
-      "id": "fancybox",
-      "surface": "component",
-      "shipped": true,
-      "runtimePath": "source/simai/ui/distr/component/fancybox",
-      "runtime": {
-        "hasCss": true,
-        "hasJs": true,
-        "hasJson": false,
-        "hasTemplate": false
-      },
-      "playExamples": [],
-      "coverageRefs": [],
-      "contract": {
-        "rootClassCandidates": [],
-        "modifierClassExamples": [],
-        "stateClassExamples": []
-      },
-      "sourceRefs": [
-        "source/simai/ui/distr/component/fancybox"
-      ]
-    },
-    {
       "id": "featured-icon",
       "surface": "component",
       "shipped": true,
@@ -1100,10 +1108,10 @@
       ]
     },
     {
-      "id": "flags",
+      "id": "flag",
       "surface": "component",
       "shipped": true,
-      "runtimePath": "source/simai/ui/distr/component/flags",
+      "runtimePath": "source/simai/ui/distr/component/flag",
       "runtime": {
         "hasCss": true,
         "hasJs": true,
@@ -1118,7 +1126,7 @@
         "stateClassExamples": []
       },
       "sourceRefs": [
-        "source/simai/ui/distr/component/flags"
+        "source/simai/ui/distr/component/flag"
       ]
     },
     {
@@ -1163,28 +1171,6 @@
       },
       "sourceRefs": [
         "source/simai/ui/distr/component/highlight"
-      ]
-    },
-    {
-      "id": "icon",
-      "surface": "component",
-      "shipped": true,
-      "runtimePath": "source/simai/ui/distr/component/icon",
-      "runtime": {
-        "hasCss": true,
-        "hasJs": true,
-        "hasJson": false,
-        "hasTemplate": false
-      },
-      "playExamples": [],
-      "coverageRefs": [],
-      "contract": {
-        "rootClassCandidates": [],
-        "modifierClassExamples": [],
-        "stateClassExamples": []
-      },
-      "sourceRefs": [
-        "source/simai/ui/distr/component/icon"
       ]
     },
     {
@@ -1338,12 +1324,12 @@
       ]
     },
     {
-      "id": "jquery",
+      "id": "kbd",
       "surface": "component",
       "shipped": true,
-      "runtimePath": "source/simai/ui/distr/component/jquery",
+      "runtimePath": "source/simai/ui/distr/component/kbd",
       "runtime": {
-        "hasCss": false,
+        "hasCss": true,
         "hasJs": true,
         "hasJson": false,
         "hasTemplate": false
@@ -1356,7 +1342,7 @@
         "stateClassExamples": []
       },
       "sourceRefs": [
-        "source/simai/ui/distr/component/jquery"
+        "source/simai/ui/distr/component/kbd"
       ]
     },
     {
@@ -1401,28 +1387,6 @@
       },
       "sourceRefs": [
         "source/simai/ui/distr/component/link"
-      ]
-    },
-    {
-      "id": "list",
-      "surface": "component",
-      "shipped": true,
-      "runtimePath": "source/simai/ui/distr/component/list",
-      "runtime": {
-        "hasCss": true,
-        "hasJs": true,
-        "hasJson": false,
-        "hasTemplate": false
-      },
-      "playExamples": [],
-      "coverageRefs": [],
-      "contract": {
-        "rootClassCandidates": [],
-        "modifierClassExamples": [],
-        "stateClassExamples": []
-      },
-      "sourceRefs": [
-        "source/simai/ui/distr/component/list"
       ]
     },
     {
@@ -1517,10 +1481,10 @@
       ]
     },
     {
-      "id": "monaco",
+      "id": "outline",
       "surface": "component",
       "shipped": true,
-      "runtimePath": "source/simai/ui/distr/component/monaco",
+      "runtimePath": "source/simai/ui/distr/component/outline",
       "runtime": {
         "hasCss": true,
         "hasJs": true,
@@ -1528,14 +1492,16 @@
         "hasTemplate": false
       },
       "playExamples": [],
-      "coverageRefs": [],
+      "coverageRefs": [
+        "examples/outline"
+      ],
       "contract": {
         "rootClassCandidates": [],
         "modifierClassExamples": [],
         "stateClassExamples": []
       },
       "sourceRefs": [
-        "source/simai/ui/distr/component/monaco"
+        "source/simai/ui/distr/component/outline"
       ]
     },
     {
@@ -1813,28 +1779,6 @@
       },
       "sourceRefs": [
         "source/simai/ui/distr/component/range-slider"
-      ]
-    },
-    {
-      "id": "rating",
-      "surface": "component",
-      "shipped": true,
-      "runtimePath": "source/simai/ui/distr/component/rating",
-      "runtime": {
-        "hasCss": true,
-        "hasJs": true,
-        "hasJson": false,
-        "hasTemplate": false
-      },
-      "playExamples": [],
-      "coverageRefs": [],
-      "contract": {
-        "rootClassCandidates": [],
-        "modifierClassExamples": [],
-        "stateClassExamples": []
-      },
-      "sourceRefs": [
-        "source/simai/ui/distr/component/rating"
       ]
     },
     {
@@ -2391,28 +2335,6 @@
       ]
     },
     {
-      "id": "theme-builder",
-      "surface": "component",
-      "shipped": true,
-      "runtimePath": "source/simai/ui/distr/component/theme-builder",
-      "runtime": {
-        "hasCss": true,
-        "hasJs": true,
-        "hasJson": false,
-        "hasTemplate": false
-      },
-      "playExamples": [],
-      "coverageRefs": [],
-      "contract": {
-        "rootClassCandidates": [],
-        "modifierClassExamples": [],
-        "stateClassExamples": []
-      },
-      "sourceRefs": [
-        "source/simai/ui/distr/component/theme-builder"
-      ]
-    },
-    {
       "id": "toast",
       "surface": "component",
       "shipped": true,
@@ -2668,28 +2590,6 @@
       ]
     },
     {
-      "id": "waves",
-      "surface": "component",
-      "shipped": true,
-      "runtimePath": "source/simai/ui/distr/component/waves",
-      "runtime": {
-        "hasCss": false,
-        "hasJs": true,
-        "hasJson": false,
-        "hasTemplate": false
-      },
-      "playExamples": [],
-      "coverageRefs": [],
-      "contract": {
-        "rootClassCandidates": [],
-        "modifierClassExamples": [],
-        "stateClassExamples": []
-      },
-      "sourceRefs": [
-        "source/simai/ui/distr/component/waves"
-      ]
-    },
-    {
       "id": "wow",
       "surface": "component",
       "shipped": true,
@@ -2714,58 +2614,12 @@
   ],
   "smartComponents": [
     {
-      "id": "admin-menu",
-      "surface": "smart-component",
-      "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/admin-menu",
-      "runtime": {
-        "hasCss": false,
-        "hasJs": true,
-        "hasJson": false,
-        "hasTemplate": true
-      },
-      "playExamples": [
-        "source/simai/ui-play/examples/smart-components/admin-menu/default/index.html"
-      ],
-      "coverageRefs": [
-        "smart-components/admin-menu/default"
-      ],
-      "contract": {
-        "customElements": [
-          "sf-admin-menu",
-          "sf-admin-menu-item"
-        ],
-        "sfCodeValues": [],
-        "attributeExamples": [
-          "active",
-          "aria-label",
-          "collapsible",
-          "href",
-          "icon",
-          "searchable",
-          "settings"
-        ],
-        "attributeFrequency": {
-          "href": 20,
-          "icon": 19,
-          "searchable": 1,
-          "settings": 1,
-          "collapsible": 1,
-          "aria-label": 1,
-          "active": 1
-        }
-      },
-      "sourceRefs": [
-        "source/simai/ui-smart/smart/admin-menu"
-      ]
-    },
-    {
       "id": "alert",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/alert",
+      "runtimePath": "source/simai/ui/distr/smart/alert",
       "runtime": {
-        "hasCss": true,
+        "hasCss": false,
         "hasJs": true,
         "hasJson": false,
         "hasTemplate": true
@@ -2814,14 +2668,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/alert"
+        "source/simai/ui/distr/smart/alert"
       ]
     },
     {
       "id": "avatar",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/avatar",
+      "runtimePath": "source/simai/ui/distr/smart/avatar",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -2886,14 +2740,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/avatar"
+        "source/simai/ui/distr/smart/avatar"
       ]
     },
     {
       "id": "avatars",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/avatars",
+      "runtimePath": "source/simai/ui/distr/smart/avatars",
       "runtime": {
         "hasCss": true,
         "hasJs": true,
@@ -2937,14 +2791,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/avatars"
+        "source/simai/ui/distr/smart/avatars"
       ]
     },
     {
       "id": "badges",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/badges",
+      "runtimePath": "source/simai/ui/distr/smart/badges",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -2963,6 +2817,7 @@
         ],
         "sfCodeValues": [],
         "attributeExamples": [
+          "aria-label",
           "icon-left",
           "icon-right",
           "scheme",
@@ -2971,23 +2826,24 @@
           "type"
         ],
         "attributeFrequency": {
-          "size": 20,
-          "type": 20,
-          "scheme": 20,
-          "text": 20,
-          "icon-left": 18,
-          "icon-right": 18
+          "size": 26,
+          "type": 26,
+          "scheme": 26,
+          "icon-left": 24,
+          "text": 23,
+          "icon-right": 21,
+          "aria-label": 3
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/badges"
+        "source/simai/ui/distr/smart/badges"
       ]
     },
     {
       "id": "breadcrumbs",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/breadcrumbs",
+      "runtimePath": "source/simai/ui/distr/smart/breadcrumbs",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -3015,14 +2871,61 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/breadcrumbs"
+        "source/simai/ui/distr/smart/breadcrumbs"
+      ]
+    },
+    {
+      "id": "button-group",
+      "surface": "smart-component",
+      "shipped": true,
+      "runtimePath": "source/simai/ui/distr/smart/button-group",
+      "runtime": {
+        "hasCss": false,
+        "hasJs": true,
+        "hasJson": false,
+        "hasTemplate": true
+      },
+      "playExamples": [
+        "source/simai/ui-play/examples/smart-components/button-group/default/index.html"
+      ],
+      "coverageRefs": [
+        "smart-components/button-group/default"
+      ],
+      "contract": {
+        "customElements": [
+          "sf-button-group"
+        ],
+        "sfCodeValues": [],
+        "attributeExamples": [
+          "aria-label",
+          "data-smart-button-group-demo",
+          "items",
+          "orientation",
+          "scheme",
+          "size",
+          "tightness",
+          "value"
+        ],
+        "attributeFrequency": {
+          "aria-label": 2,
+          "value": 2,
+          "size": 2,
+          "scheme": 2,
+          "orientation": 2,
+          "items": 2,
+          "data-smart-button-group-demo": 1,
+          "tightness": 1
+        }
+      },
+      "sourceRefs": [
+        "source/simai/ui/distr/smart/button-group"
       ]
     },
     {
       "id": "buttons",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/buttons",
+      "runtimePath": "source/simai/ui/distr/smart/buttons",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -3070,14 +2973,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/buttons"
+        "source/simai/ui/distr/smart/buttons"
       ]
     },
     {
       "id": "checkbox",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/checkbox",
+      "runtimePath": "source/simai/ui/distr/smart/checkbox",
       "runtime": {
         "hasCss": true,
         "hasJs": true,
@@ -3126,14 +3029,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/checkbox"
+        "source/simai/ui/distr/smart/checkbox"
       ]
     },
     {
       "id": "close",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/close",
+      "runtimePath": "source/simai/ui/distr/smart/close",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -3149,14 +3052,60 @@
         "attributeFrequency": {}
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/close"
+        "source/simai/ui/distr/smart/close"
+      ]
+    },
+    {
+      "id": "color",
+      "surface": "smart-component",
+      "shipped": true,
+      "runtimePath": "source/simai/ui/distr/smart/color",
+      "runtime": {
+        "hasCss": true,
+        "hasJs": true,
+        "hasJson": false,
+        "hasTemplate": true
+      },
+      "playExamples": [],
+      "coverageRefs": [],
+      "contract": {
+        "customElements": [],
+        "sfCodeValues": [],
+        "attributeExamples": [],
+        "attributeFrequency": {}
+      },
+      "sourceRefs": [
+        "source/simai/ui/distr/smart/color"
+      ]
+    },
+    {
+      "id": "composition-overlay",
+      "surface": "smart-component",
+      "shipped": true,
+      "runtimePath": "source/simai/ui/distr/smart/composition-overlay",
+      "runtime": {
+        "hasCss": true,
+        "hasJs": true,
+        "hasJson": false,
+        "hasTemplate": false
+      },
+      "playExamples": [],
+      "coverageRefs": [],
+      "contract": {
+        "customElements": [],
+        "sfCodeValues": [],
+        "attributeExamples": [],
+        "attributeFrequency": {}
+      },
+      "sourceRefs": [
+        "source/simai/ui/distr/smart/composition-overlay"
       ]
     },
     {
       "id": "context-menu",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/context-menu",
+      "runtimePath": "source/simai/ui/distr/smart/context-menu",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -3193,14 +3142,37 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/context-menu"
+        "source/simai/ui/distr/smart/context-menu"
+      ]
+    },
+    {
+      "id": "copy-button",
+      "surface": "smart-component",
+      "shipped": true,
+      "runtimePath": "source/simai/ui/distr/smart/copy-button",
+      "runtime": {
+        "hasCss": true,
+        "hasJs": true,
+        "hasJson": false,
+        "hasTemplate": true
+      },
+      "playExamples": [],
+      "coverageRefs": [],
+      "contract": {
+        "customElements": [],
+        "sfCodeValues": [],
+        "attributeExamples": [],
+        "attributeFrequency": {}
+      },
+      "sourceRefs": [
+        "source/simai/ui/distr/smart/copy-button"
       ]
     },
     {
       "id": "country-code",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/country-code",
+      "runtimePath": "source/simai/ui/distr/smart/country-code",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -3258,14 +3230,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/country-code"
+        "source/simai/ui/distr/smart/country-code"
       ]
     },
     {
       "id": "datepicker",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/datepicker",
+      "runtimePath": "source/simai/ui/distr/smart/datepicker",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -3281,14 +3253,14 @@
         "attributeFrequency": {}
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/datepicker"
+        "source/simai/ui/distr/smart/datepicker"
       ]
     },
     {
       "id": "download-file",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/download-file",
+      "runtimePath": "source/simai/ui/distr/smart/download-file",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -3326,14 +3298,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/download-file"
+        "source/simai/ui/distr/smart/download-file"
       ]
     },
     {
       "id": "drawer",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/drawer",
+      "runtimePath": "source/simai/ui/distr/smart/drawer",
       "runtime": {
         "hasCss": true,
         "hasJs": true,
@@ -3349,14 +3321,14 @@
         "attributeFrequency": {}
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/drawer"
+        "source/simai/ui/distr/smart/drawer"
       ]
     },
     {
       "id": "dropdown",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/dropdown",
+      "runtimePath": "source/simai/ui/distr/smart/dropdown",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -3408,90 +3380,37 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/dropdown"
+        "source/simai/ui/distr/smart/dropdown"
       ]
     },
     {
-      "id": "editor",
+      "id": "empty-state",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/editor",
+      "runtimePath": "source/simai/ui/distr/smart/empty-state",
       "runtime": {
         "hasCss": true,
         "hasJs": true,
         "hasJson": false,
-        "hasTemplate": false
+        "hasTemplate": true
       },
-      "playExamples": [
-        "source/simai/ui-play/examples/smart-components/editor/default/index.html"
-      ],
-      "coverageRefs": [
-        "smart-components/editor/default"
-      ],
+      "playExamples": [],
+      "coverageRefs": [],
       "contract": {
-        "customElements": [
-          "sf-editor"
-        ],
+        "customElements": [],
         "sfCodeValues": [],
-        "attributeExamples": [
-          "hint",
-          "label",
-          "placeholder",
-          "value"
-        ],
-        "attributeFrequency": {
-          "label": 1,
-          "placeholder": 1,
-          "value": 1,
-          "hint": 1
-        }
+        "attributeExamples": [],
+        "attributeFrequency": {}
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/editor"
+        "source/simai/ui/distr/smart/empty-state"
       ]
     },
     {
-      "id": "fab",
+      "id": "field-renderers",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/fab",
-      "runtime": {
-        "hasCss": false,
-        "hasJs": true,
-        "hasJson": false,
-        "hasTemplate": false
-      },
-      "playExamples": [
-        "source/simai/ui-play/examples/smart-components/fab/default/index.html"
-      ],
-      "coverageRefs": [
-        "smart-components/fab/default"
-      ],
-      "contract": {
-        "customElements": [
-          "sf-fab"
-        ],
-        "sfCodeValues": [],
-        "attributeExamples": [
-          "icon",
-          "rotate",
-          "size"
-        ],
-        "attributeFrequency": {
-          "size": 1,
-          "rotate": 1,
-          "icon": 1
-        }
-      },
-      "sourceRefs": [
-        "source/simai/ui-smart/smart/fab"
-      ]
-    },
-    {
-      "id": "file-preview",
-      "surface": "smart-component",
-      "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/file-preview",
+      "runtimePath": "source/simai/ui/distr/smart/field-renderers",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -3507,14 +3426,37 @@
         "attributeFrequency": {}
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/file-preview"
+        "source/simai/ui/distr/smart/field-renderers"
+      ]
+    },
+    {
+      "id": "file-preview",
+      "surface": "smart-component",
+      "shipped": true,
+      "runtimePath": "source/simai/ui/distr/smart/file-preview",
+      "runtime": {
+        "hasCss": false,
+        "hasJs": true,
+        "hasJson": false,
+        "hasTemplate": true
+      },
+      "playExamples": [],
+      "coverageRefs": [],
+      "contract": {
+        "customElements": [],
+        "sfCodeValues": [],
+        "attributeExamples": [],
+        "attributeFrequency": {}
+      },
+      "sourceRefs": [
+        "source/simai/ui/distr/smart/file-preview"
       ]
     },
     {
       "id": "file-upload",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/file-upload",
+      "runtimePath": "source/simai/ui/distr/smart/file-upload",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -3557,72 +3499,16 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/file-upload"
-      ]
-    },
-    {
-      "id": "flags",
-      "surface": "smart-component",
-      "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/flags",
-      "runtime": {
-        "hasCss": false,
-        "hasJs": true,
-        "hasJson": false,
-        "hasTemplate": false
-      },
-      "playExamples": [
-        "source/simai/ui-play/examples/smart-components/flags/default/index.html"
-      ],
-      "coverageRefs": [
-        "smart-components/flags/default"
-      ],
-      "contract": {
-        "customElements": [
-          "sf-flags"
-        ],
-        "sfCodeValues": [],
-        "attributeExamples": [
-          "country"
-        ],
-        "attributeFrequency": {
-          "country": 4
-        }
-      },
-      "sourceRefs": [
-        "source/simai/ui-smart/smart/flags"
-      ]
-    },
-    {
-      "id": "form",
-      "surface": "smart-component",
-      "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/form",
-      "runtime": {
-        "hasCss": false,
-        "hasJs": true,
-        "hasJson": false,
-        "hasTemplate": false
-      },
-      "playExamples": [],
-      "coverageRefs": [],
-      "contract": {
-        "customElements": [],
-        "sfCodeValues": [],
-        "attributeExamples": [],
-        "attributeFrequency": {}
-      },
-      "sourceRefs": [
-        "source/simai/ui-smart/smart/form"
+        "source/simai/ui/distr/smart/file-upload"
       ]
     },
     {
       "id": "gallery",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/gallery",
+      "runtimePath": "source/simai/ui/distr/smart/gallery",
       "runtime": {
-        "hasCss": false,
+        "hasCss": true,
         "hasJs": true,
         "hasJson": false,
         "hasTemplate": true
@@ -3677,14 +3563,37 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/gallery"
+        "source/simai/ui/distr/smart/gallery"
+      ]
+    },
+    {
+      "id": "help-mark",
+      "surface": "smart-component",
+      "shipped": true,
+      "runtimePath": "source/simai/ui/distr/smart/help-mark",
+      "runtime": {
+        "hasCss": true,
+        "hasJs": true,
+        "hasJson": false,
+        "hasTemplate": true
+      },
+      "playExamples": [],
+      "coverageRefs": [],
+      "contract": {
+        "customElements": [],
+        "sfCodeValues": [],
+        "attributeExamples": [],
+        "attributeFrequency": {}
+      },
+      "sourceRefs": [
+        "source/simai/ui/distr/smart/help-mark"
       ]
     },
     {
       "id": "icon-buttons",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/icon-buttons",
+      "runtimePath": "source/simai/ui/distr/smart/icon-buttons",
       "runtime": {
         "hasCss": true,
         "hasJs": true,
@@ -3727,14 +3636,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/icon-buttons"
+        "source/simai/ui/distr/smart/icon-buttons"
       ]
     },
     {
       "id": "icons",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/icons",
+      "runtimePath": "source/simai/ui/distr/smart/icons",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -3766,14 +3675,37 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/icons"
+        "source/simai/ui/distr/smart/icons"
+      ]
+    },
+    {
+      "id": "inline-editor",
+      "surface": "smart-component",
+      "shipped": true,
+      "runtimePath": "source/simai/ui/distr/smart/inline-editor",
+      "runtime": {
+        "hasCss": true,
+        "hasJs": true,
+        "hasJson": false,
+        "hasTemplate": false
+      },
+      "playExamples": [],
+      "coverageRefs": [],
+      "contract": {
+        "customElements": [],
+        "sfCodeValues": [],
+        "attributeExamples": [],
+        "attributeFrequency": {}
+      },
+      "sourceRefs": [
+        "source/simai/ui/distr/smart/inline-editor"
       ]
     },
     {
       "id": "inputs",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/inputs",
+      "runtimePath": "source/simai/ui/distr/smart/inputs",
       "runtime": {
         "hasCss": true,
         "hasJs": true,
@@ -3863,70 +3795,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/inputs"
-      ]
-    },
-    {
-      "id": "link",
-      "surface": "smart-component",
-      "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/link",
-      "runtime": {
-        "hasCss": false,
-        "hasJs": true,
-        "hasJson": false,
-        "hasTemplate": false
-      },
-      "playExamples": [
-        "source/simai/ui-play/examples/smart-components/link/default/index.html"
-      ],
-      "coverageRefs": [
-        "smart-components/link/default"
-      ],
-      "contract": {
-        "customElements": [
-          "sf-link"
-        ],
-        "sfCodeValues": [],
-        "attributeExamples": [
-          "link"
-        ],
-        "attributeFrequency": {
-          "link": 3
-        }
-      },
-      "sourceRefs": [
-        "source/simai/ui-smart/smart/link"
-      ]
-    },
-    {
-      "id": "list",
-      "surface": "smart-component",
-      "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/list",
-      "runtime": {
-        "hasCss": false,
-        "hasJs": true,
-        "hasJson": false,
-        "hasTemplate": false
-      },
-      "playExamples": [],
-      "coverageRefs": [],
-      "contract": {
-        "customElements": [],
-        "sfCodeValues": [],
-        "attributeExamples": [],
-        "attributeFrequency": {}
-      },
-      "sourceRefs": [
-        "source/simai/ui-smart/smart/list"
+        "source/simai/ui/distr/smart/inputs"
       ]
     },
     {
       "id": "list-item",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/list-item",
+      "runtimePath": "source/simai/ui/distr/smart/list-item",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -3973,14 +3849,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/list-item"
+        "source/simai/ui/distr/smart/list-item"
       ]
     },
     {
       "id": "modal",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/modal",
+      "runtimePath": "source/simai/ui/distr/smart/modal",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -4050,14 +3926,37 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/modal"
+        "source/simai/ui/distr/smart/modal"
+      ]
+    },
+    {
+      "id": "page-header",
+      "surface": "smart-component",
+      "shipped": true,
+      "runtimePath": "source/simai/ui/distr/smart/page-header",
+      "runtime": {
+        "hasCss": false,
+        "hasJs": true,
+        "hasJson": false,
+        "hasTemplate": true
+      },
+      "playExamples": [],
+      "coverageRefs": [],
+      "contract": {
+        "customElements": [],
+        "sfCodeValues": [],
+        "attributeExamples": [],
+        "attributeFrequency": {}
+      },
+      "sourceRefs": [
+        "source/simai/ui/distr/smart/page-header"
       ]
     },
     {
       "id": "pagination",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/pagination",
+      "runtimePath": "source/simai/ui/distr/smart/pagination",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -4093,14 +3992,60 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/pagination"
+        "source/simai/ui/distr/smart/pagination"
+      ]
+    },
+    {
+      "id": "popover",
+      "surface": "smart-component",
+      "shipped": true,
+      "runtimePath": "source/simai/ui/distr/smart/popover",
+      "runtime": {
+        "hasCss": true,
+        "hasJs": true,
+        "hasJson": false,
+        "hasTemplate": true
+      },
+      "playExamples": [],
+      "coverageRefs": [],
+      "contract": {
+        "customElements": [],
+        "sfCodeValues": [],
+        "attributeExamples": [],
+        "attributeFrequency": {}
+      },
+      "sourceRefs": [
+        "source/simai/ui/distr/smart/popover"
+      ]
+    },
+    {
+      "id": "profile-picker",
+      "surface": "smart-component",
+      "shipped": true,
+      "runtimePath": "source/simai/ui/distr/smart/profile-picker",
+      "runtime": {
+        "hasCss": true,
+        "hasJs": true,
+        "hasJson": false,
+        "hasTemplate": true
+      },
+      "playExamples": [],
+      "coverageRefs": [],
+      "contract": {
+        "customElements": [],
+        "sfCodeValues": [],
+        "attributeExamples": [],
+        "attributeFrequency": {}
+      },
+      "sourceRefs": [
+        "source/simai/ui/distr/smart/profile-picker"
       ]
     },
     {
       "id": "progress-bar",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/progress-bar",
+      "runtimePath": "source/simai/ui/distr/smart/progress-bar",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -4132,14 +4077,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/progress-bar"
+        "source/simai/ui/distr/smart/progress-bar"
       ]
     },
     {
       "id": "progress-scale",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/progress-scale",
+      "runtimePath": "source/simai/ui/distr/smart/progress-scale",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -4169,14 +4114,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/progress-scale"
+        "source/simai/ui/distr/smart/progress-scale"
       ]
     },
     {
       "id": "radio",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/radio",
+      "runtimePath": "source/simai/ui/distr/smart/radio",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -4218,14 +4163,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/radio"
+        "source/simai/ui/distr/smart/radio"
       ]
     },
     {
       "id": "range-slider",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/range-slider",
+      "runtimePath": "source/simai/ui/distr/smart/range-slider",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -4261,53 +4206,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/range-slider"
-      ]
-    },
-    {
-      "id": "rating",
-      "surface": "smart-component",
-      "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/rating",
-      "runtime": {
-        "hasCss": false,
-        "hasJs": true,
-        "hasJson": false,
-        "hasTemplate": false
-      },
-      "playExamples": [
-        "source/simai/ui-play/examples/smart-components/rating/default/index.html"
-      ],
-      "coverageRefs": [
-        "smart-components/rating/default"
-      ],
-      "contract": {
-        "customElements": [
-          "sf-rating"
-        ],
-        "sfCodeValues": [],
-        "attributeExamples": [
-          "max",
-          "readonly",
-          "stars-count",
-          "value"
-        ],
-        "attributeFrequency": {
-          "max": 6,
-          "stars-count": 6,
-          "value": 4,
-          "readonly": 4
-        }
-      },
-      "sourceRefs": [
-        "source/simai/ui-smart/smart/rating"
+        "source/simai/ui/distr/smart/range-slider"
       ]
     },
     {
       "id": "reference-link",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/reference-link",
+      "runtimePath": "source/simai/ui/distr/smart/reference-link",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -4343,14 +4249,37 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/reference-link"
+        "source/simai/ui/distr/smart/reference-link"
+      ]
+    },
+    {
+      "id": "resizer",
+      "surface": "smart-component",
+      "shipped": true,
+      "runtimePath": "source/simai/ui/distr/smart/resizer",
+      "runtime": {
+        "hasCss": true,
+        "hasJs": true,
+        "hasJson": false,
+        "hasTemplate": false
+      },
+      "playExamples": [],
+      "coverageRefs": [],
+      "contract": {
+        "customElements": [],
+        "sfCodeValues": [],
+        "attributeExamples": [],
+        "attributeFrequency": {}
+      },
+      "sourceRefs": [
+        "source/simai/ui/distr/smart/resizer"
       ]
     },
     {
       "id": "skeleton",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/skeleton",
+      "runtimePath": "source/simai/ui/distr/smart/skeleton",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -4390,14 +4319,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/skeleton"
+        "source/simai/ui/distr/smart/skeleton"
       ]
     },
     {
       "id": "slider",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/slider",
+      "runtimePath": "source/simai/ui/distr/smart/slider",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -4429,14 +4358,37 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/slider"
+        "source/simai/ui/distr/smart/slider"
+      ]
+    },
+    {
+      "id": "sortable",
+      "surface": "smart-component",
+      "shipped": true,
+      "runtimePath": "source/simai/ui/distr/smart/sortable",
+      "runtime": {
+        "hasCss": true,
+        "hasJs": true,
+        "hasJson": false,
+        "hasTemplate": false
+      },
+      "playExamples": [],
+      "coverageRefs": [],
+      "contract": {
+        "customElements": [],
+        "sfCodeValues": [],
+        "attributeExamples": [],
+        "attributeFrequency": {}
+      },
+      "sourceRefs": [
+        "source/simai/ui/distr/smart/sortable"
       ]
     },
     {
       "id": "spinner",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/spinner",
+      "runtimePath": "source/simai/ui/distr/smart/spinner",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -4468,14 +4420,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/spinner"
+        "source/simai/ui/distr/smart/spinner"
       ]
     },
     {
       "id": "steps",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/steps",
+      "runtimePath": "source/simai/ui/distr/smart/steps",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -4509,14 +4461,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/steps"
+        "source/simai/ui/distr/smart/steps"
       ]
     },
     {
       "id": "switch",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/switch",
+      "runtimePath": "source/simai/ui/distr/smart/switch",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -4554,43 +4506,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/switch"
-      ]
-    },
-    {
-      "id": "table",
-      "surface": "smart-component",
-      "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/table",
-      "runtime": {
-        "hasCss": true,
-        "hasJs": true,
-        "hasJson": false,
-        "hasTemplate": true
-      },
-      "playExamples": [
-        "source/simai/ui-play/examples/smart-components/table/default/index.html"
-      ],
-      "coverageRefs": [
-        "smart-components/table/default"
-      ],
-      "contract": {
-        "customElements": [
-          "sf-table"
-        ],
-        "sfCodeValues": [],
-        "attributeExamples": [],
-        "attributeFrequency": {}
-      },
-      "sourceRefs": [
-        "source/simai/ui-smart/smart/table"
+        "source/simai/ui/distr/smart/switch"
       ]
     },
     {
       "id": "tabs",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/tabs",
+      "runtimePath": "source/simai/ui/distr/smart/tabs",
       "runtime": {
         "hasCss": true,
         "hasJs": true,
@@ -4622,14 +4545,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/tabs"
+        "source/simai/ui/distr/smart/tabs"
       ]
     },
     {
       "id": "tags",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/tags",
+      "runtimePath": "source/simai/ui/distr/smart/tags",
       "runtime": {
         "hasCss": true,
         "hasJs": true,
@@ -4678,14 +4601,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/tags"
+        "source/simai/ui/distr/smart/tags"
       ]
     },
     {
       "id": "textarea",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/textarea",
+      "runtimePath": "source/simai/ui/distr/smart/textarea",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -4735,14 +4658,37 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/textarea"
+        "source/simai/ui/distr/smart/textarea"
+      ]
+    },
+    {
+      "id": "theme-generator",
+      "surface": "smart-component",
+      "shipped": true,
+      "runtimePath": "source/simai/ui/distr/smart/theme-generator",
+      "runtime": {
+        "hasCss": true,
+        "hasJs": true,
+        "hasJson": false,
+        "hasTemplate": true
+      },
+      "playExamples": [],
+      "coverageRefs": [],
+      "contract": {
+        "customElements": [],
+        "sfCodeValues": [],
+        "attributeExamples": [],
+        "attributeFrequency": {}
+      },
+      "sourceRefs": [
+        "source/simai/ui/distr/smart/theme-generator"
       ]
     },
     {
       "id": "toast",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/toast",
+      "runtimePath": "source/simai/ui/distr/smart/toast",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -4787,14 +4733,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/toast"
+        "source/simai/ui/distr/smart/toast"
       ]
     },
     {
       "id": "toggle",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/toggle",
+      "runtimePath": "source/simai/ui/distr/smart/toggle",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -4832,14 +4778,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/toggle"
+        "source/simai/ui/distr/smart/toggle"
       ]
     },
     {
       "id": "tooltip",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/tooltip",
+      "runtimePath": "source/simai/ui/distr/smart/tooltip",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -4873,14 +4819,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/tooltip"
+        "source/simai/ui/distr/smart/tooltip"
       ]
     },
     {
       "id": "tree",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/tree",
+      "runtimePath": "source/simai/ui/distr/smart/tree",
       "runtime": {
         "hasCss": true,
         "hasJs": true,
@@ -4917,14 +4863,14 @@
         }
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/tree"
+        "source/simai/ui/distr/smart/tree"
       ]
     },
     {
       "id": "tree-item",
       "surface": "smart-component",
       "shipped": true,
-      "runtimePath": "source/simai/ui-smart/smart/tree-item",
+      "runtimePath": "source/simai/ui/distr/smart/tree-item",
       "runtime": {
         "hasCss": false,
         "hasJs": true,
@@ -4940,7 +4886,7 @@
         "attributeFrequency": {}
       },
       "sourceRefs": [
-        "source/simai/ui-smart/smart/tree-item"
+        "source/simai/ui/distr/smart/tree-item"
       ]
     }
   ],

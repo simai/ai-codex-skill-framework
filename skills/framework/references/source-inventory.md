@@ -4,31 +4,28 @@ Generated from synced upstream repositories under `source/simai`.
 
 ## Source Revisions
 
-- `ui`: `main` @ `ff47bd694b6c0ed61b7ad4824f986d99b150cbea`
-- `ui-loader`: `main` @ `3ca31c6c2c50ca099b51ce3c25251c71d4860317`
-- `ui-doc`: `main` @ `85148eb2c0ba0b21d497ecb912085337a37a7d88`
-- `ui-play`: `master` @ `bdd253aaa3418bee7f51b4b69d8e5c08af49ee58`
-- `ui-smart`: `main` @ `ab896dc7cd33f151377e3992ffb286769beee7f7`
-- `ui-vscode`: `main` @ `a8fd4a8dcd75ce53d2af0c07186fb0ef3b907058`
-- `ui-components`: `error` - Cloning into 'repo://ai-skill-framework/source/simai/ui-components'...
-fatal: Remote branch main not found in upstream origin
+- `ui`: `main` @ `3d9bf903a590fc7c21e5ea14983742b0225edbe7`
+- `ui-source`: `main` @ `aa81305b14f103def02dead1ffc0b0451c877f0f`
+- `ui-doc`: `main` @ `ae2c38b8b1abcc56a62221cbbf3b19679475542a`
+- `ui-play`: `main` @ `e062a00367aa5ee1af6266d6416b8ba59c2ca21f`
+- `ui-vscode`: `main` @ `352cd897bb63711ff600dbd06dbea923c14dfe6a`
 
 ## Summary
 
-- Shipped components in `ui`: `77`
-- Shipped smart-components in `ui-smart`: `50`
-- Shipped utility groups in `ui`: `225`
-- Utility source groups in `ui-loader`: `226`
-- Component example groups in `ui-play`: `37`
-- Smart example groups in `ui-play`: `42`
-- Shipped components without direct component example groups: `43`
-- Shipped smart-components without direct smart example groups: `7`
+- Shipped components in `ui`: `72`
+- Shipped smart-components in `ui/distr/smart`: `55`
+- Shipped utility groups in `ui`: `228`
+- Utility source groups in `ui-source`: `229`
+- Component example groups in `ui-play`: `38`
+- Smart example groups in `ui-play`: `44`
+- Shipped components without direct component example groups: `36`
+- Shipped smart-components without direct smart example groups: `18`
 
 ## Practical Reading Order
 
-- For utility/layout work: start with the `ui-doc` atlas, validate shipped groups in `ui`, then inspect rule and state semantics in `ui-loader`.
+- For utility/layout work: start with the `ui-doc` atlas, validate shipped groups in `ui`, then inspect rule and state semantics in `ui-source/src/utility`.
 - For presentational components: start with `ui-play/examples/components`, then confirm shipping in `ui/distr/component`.
-- For smart-components: start with `ui-play/examples/smart-components`, then confirm runtime presence in `ui-smart/smart`.
+- For smart-components: start with `ui-play/examples/smart-components`, then confirm runtime presence in `ui/distr/smart`.
 - For loader/runtime assumptions: confirm actual boot paths in `ui-play/packages/*/setup-sf.ts` and shipped paths in `ui/distr/core`.
 
 ## Component Coverage
@@ -39,6 +36,7 @@ fatal: Remote branch main not found in upstream origin
 - `avatars`: `avatar`
 - `badges`: `components/badges/all`
 - `breadcrumbs`: `components/breadcrumbs/default`
+- `button-group`: `components/button-group/default`
 - `buttons`: `components/buttons/all, components/buttons/segments, components/buttons/tightness`
 - `checkbox`: `components/checkbox/all`
 - `close`: `components/close/default`
@@ -53,6 +51,7 @@ fatal: Remote branch main not found in upstream origin
 - `inputs`: `components/inputs/all, components/inputs/country-code, components/inputs/quantity, components/inputs/textarea, components/inputs/verification`
 - `menu`: `components/menu/default`
 - `modal`: `components/modal/all`
+- `outline`: `examples/outline`
 - `pagination`: `components/pagination/default, components/pagination/page-number`
 - `placeholder`: `components/placeholder/default`
 - `range-slider`: `components/range-slider/default`
@@ -80,24 +79,19 @@ Direct component-example gaps:
 - `dot`
 - `emoji`
 - `fab`
-- `fancybox`
-- `flags`
+- `flag`
 - `hideShow`
 - `highlight`
-- `icon`
 - `icons`
-- `jquery`
+- `kbd`
 - `lazy-load`
 - `link`
-- `list`
-- `monaco`
 - `overbox`
 - `overcard`
 - `progress-bar`
 - `progress-scale`
 - `quantity`
 - `radio`
-- `rating`
 - `scrollbar`
 - `sf-system`
 - `share`
@@ -106,35 +100,31 @@ Direct component-example gaps:
 - `tab`
 - `textarea`
 - `theme`
-- `theme-builder`
 - `tree`
 - `tree-item`
 - `verification`
-- `... +3 more`
+- `viewbox`
+- `wow`
 
 ## Smart-Component Coverage
 
-- `admin-menu`: `smart-components/admin-menu/default`
 - `alert`: `smart-components/alert/default`
 - `avatar`: `smart-components/avatar/element, smart-components/avatar/group`
 - `avatars`: `avatar/group`
 - `badges`: `smart-components/badges/element`
 - `breadcrumbs`: `smart-components/breadcrumbs/default`
+- `button-group`: `smart-components/button-group/default`
 - `buttons`: `smart-components/buttons/element, smart-components/buttons/events`
 - `checkbox`: `smart-components/checkbox/all`
 - `context-menu`: `smart-components/context-menu/default`
 - `country-code`: `inputs/country-code`
 - `download-file`: `smart-components/download-file/element`
 - `dropdown`: `smart-components/dropdown/element`
-- `editor`: `smart-components/editor/default`
-- `fab`: `smart-components/fab/default`
 - `file-upload`: `smart-components/file-upload/element`
-- `flags`: `smart-components/flags/default`
 - `gallery`: `smart-components/gallery/default, smart-components/gallery/images`
 - `icon-buttons`: `smart-components/icon-buttons/element`
 - `icons`: `smart-components/icons/default`
 - `inputs`: `smart-components/inputs/country-code, smart-components/inputs/element, smart-components/inputs/password`
-- `link`: `smart-components/link/default`
 - `list-item`: `smart-components/list-item/element`
 - `modal`: `smart-components/modal/element`
 - `pagination`: `smart-components/pagination/default`
@@ -142,14 +132,12 @@ Direct component-example gaps:
 - `progress-scale`: `progress/progress-scale`
 - `radio`: `smart-components/radio/all`
 - `range-slider`: `smart-components/range-slider/default`
-- `rating`: `smart-components/rating/default`
 - `reference-link`: `smart-components/reference-link/default`
 - `skeleton`: `smart-components/skeleton/default`
 - `slider`: `smart-components/slider/default`
 - `spinner`: `smart-components/spinner/default`
 - `steps`: `smart-components/steps/default`
 - `switch`: `smart-components/switch/default`
-- `table`: `smart-components/table/default`
 - `tabs`: `smart-components/tabs/default`
 - `tags`: `smart-components/tags/element`
 - `textarea`: `smart-components/textarea/element`
@@ -161,11 +149,22 @@ Direct component-example gaps:
 Direct smart-example gaps:
 
 - `close`
+- `color`
+- `composition-overlay`
+- `copy-button`
 - `datepicker`
 - `drawer`
+- `empty-state`
+- `field-renderers`
 - `file-preview`
-- `form`
-- `list`
+- `help-mark`
+- `inline-editor`
+- `page-header`
+- `popover`
+- `profile-picker`
+- `resizer`
+- `sortable`
+- `theme-generator`
 - `tree-item`
 
 ## Utility Example Groups

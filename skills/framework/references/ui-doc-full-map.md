@@ -1,7 +1,7 @@
 # SIMAI Framework UI Docs Full Map
 
 Generated from:
-`repo://ai-skill-framework/source/simai/ui-doc/source/docs/ru`
+`source/simai/ui-doc/content/ru`
 
 ## Contents
 
@@ -12,422 +12,462 @@ Generated from:
 
 ## Summary
 
-- Total markdown files: `461`
-- Utility files: `247`
-- Files with playground embeds: `220`
+- Total markdown files: `505`
+- Utility files: `236`
+- Files with playground embeds: `0`
 
 ## Top-Level Sections
 
-- `components`: `2`
-- `fundamentals`: `117`
-- `migration`: `2`
-- `reference`: `66`
-- `root`: `1`
-- `smart-components`: `1`
-- `start`: `25`
-- `utilities`: `247`
+- `components`: `71`
+- `guide`: `127`
+- `root`: `4`
+- `smart-components`: `67`
+- `utilities`: `236`
 
 ## Utility Groups
 
 - `utilities/_root`: `1`
-- `utilities/animation`: `9`
+- `utilities/animation`: `7`
 - `utilities/backdrop-filter`: `10`
 - `utilities/background`: `13`
-- `utilities/border`: `6`
-- `utilities/divider`: `6`
-- `utilities/filters`: `10`
+- `utilities/border`: `5`
+- `utilities/divider`: `5`
+- `utilities/filters`: `12`
 - `utilities/flex`: `7`
 - `utilities/forms`: `8`
 - `utilities/grid`: `12`
 - `utilities/grid-and-flexbox-utilities`: `13`
 - `utilities/indents`: `4`
 - `utilities/interactivity`: `6`
-- `utilities/layout`: `14`
+- `utilities/layout`: `16`
 - `utilities/layout-break`: `6`
-- `utilities/links`: `5`
+- `utilities/links`: `2`
 - `utilities/mask`: `9`
 - `utilities/objects`: `3`
 - `utilities/outline`: `8`
 - `utilities/overscroll`: `16`
 - `utilities/print`: `3`
-- `utilities/shadows`: `5`
+- `utilities/shadows`: `6`
 - `utilities/sizes`: `7`
 - `utilities/stripes`: `4`
-- `utilities/svg`: `10`
-- `utilities/tables`: `8`
-- `utilities/text-formatting`: `13`
+- `utilities/svg`: `9`
+- `utilities/tables`: `7`
+- `utilities/text-formatting`: `8`
 - `utilities/transform`: `6`
-- `utilities/typography`: `25`
+- `utilities/typography`: `23`
 
 ## Full File List By Section
 
 ### `components`
 
-- `components/buttons.md` - Кнопки
-- `components/introduction.md` - Компоненты
+- `components/actions/button-group.md` - Группа кнопок
+- `components/actions/buttons.md` - Кнопки
+- `components/actions/clipboard.md` - Копирование
+- `components/actions/close.md` - Закрытие
+- `components/actions/download-file.md` - Скачивание файла
+- `components/actions/fab.md` - Плавающая кнопка
+- `components/actions/icon-buttons.md` - Кнопки с иконкой
+- `components/actions/index.md` - Действия
+- `components/content/accordion.md` - Аккордеон
+- `components/content/avatars.md` - Аватары
+- `components/content/content-divider.md` - Разделитель
+- `components/content/doc.md` - Документ
+- `components/content/emoji.md` - Emoji
+- `components/content/featured-icon.md` - Акцентная иконка
+- `components/content/file-preview.md` - Предпросмотр файла
+- `components/content/flag.md` - Флаг
+- `components/content/highlight.md` - Подсветка кода
+- `components/content/icons.md` - Иконки
+- `components/content/index.md` - Содержимое и представление
+- `components/content/kbd.md` - Клавиши
+- `components/content/reference-link.md` - Справочная ссылка
+- `components/content/tags.md` - Теги
+- `components/feedback/alerts.md` - Уведомления
+- `components/feedback/badges.md` - Бейджи
+- `components/feedback/dot.md` - Точка состояния
+- `components/feedback/index.md` - Обратная связь и состояние
+- `components/feedback/placeholder.md` - Заполнитель
+- `components/feedback/progress-bar.md` - Прогресс
+- `components/feedback/progress-scale.md` - Шкала прогресса
+- `components/feedback/skeleton.md` - Скелетон
+- `components/feedback/spinner.md` - Спиннер
+- `components/feedback/toast.md` - Всплывающие сообщения
+- `components/forms/checkbox.md` - Флажок
+- `components/forms/country-code.md` - Код страны
+- `components/forms/datepicker.md` - Календарь
+- `components/forms/file-upload.md` - Загрузка файлов
+- `components/forms/index.md` - Формы и ввод
+- `components/forms/inputs.md` - Текстовые поля
+- `components/forms/quantity.md` - Количество
+- `components/forms/radio.md` - Радиокнопки
+- `components/forms/range-slider.md` - Слайдер диапазона
+- `components/forms/slider.md` - Слайдер контента
+- `components/forms/switch.md` - Переключатель
+- `components/forms/textarea.md` - Многострочное поле
+- `components/forms/toggle.md` - Toggle
+- `components/forms/verification.md` - Код подтверждения
+- `components/index.md` - Компоненты
+- `components/internal/admin-menu.md` - Основа Admin Menu
+- `components/internal/index.md` - Технические контракты
+- `components/navigation/breadcrumbs.md` - Хлебные крошки
+- `components/navigation/context-menu.md` - Контекстное меню
+- `components/navigation/dropdown.md` - Выпадающий список
+- `components/navigation/index.md` - Навигация и процесс
+- `components/navigation/link.md` - Ссылка
+- `components/navigation/menu.md` - Меню
+- `components/navigation/pagination.md` - Пагинация
+- `components/navigation/step.md` - Шаги
+- `components/navigation/tab.md` - Вкладка (совместимость)
+- `components/navigation/tabs.md` - Вкладки
+- `components/navigation/tree-item.md` - Элемент дерева
+- `components/navigation/tree.md` - Дерево
+- `components/overlays-media/carousel.md` - Карусель
+- `components/overlays-media/index.md` - Слои и медиаконтент
+- `components/overlays-media/modal.md` - Модальное окно
+- `components/overlays-media/swiper.md` - Swiper
+- `components/overlays-media/tooltip.md` - Подсказка
+- `components/tools/hide-show.md` - Показ и скрытие
+- `components/tools/index.md` - Системные и расширенные
+- `components/tools/outline.md` - Оглавление
+- `components/tools/scrollbar.md` - Полоса прокрутки
+- `components/tools/theme.md` - Тема
 
-### `fundamentals`
+### `guide`
 
-- `fundamentals/abbreviations-of-properties/abbreviations-of-properties.md` - Сокращения свойств
-- `fundamentals/adaptive-sizing-system.md` - Адаптивная система размеров
-- `fundamentals/alignment/alignment.md` - Выравнивание
-- `fundamentals/best-practices.md` - Ограничения модификаторов
-- `fundamentals/break-points/break-points-description.md` - Описание контрольных точек
-- `fundamentals/break-points/break-points-mobile-and-desktop.md` - Разделение на мобильные и десктопные устройства
-- `fundamentals/break-points/break-points-prefixes.md` - Префиксы для контрольных точек
-- `fundamentals/break-points/break-points-relationship.md` - Связь условий адаптивности и контрольных точек
-- `fundamentals/break-points/break-points-variables.md` - Переменные контрольных точек
-- `fundamentals/breakpoints.md` - Контрольные точки
-- `fundamentals/color/color-generator.md` - Генератор цветов
-- `fundamentals/color/color-palette.md` - Цветовая палитра
-- `fundamentals/color/color.md` - Цвет
-- `fundamentals/color/new-approach-to-using-color.md` - Новый подход к использованию цвета
-- `fundamentals/colors-and-themes.md` - Цвета
-- `fundamentals/concept/abbreviations-of-properties/abbreviations-of-properties.md` - Сокращения свойств
-- `fundamentals/concept/alignment/alignment.md` - Выравнивание
-- `fundamentals/concept/break-points/break-points-description.md` - Описание контрольных точек
-- `fundamentals/concept/break-points/break-points-mobile-and-desktop.md` - Разделение на мобильные и десктопные устройства
-- `fundamentals/concept/break-points/break-points-prefixes.md` - Префиксы для контрольных точек
-- `fundamentals/concept/break-points/break-points-relationship.md` - Связь условий адаптивности и контрольных точек
-- `fundamentals/concept/break-points/break-points-variables.md` - Переменные контрольных точек
-- `fundamentals/concept/color/color-generator.md` - Генератор цветов
-- `fundamentals/concept/color/color-palette.md` - Цветовая палитра
-- `fundamentals/concept/color/color.md` - Цвет
-- `fundamentals/concept/color/new-approach-to-using-color.md` - Новый подход к использованию цвета
-- `fundamentals/concept/directions/directions.md` - Направления
-- `fundamentals/concept/modifier-parameters/angle-parameter.md` - Параметр угла
-- `fundamentals/concept/modifier-parameters/axle-designations.md` - Обозначение осей
-- `fundamentals/concept/modifier-parameters/examples-of-parameters-in-modifiers.md` - Примеры параметров в модификаторах
-- `fundamentals/concept/modifier-parameters/modifier-parameters.md` - Параметры модификаторов
-- `fundamentals/concept/modifier-parameters/side-parameter.md` - Параметр стороны
-- `fundamentals/concept/sizes/direct-translation.md` - Прямой перевод (из буквенно-цифрового к пикселям)
-- `fundamentals/concept/sizes/from-old-to-new.md` - Переход со старой системы на новую
-- `fundamentals/concept/sizes/indents.md` - Отступы
-- `fundamentals/concept/sizes/mnemonic.md` - Мнемоника для быстрого запоминания
-- `fundamentals/concept/sizes/relationship-between-letters-and-multipliers.md` - Соотношение букв и множителей
-- `fundamentals/concept/sizes/reverse-conversion.md` - Обратная конвертация
-- `fundamentals/concept/sizes/reverse-translation.md` - Обратный перевод (из пикселей к буквенно-цифровому)
-- `fundamentals/concept/sizes/size-conversion.md` - Конвертация размеров
-- `fundamentals/concept/sizes/sizes.md` - Размеры
-- `fundamentals/concept/themes/design-themes/change-background-on-hover.md` - Изменение фона при наведении
-- `fundamentals/concept/themes/design-themes/color-and-theme.md` - Цвет и тема
-- `fundamentals/concept/themes/design-themes/design-themes.md` - Темы оформления
-- `fundamentals/concept/themes/design-themes/examples.md` - Пример
-- `fundamentals/concept/themes/design-themes/named-colors.md` - Именованные цвета
-- `fundamentals/concept/themes/design-themes/theme-color-palette/dark-theme-palette.md` - Палитра темной темы
-- `fundamentals/concept/themes/design-themes/theme-color-palette/light-theme-palette.md` - Палитра светлой темы
-- `fundamentals/concept/themes/design-themes/theme-color-palette/theme-color-palette.md` - Палитра цветов темы
-- `fundamentals/concept/themes/design-themes/using-themes.md` - Использование темы
-- `fundamentals/concept/typography/border-radius.md` - Закругление границ
-- `fundamentals/concept/typography/categories-font-sizes.md` - Категории размеров шрифтов
-- `fundamentals/concept/typography/changing-font-sizes.md` - Изменения размеров шрифта
-- `fundamentals/concept/typography/focus.md` - Фокус
-- `fundamentals/concept/typography/font-family.md` - Семейство шрифтов
-- `fundamentals/concept/typography/line-height.md` - Высота строки
-- `fundamentals/concept/typography/links.md` - Ссылки
-- `fundamentals/concept/typography/roles-of-text.md` - Роли текста
-- `fundamentals/concept/typography/shadows.md` - Тени
-- `fundamentals/concept/typography/text-indents.md` - Отступы для текста
-- `fundamentals/concept/values/absolute-dimensions.md` - Абсолютные размеры
-- `fundamentals/concept/values/binary-values.md` - Бинарные значения
-- `fundamentals/concept/values/degrees.md` - Градусы
-- `fundamentals/concept/values/percents.md` - Проценты
-- `fundamentals/concept/values/proportional-values.md` - Соразмерные значения
-- `fundamentals/concept/values/relative-sizes.md` - Относительные размеры
-- `fundamentals/concept/variables/variables-default.md` - Переменные по умолчанию
-- `fundamentals/concept/variables/variables-global.md` - Глобальные переменные
-- `fundamentals/concept/variables/variables-local.md` - Локальные переменные
-- `fundamentals/concept/variables/variables-types.md` - Типы переменных
-- `fundamentals/concept/variables/variables.md` - Переменные
-- `fundamentals/conditions.md` - Условия действия модификаторов
-- `fundamentals/directions/directions.md` - Поддержка LTR и RTL
-- `fundamentals/index.md` - Основы
-- `fundamentals/modifier-parameters/angle-parameter.md` - Параметр угла
-- `fundamentals/modifier-parameters/axle-designations.md` - Обозначение осей
-- `fundamentals/modifier-parameters/examples-of-parameters-in-modifiers.md` - Примеры параметров в модификаторах
-- `fundamentals/modifier-parameters/modifier-parameters.md` - Параметры модификаторов
-- `fundamentals/modifier-parameters/side-parameter.md` - Параметр стороны
-- `fundamentals/modifiers.md` - Модификаторы
-- `fundamentals/sizes/direct-translation.md` - Прямой перевод (из буквенно-цифрового к пикселям)
-- `fundamentals/sizes/from-old-to-new.md` - Переход со старой системы на новую
-- `fundamentals/sizes/indents.md` - Отступы
-- `fundamentals/sizes/mnemonic.md` - Мнемоника для быстрого запоминания
-- `fundamentals/sizes/relationship-between-letters-and-multipliers.md` - Соотношение букв и множителей
-- `fundamentals/sizes/reverse-conversion.md` - Обратная конвертация
-- `fundamentals/sizes/reverse-translation.md` - Обратный перевод (из пикселей к буквенно-цифровому)
-- `fundamentals/sizes/size-conversion.md` - Конвертация размеров
-- `fundamentals/sizes/sizes.md` - Размеры
-- `fundamentals/states.md` - Условия состояния
-- `fundamentals/themes/design-themes/change-background-on-hover.md` - Изменение фона при наведении
-- `fundamentals/themes/design-themes/color-and-theme.md` - Цвет и тема
-- `fundamentals/themes/design-themes/design-themes.md` - Темы оформления
-- `fundamentals/themes/design-themes/examples.md` - Пример
-- `fundamentals/themes/design-themes/named-colors.md` - Именованные цвета
-- `fundamentals/themes/design-themes/theme-color-palette/dark-theme-palette.md` - Палитра темной темы
-- `fundamentals/themes/design-themes/theme-color-palette/light-theme-palette.md` - Палитра светлой темы
-- `fundamentals/themes/design-themes/theme-color-palette/theme-color-palette.md` - Палитра цветов темы
-- `fundamentals/themes/design-themes/using-themes.md` - Использование темы
-- `fundamentals/typography-system.md` - Типографика
-- `fundamentals/typography/border-radius.md` - Закругление границ
-- `fundamentals/typography/categories-font-sizes.md` - Категории размеров шрифтов
-- `fundamentals/typography/changing-font-sizes.md` - Изменения размеров шрифта
-- `fundamentals/typography/focus.md` - Фокус
-- `fundamentals/typography/font-family.md` - Семейство шрифтов
-- `fundamentals/typography/line-height.md` - Высота строки
-- `fundamentals/typography/links.md` - Ссылки
-- `fundamentals/typography/roles-of-text.md` - Роли текста
-- `fundamentals/typography/shadows.md` - Тени
-- `fundamentals/typography/text-indents.md` - Отступы для текста
-- `fundamentals/values-and-scales.md` - Значения
-- `fundamentals/values.md` - Значения
-- `fundamentals/variables/variables-default.md` - Переменные по умолчанию
-- `fundamentals/variables/variables-global.md` - Глобальные переменные
-- `fundamentals/variables/variables-local.md` - Локальные переменные
-- `fundamentals/variables/variables-types.md` - Типы переменных
-- `fundamentals/variables/variables.md` - Переменные
-
-### `migration`
-
-- `migration/adaptive-sizing-v1.md` - Переход на вертикальный sizing contract
-- `migration/change-history.md` - Изменения в версии 5.4.0
-
-### `reference`
-
-- `reference/adaptive-sizing/generated-contract.md` - Справочник вертикальных размеров
-- `reference/color-primitives/additional-themes.md` - Дополнительные темы
-- `reference/color-primitives/color-palette/color-palette.md` - Цветовая палитра
-- `reference/color-primitives/color-palette/error.md` - Error
-- `reference/color-primitives/color-palette/neutral.md` - Neutral
-- `reference/color-primitives/color-palette/primary.md` - Primary
-- `reference/color-primitives/color-palette/secondary.md` - Secondary
-- `reference/color-primitives/color-palette/success.md` - Success
-- `reference/color-primitives/color-palette/tertiary.md` - Tertiary
-- `reference/color-primitives/color-palette/transparent-white-black.md` - Transparent, White и Black
-- `reference/color-primitives/color-palette/warning.md` - Warning
-- `reference/color-primitives/color-primitives-naming-rules.md` - Правила именования цветовых примитивов
-- `reference/color-primitives/color-primitives.md` - Цветовые примитивы
-- `reference/color-primitives/color-roles.md` - Цветовые роли
-- `reference/color-primitives/disable/disable.md` - Disable
-- `reference/color-primitives/disable/features-of-use.md` - Особенности использования
-- `reference/color-primitives/error.md` - Error
-- `reference/color-primitives/focus.md` - Focus
-- `reference/color-primitives/interactive-roles.md` - Интерактивные роли
-- `reference/color-primitives/light-and-dark-theme.md` - Светлая и тёмная тема
-- `reference/color-primitives/link.md` - Link
-- `reference/color-primitives/main-roles.md` - Основные роли
-- `reference/color-primitives/mark.md` - Mark
-- `reference/color-primitives/outline/features-of-use.md` - Особенности использования
-- `reference/color-primitives/outline/outline.md` - Outline
-- `reference/color-primitives/primary.md` - Primary
-- `reference/color-primitives/secondary.md` - Secondary
-- `reference/color-primitives/special-roles.md` - Специальные роли
-- `reference/color-primitives/success.md` - Success
-- `reference/color-primitives/supporting-roles.md` - Вспомогательные роли
-- `reference/color-primitives/surface.md` - Surface
-- `reference/color-primitives/tertiary.md` - Tertiary
-- `reference/color-primitives/warning.md` - Warning
-- `reference/properties-of-modifiers/properties-of-modifiers.md` - Свойства модификаторов
-- `reference/properties-of-modifiers/property-structure/animation.md` - Анимация (animation)
-- `reference/properties-of-modifiers/property-structure/backdrop-filter.md` - Фильтры подложки (backdrop-filter)
-- `reference/properties-of-modifiers/property-structure/background-color.md` - Цвет фона (background-color)
-- `reference/properties-of-modifiers/property-structure/background-image.md` - Фоновое изображение (background-image)
-- `reference/properties-of-modifiers/property-structure/border.md` - Границы (border)
-- `reference/properties-of-modifiers/property-structure/divider.md` - Разделители (divider)
-- `reference/properties-of-modifiers/property-structure/filter.md` - Фильтры элемента (filter)
-- `reference/properties-of-modifiers/property-structure/flex.md` - Флексбоксы (flex)
-- `reference/properties-of-modifiers/property-structure/form.md` - Формы (form)
-- `reference/properties-of-modifiers/property-structure/gradient.md` - Градиент (gradient)
-- `reference/properties-of-modifiers/property-structure/grid-flex.md` - Сетка и флексбоксы (grid-flex)
-- `reference/properties-of-modifiers/property-structure/grid.md` - Сетка (grid)
-- `reference/properties-of-modifiers/property-structure/interactivity.md` - Интерактивность (interactivity)
-- `reference/properties-of-modifiers/property-structure/layout-break.md` - Разрыв макета (layout-break)
-- `reference/properties-of-modifiers/property-structure/layout.md` - Макет
-- `reference/properties-of-modifiers/property-structure/link.md` - Ссылки (link)
-- `reference/properties-of-modifiers/property-structure/object.md` - Объекты (object)
-- `reference/properties-of-modifiers/property-structure/outline.md` - Внешняя граница (outline)
-- `reference/properties-of-modifiers/property-structure/print.md` - Печать (print)
-- `reference/properties-of-modifiers/property-structure/ring.md` - Кольцо (ring)
-- `reference/properties-of-modifiers/property-structure/scroll.md` - Прокрутка (scroll)
-- `reference/properties-of-modifiers/property-structure/shadow.md` - Тени (shadow)
-- `reference/properties-of-modifiers/property-structure/size.md` - Размеры (size)
-- `reference/properties-of-modifiers/property-structure/space.md` - Отступы (space)
-- `reference/properties-of-modifiers/property-structure/stripe.md` - Полосы (stripe)
-- `reference/properties-of-modifiers/property-structure/svg.md` - SVG (svg)
-- `reference/properties-of-modifiers/property-structure/table.md` - Таблицы (table)
-- `reference/properties-of-modifiers/property-structure/text-color.md` - Цвет текста (text-color)
-- `reference/properties-of-modifiers/property-structure/text-decoration.md` - Оформление текста (text-decoration)
-- `reference/properties-of-modifiers/property-structure/theme.md` - Темы (theme)
-- `reference/properties-of-modifiers/property-structure/transform.md` - Преобразования (transform)
-- `reference/properties-of-modifiers/property-structure/typography.md` - Типографика (typography)
+- `guide/colour/all-tokens.md` - Все переменные
+- `guide/colour/cascade-layers.md` - Каскадные слои
+- `guide/colour/colour-roles.md` - Цветовые роли
+- `guide/colour/contrast.md` - Контраст
+- `guide/colour/design-tokens.md` - Дизайн-токены
+- `guide/colour/elevation.md` - Поверхность и тень
+- `guide/colour/index.md` - Токены, цвет и темы
+- `guide/colour/palettes.md` - Цветовые примитивы и палитры
+- `guide/colour/themes.md` - Темы
+- `guide/colour/transparency.md` - Прозрачность
+- `guide/components/examples-and-project.md` - Примеры и компоненты проекта
+- `guide/components/form-fields.md` - Поля формы
+- `guide/components/index.md` - Компоненты
+- `guide/components/settings.md` - Настройки и размер
+- `guide/components/smart-twin.md` - Компонент и его Smart-двойник
+- `guide/components/states.md` - Состояния
+- `guide/components/surfaces-and-accessibility.md` - Поверхности и доступность
+- `guide/components/what-is.md` - Что такое компонент
+- `guide/connection/change-lifecycle.md` - Жизненный цикл изменений
+- `guide/connection/delivery.md` - Поставка и выпуск
+- `guide/connection/index.md` - Подключение и обновление
+- `guide/connection/js-api.md` - JavaScript API
+- `guide/connection/loader.md` - Как работает Loader
+- `guide/connection/project-setup.md` - Подключение к проекту
+- `guide/connection/updating.md` - Как обновить проект
+- `guide/connection/versions.md` - Версии
+- `guide/glossary.md` - Глоссарий
+- `guide/index.md` - Руководство
+- `guide/introduction/framework-and-project.md` - Framework и проект
+- `guide/introduction/index.md` - Знакомство
+- `guide/introduction/levels.md` - Уровни Framework
+- `guide/introduction/principles.md` - Принципы
+- `guide/introduction/quick-start.md` - Быстрый старт
+- `guide/introduction/structure.md` - Из чего состоит Framework
+- `guide/introduction/what-is.md` - Что такое SIMAI Framework
+- `guide/layouts/building/background-effects.md` - Фоновые эффекты
+- `guide/layouts/building/block.md` - Блок
+- `guide/layouts/building/component.md` - Компонент
+- `guide/layouts/building/composite-smart-component.md` - Составной компонент в макете
+- `guide/layouts/building/index.md` - Построение макета
+- `guide/layouts/building/interface-fragments.md` - Фрагменты интерфейса
+- `guide/layouts/building/page.md` - Страница
+- `guide/layouts/building/recipe-templates-and-variants.md` - Шаблоны, вставки и варианты
+- `guide/layouts/building/region-navigation.md` - Навигация по областям страницы
+- `guide/layouts/building/section.md` - Секция
+- `guide/layouts/building/slots.md` - Слоты и порядок
+- `guide/layouts/building/smart-component.md` - Smart-компонент в макете
+- `guide/layouts/content-and-data/data-sources.md` - Входы и источники данных
+- `guide/layouts/content-and-data/index.md` - Содержимое и данные
+- `guide/layouts/content-and-data/publication-and-rollback.md` - Публикация и откат
+- `guide/layouts/content-and-data/rendering-boundary.md` - Граница ответственности
+- `guide/layouts/content-and-data/snapshots-and-cache.md` - Снимки и кеш
+- `guide/layouts/content-and-data/structured-text.md` - Структурированный текст
+- `guide/layouts/editor/index.md` - Редактор страниц
+- `guide/layouts/editor/inline-text.md` - Правка текста на месте
+- `guide/layouts/editor/moving-blocks.md` - Перенос и вставка блоков
+- `guide/layouts/editor/overview.md` - Принцип и холст
+- `guide/layouts/editor/panels.md` - Панели и поля свойств
+- `guide/layouts/examples/catalog.md` - Каталог товаров
+- `guide/layouts/examples/dashboard.md` - Рабочая панель
+- `guide/layouts/examples/index.md` - Примеры макетов
+- `guide/layouts/examples/information-page.md` - Информационная страница
+- `guide/layouts/index.md` - Макеты и композиция
+- `guide/layouts/introduction/document-flow.md` - Как проходит сборка
+- `guide/layouts/introduction/index.md` - Введение в макеты
+- `guide/layouts/introduction/levels.md` - Уровни макета
+- `guide/layouts/introduction/recipe-document-html.md` - Recipe, документ и HTML
+- `guide/layouts/introduction/what-is-layout.md` - Что такое макет
+- `guide/layouts/reference/api.md` - API сборки и отрисовки
+- `guide/layouts/reference/custom-type.md` - Собственный тип
+- `guide/layouts/reference/diagnostics.md` - Диагностика
+- `guide/layouts/reference/index.md` - Справочные темы
+- `guide/layouts/reference/specification.md` - Где взять спецификацию
+- `guide/layouts/reference/studio-inspector.md` - Инспектор макета
+- `guide/layouts/reference/type-manifest.md` - Манифест типа
+- `guide/layouts/reference/value-types.md` - Типы значений маршрутов
+- `guide/layouts/reference/versions.md` - Версии и отпечатки
+- `guide/size-and-type/adaptive-sizing.md` - Адаптивные размеры
+- `guide/size-and-type/borders-and-radii.md` - Границы, скругления и высота
+- `guide/size-and-type/default-text.md` - Текст по умолчанию
+- `guide/size-and-type/directions.md` - Направление текста
+- `guide/size-and-type/focus.md` - Фокус
+- `guide/size-and-type/geometry.md` - Геометрия: стандарт и проверка
+- `guide/size-and-type/index.md` - Размер, пространство, текст и форма
+- `guide/size-and-type/language.md` - Язык интерфейса
+- `guide/size-and-type/languages.md` - Языки
+- `guide/size-and-type/motion.md` - Движение
+- `guide/size-and-type/scales.md` - Шкалы и базовая единица
+- `guide/size-and-type/size-ladder.md` - Одна лестница размеров
+- `guide/size-and-type/spacing-scale.md` - Значения интервалов
+- `guide/size-and-type/spacing.md` - Пространство
+- `guide/size-and-type/typography.md` - Типографика
+- `guide/size-and-type/vertical-sizing.md` - Значения вертикальных размеров
+- `guide/smart-components/ai-development.md` - Разработка с ИИ
+- `guide/smart-components/composite.md` - Составные компоненты
+- `guide/smart-components/connection.md` - Подключение и использование
+- `guide/smart-components/events.md` - События
+- `guide/smart-components/field-renderers.md` - Поля по типу свойства
+- `guide/smart-components/host-ports.md` - Порты хоста и намерения
+- `guide/smart-components/index.md` - Smart-компоненты
+- `guide/smart-components/introduction.md` - Что это и что даёт
+- `guide/smart-components/lifecycle.md` - Жизненный цикл
+- `guide/smart-components/manifest.md` - Манифест
+- `guide/smart-components/properties.md` - Атрибуты, свойства и состояние
+- `guide/smart-components/quality.md` - Качество
+- `guide/smart-components/slots.md` - Содержимое и слоты
+- `guide/smart-components/states-and-loading.md` - Состояния и загрузка данных
+- `guide/smart-components/structure.md` - Устройство компонента
+- `guide/smart-components/templates.md` - Шаблоны
+- `guide/smart-components/view-preferences.md` - Персональный вид
+- `guide/standards/ai.md` - Работа с ИИ
+- `guide/standards/framework-checks.md` - Как Framework проверяет себя
+- `guide/standards/index.md` - Стандарты, качество и ИИ
+- `guide/standards/interaction-rules.md` - Правила взаимодействия компонентов
+- `guide/standards/map.md` - Карта стандартов
+- `guide/standards/ports.md` - Порты и наборы проверок
+- `guide/standards/project-checks.md` - Как проект проверяет своё использование
+- `guide/standards/quality-principles.md` - Принципы качества
+- `guide/standards/what-is.md` - Что такое стандарт
+- `guide/utilities/conditions.md` - Условия действия
+- `guide/utilities/index.md` - Утилиты и раскладка
+- `guide/utilities/layout.md` - Раскладка
+- `guide/utilities/loading.md` - Как утилиты попадают на страницу
+- `guide/utilities/naming.md` - Имя утилиты
+- `guide/utilities/utilities-and-components.md` - Утилиты и компоненты
+- `guide/utilities/values.md` - Значения
+- `guide/utilities/what-is.md` - Что такое утилита
 
 ### `root`
 
-- `index.md` - Введение
+- `404.md` - Страница не найдена
+- `effects-preview.md` - effects-preview
+- `home-preview.md` - home-preview
+- `index.md` - Интерфейс без сборки: один CSS и один скрипт
 
 ### `smart-components`
 
-- `smart-components/introduction.md` - Смарт-компоненты
-
-### `start`
-
-- `start/glossary/index.md` - Глоссарий
-- `start/installation.md` - Начало работы
-- `start/introduction.md` - Введение
-- `start/loader/api/events.md` - События загрузчика
-- `start/loader/api/index.md` - API
-- `start/loader/api/methods.md` - Методы API
-- `start/loader/backend/caching.md` - 2.3 AssetManager.php — Генерация и сборка асетов
-- `start/loader/backend/index.md` - 2.1 Loader.php — Главный контроллер загрузки
-- `start/loader/backend/integration.md` - 2.8 Composer и автозагрузка
-- `start/loader/backend/server-interaction.md` - 1.6 Серверное взаимодействие
-- `start/loader/description.md` - Описание
-- `start/loader/frontend/cache-control.md` - 1.8 Очистка и контроль кэша
-- `start/loader/frontend/caching.md` - 1.4 Кэширование и ускорение загрузки
-- `start/loader/frontend/dependencies.md` - 1.3 Управление зависимостями плагинов
-- `start/loader/frontend/dynamic-js-css.md` - 1.2 Динамическая загрузка JS и CSS
-- `start/loader/frontend/index.md` - Фронтенд
-- `start/loader/frontend/plugin-discovery.md` - 1.1 Автоматический поиск плагинов
-- `start/loader/frontend/preloader.md` - 1.5 Прелоадер (индикатор загрузки)
-- `start/loader/frontend/smart-components.md` - 1.7 Поддержка Smart-компонентов
-- `start/loader/frontend/standalone.md` - 1.9 Режим standAlone
-- `start/loader/overview.md` - Введение
-- `start/playground.md` - Playground
-- `start/project-setup.md` - Настройка проекта
-- `start/quickstart.md` - Быстрый старт
-- `start/version-matrix.md` - Матрица версий sizing contract
+- `smart-components/actions/button-group.md` - Button Group
+- `smart-components/actions/buttons.md` - Buttons
+- `smart-components/actions/close.md` - Close
+- `smart-components/actions/copy-button.md` - Кнопка копирования
+- `smart-components/actions/download-file.md` - Download File
+- `smart-components/actions/icon-buttons.md` - Icon Buttons
+- `smart-components/actions/index.md` - Действия
+- `smart-components/actions/segmented.md` - Сегментный переключатель
+- `smart-components/composite/admin-menu.md` - Admin Menu
+- `smart-components/composite/index.md` - Составные компоненты
+- `smart-components/composite/page-header.md` - Page Header
+- `smart-components/composite/profile-picker.md` - Выбор профиля
+- `smart-components/composite/property-view.md` - Представление свойств
+- `smart-components/content/avatar.md` - Avatar
+- `smart-components/content/avatars.md` - Avatars
+- `smart-components/content/file-preview.md` - File Preview
+- `smart-components/content/gallery.md` - Галерея
+- `smart-components/content/icons.md` - Icons
+- `smart-components/content/index.md` - Содержимое и медиа
+- `smart-components/content/list-item.md` - List Item
+- `smart-components/content/reference-link.md` - Reference Link
+- `smart-components/content/table.md` - Представление данных
+- `smart-components/content/tags.md` - Tags
+- `smart-components/editor/composition-overlay.md` - Оверлей редактора
+- `smart-components/editor/index.md` - Редактор страниц
+- `smart-components/editor/inline-editor.md` - Inline-редактор
+- `smart-components/editor/sortable.md` - Перетаскивание
+- `smart-components/feedback/alert.md` - Alert
+- `smart-components/feedback/badges.md` - Badges
+- `smart-components/feedback/empty-state.md` - Пустое состояние
+- `smart-components/feedback/help-mark.md` - Подсказка «?»
+- `smart-components/feedback/index.md` - Уведомления и состояния
+- `smart-components/feedback/progress-bar.md` - Progress Bar
+- `smart-components/feedback/progress-scale.md` - Progress Scale
+- `smart-components/feedback/skeleton.md` - Skeleton
+- `smart-components/feedback/spinner.md` - Spinner
+- `smart-components/feedback/toast.md` - Toast
+- `smart-components/feedback/tooltip.md` - Tooltip
+- `smart-components/forms/checkbox.md` - Checkbox
+- `smart-components/forms/color.md` - Цвет
+- `smart-components/forms/country-code.md` - Smart-код страны
+- `smart-components/forms/datepicker.md` - Datepicker
+- `smart-components/forms/file-upload.md` - Smart-загрузка файлов
+- `smart-components/forms/index.md` - Формы и ввод
+- `smart-components/forms/inputs.md` - Поле ввода
+- `smart-components/forms/radio.md` - Radio
+- `smart-components/forms/range-slider.md` - Range Slider
+- `smart-components/forms/slider.md` - Smart-слайдер
+- `smart-components/forms/switch.md` - Switch
+- `smart-components/forms/textarea.md` - Textarea
+- `smart-components/forms/theme-generator.md` - Генератор темы
+- `smart-components/forms/toggle.md` - Toggle
+- `smart-components/index.md` - Смарт-компоненты
+- `smart-components/navigation/breadcrumbs.md` - Breadcrumbs
+- `smart-components/navigation/context-menu.md` - Context Menu
+- `smart-components/navigation/dropdown.md` - Dropdown
+- `smart-components/navigation/index.md` - Навигация
+- `smart-components/navigation/pagination.md` - Pagination
+- `smart-components/navigation/steps.md` - Steps
+- `smart-components/navigation/tabs.md` - Smart-вкладки
+- `smart-components/navigation/tree-item.md` - Tree Item
+- `smart-components/navigation/tree.md` - Tree
+- `smart-components/overlays/drawer.md` - Drawer
+- `smart-components/overlays/index.md` - Окна и панели
+- `smart-components/overlays/modal.md` - Модальное окно
+- `smart-components/overlays/popover.md` - Popover
+- `smart-components/overlays/resizer.md` - Изменение ширины
 
 ### `utilities`
 
-- `utilities/animation/animation-default-parameters.md` - Параметры по умолчанию для анимации
 - `utilities/animation/animation-duration.md` - Продолжительность анимации
-- `utilities/animation/animation-transition-appearing.md` - Анимация элемента
 - `utilities/animation/animation-transition-delay.md` - Задержка перехода
 - `utilities/animation/animation-transition-duration.md` - Продолжительность перехода
 - `utilities/animation/animation-transition-property.md` - Общее свойство перехода
 - `utilities/animation/animation-transition-timing-function.md` - Функция времени перехода
 - `utilities/animation/animation-type.md` - Тип анимации
 - `utilities/animation/index.md` - Анимация
-- `utilities/backdrop-filter/backdrop-blur.md` - Размытие фона элемента (backdrop-blur)
-- `utilities/backdrop-filter/backdrop-brightness.md` - Яркость фона элемента (backdrop-brightness)
-- `utilities/backdrop-filter/backdrop-contrast.md` - Контрастность фона элемента (backdrop-contrast)
-- `utilities/backdrop-filter/backdrop-grayscale.md` - Фон в оттенках серого элемента (backdrop-grayscale)
-- `utilities/backdrop-filter/backdrop-hue-rotate.md` - Вращение оттенка фона элемента (backdrop-hue-rotate)
-- `utilities/backdrop-filter/backdrop-invert.md` - Инвертирование цвета фона элемента (backdrop-invert)
-- `utilities/backdrop-filter/backdrop-opacity.md` - Прозрачность фона элемента (backdrop-opacity)
-- `utilities/backdrop-filter/backdrop-saturate.md` - Насыщенность подложки (backdrop-saturate)
-- `utilities/backdrop-filter/backdrop-sepia.md` - Сепия подложки (backdrop-sepia)
+- `utilities/backdrop-filter/backdrop-blur.md` - Размытие фона элемента
+- `utilities/backdrop-filter/backdrop-brightness.md` - Яркость фона элемента
+- `utilities/backdrop-filter/backdrop-contrast.md` - Контрастность фона элемента
+- `utilities/backdrop-filter/backdrop-grayscale.md` - Фон в оттенках серого элемента
+- `utilities/backdrop-filter/backdrop-hue-rotate.md` - Вращение оттенка фона элемента
+- `utilities/backdrop-filter/backdrop-invert.md` - Инвертирование цвета фона элемента
+- `utilities/backdrop-filter/backdrop-opacity.md` - Прозрачность фона элемента
+- `utilities/backdrop-filter/backdrop-saturate.md` - Насыщенность подложки
+- `utilities/backdrop-filter/backdrop-sepia.md` - Сепия подложки
 - `utilities/backdrop-filter/index.md` - Фильтры подложки
 - `utilities/background/background-attachment.md` - Вложение фона
 - `utilities/background/background-clip.md` - Обрезка фона
 - `utilities/background/background-color-brand.md` - Брендовые цвета фона
 - `utilities/background/background-color.md` - Цвет фона
 - `utilities/background/background-gradient-background.md` - Градиент фона
-- `utilities/background/background-gradient-stops.md` - Точки градиента (gradient-stops)
+- `utilities/background/background-gradient-stops.md` - Точки градиента
 - `utilities/background/background-gradient-type.md` - Вид градиента
-- `utilities/background/background-origin.md` - Вложение фона
+- `utilities/background/background-origin.md` - Исходная область фона
 - `utilities/background/background-pattern.md` - Паттерн фона
 - `utilities/background/background-position.md` - Положение фона
 - `utilities/background/background-repeat.md` - Повтор фона
 - `utilities/background/background-size.md` - Размер фона
 - `utilities/background/index.md` - Фон (background)
 - `utilities/border/border-color.md` - Цвет границы
-- `utilities/border/border-default-parameters.md` - Параметры по умолчанию (для границ)
 - `utilities/border/border-radius.md` - Скругление границы
 - `utilities/border/border-style.md` - Стиль границы
 - `utilities/border/border-width.md` - Толщина границы
 - `utilities/border/index.md` - Граница
 - `utilities/divider/divider-color.md` - Цвет разделителя
-- `utilities/divider/divider-default-parameters.md` - Параметры по умолчанию
 - `utilities/divider/divider-opacity.md` - Прозрачность разделителя
 - `utilities/divider/divider-style.md` - Стиль разделителя
 - `utilities/divider/divider-width.md` - Толщина разделителя
 - `utilities/divider/index.md` - Разделитель
-- `utilities/filters/filter-blur.md` - Размытие элемента (filter-blur)
-- `utilities/filters/filter-brightness.md` - Яркость элемента (filter-brightness)
-- `utilities/filters/filter-contrast.md` - Контрастность элемента (filter-contrast)
-- `utilities/filters/filter-grayscale.md` - Монохромность элемента (filter-grayscale)
-- `utilities/filters/filter-hue-rotate.md` - Вращение оттенка элемента (filter-hue-rotate)
-- `utilities/filters/filter-invert.md` - Инвертирование цвета элемента (filter-invert)
-- `utilities/filters/filter-opacity.md` - Прозрачность элемента (filter-opacity)
-- `utilities/filters/filter-saturate.md` - Насыщенность элемента (filter-saturate)
-- `utilities/filters/filter-sepia.md` - Сепия элемента (filter-sepia)
-- `utilities/filters/index.md` - Фильтры элемента
-- `utilities/flex/flex-basis.md` - Базисный размер (flex-basis)
-- `utilities/flex/flex-direction.md` - Направление размещения (flex-direction)
-- `utilities/flex/flex-grow.md` - Растяжимость элементов (flex-grow)
-- `utilities/flex/flex-shrink.md` - Сжимаемость (flex-shrink)
-- `utilities/flex/flex-wrap.md` - Перенос элементов (flex-wrap)
-- `utilities/flex/flexibility.md` - Гибкость элементов (flex)
+- `utilities/filters/filter-blur.md` - Размытие элемента
+- `utilities/filters/filter-brightness.md` - Яркость элемента
+- `utilities/filters/filter-contrast.md` - Контрастность элемента
+- `utilities/filters/filter-grayscale.md` - Монохромность элемента
+- `utilities/filters/filter-hue-rotate.md` - Вращение оттенка элемента
+- `utilities/filters/filter-invert.md` - Инвертирование цвета элемента
+- `utilities/filters/filter-opacity.md` - Прозрачность элемента
+- `utilities/filters/filter-saturate.md` - Насыщенность элемента
+- `utilities/filters/filter-sepia.md` - Сепия элемента
+- `utilities/filters/index.md` - Эффекты и фильтры
+- `utilities/filters/mix-blend-mode.md` - Смешивание цветов
+- `utilities/filters/opacity.md` - Прозрачность
+- `utilities/flex/flex-basis.md` - Базисный размер
+- `utilities/flex/flex-direction.md` - Направление размещения
+- `utilities/flex/flex-grow.md` - Растяжимость элементов
+- `utilities/flex/flex-shrink.md` - Сжимаемость
+- `utilities/flex/flex-wrap.md` - Перенос элементов
+- `utilities/flex/flexibility.md` - Гибкость элементов
 - `utilities/flex/index.md` - Флексбоксы
-- `utilities/forms/accent-color.md` - Акцентный цвет (accent-color)
-- `utilities/forms/appearance.md` - Сброс стиля (appearance)
-- `utilities/forms/caret-color.md` - Цвет каретки (caret-color)
+- `utilities/forms/accent-color.md` - Акцентный цвет
+- `utilities/forms/appearance.md` - Сброс стиля
+- `utilities/forms/caret-color.md` - Цвет каретки
 - `utilities/forms/index.md` - Формы
 - `utilities/forms/placeholder-color.md` - Цвет placeholder
 - `utilities/forms/placeholder-opacity.md` - Прозрачность placeholder
-- `utilities/forms/pointer-events.md` - События указателя (pointer-events)
-- `utilities/forms/resize.md` - Изменение размера (resize)
-- `utilities/grid-and-flexbox-utilities/align-content.md` - Выравнивание содержимого по поперечной оси (align-content)
-- `utilities/grid-and-flexbox-utilities/align-items.md` - Выравнивание каждого элемента в ячейках по поперечной оси (align-items)
-- `utilities/grid-and-flexbox-utilities/align-self.md` - Выравнивание отдельного элемента по поперечной оси (align-self)
-- `utilities/grid-and-flexbox-utilities/flex-align.md` - Одновременное выравнивание по двум осям (flex-align)
-- `utilities/grid-and-flexbox-utilities/gap.md` - Промежутки между элементами (gap)
+- `utilities/forms/pointer-events.md` - События указателя
+- `utilities/forms/resize.md` - Изменение размера
+- `utilities/grid-and-flexbox-utilities/align-content.md` - Выравнивание содержимого по поперечной оси
+- `utilities/grid-and-flexbox-utilities/align-items.md` - Выравнивание каждого элемента в ячейках по поперечной оси
+- `utilities/grid-and-flexbox-utilities/align-self.md` - Выравнивание отдельного элемента по поперечной оси
+- `utilities/grid-and-flexbox-utilities/flex-align.md` - Одновременное выравнивание по двум осям
+- `utilities/grid-and-flexbox-utilities/gap.md` - Промежутки между элементами
 - `utilities/grid-and-flexbox-utilities/index.md` - Утилиты для сетки и флексбоксов
-- `utilities/grid-and-flexbox-utilities/justify-content.md` - Выравнивание содержимого по основной оси (justify-content)
-- `utilities/grid-and-flexbox-utilities/justify-items.md` - Выравнивание каждого элемента по основной оси внутри ячейки (justify-items)
-- `utilities/grid-and-flexbox-utilities/justify-self.md` - Выравнивание отдельного элемента в ячейке по основной оси (justify-self)
-- `utilities/grid-and-flexbox-utilities/order.md` - Сортировка (order)
-- `utilities/grid-and-flexbox-utilities/place-content.md` - Размещение содержимого по обеим осям (place-content)
-- `utilities/grid-and-flexbox-utilities/place-items.md` - Размещение элементов по обеим осям (place-items)
-- `utilities/grid-and-flexbox-utilities/place-self.md` - Размещение отдельного элемента (place-self)
-- `utilities/grid/grid-auto-columns.md` - Автоматическая ширина столбцов сетки (grid-auto-columns)
-- `utilities/grid/grid-auto-flow.md` - Автоматическое формирование сетки (grid-auto-flow)
-- `utilities/grid/grid-auto-rows.md` - Автоматический размер строк сетки (grid-auto-rows)
-- `utilities/grid/grid-column-end.md` - Конечное положение колонки сетки (grid-column-end)
-- `utilities/grid/grid-column-start.md` - Начальное положение колонки сетки (grid-column-start)
-- `utilities/grid/grid-column.md` - Размер колонки сетки (grid-column)
-- `utilities/grid/grid-row-end.md` - Конечное положение строки сетки (grid-row-end)
-- `utilities/grid/grid-row-start.md` - Начальное положение строки сетки (grid-row-start)
-- `utilities/grid/grid-row.md` - Размер строки сетки (grid-row)
-- `utilities/grid/grid-template-columns.md` - Шаблон колонок сетки (grid-template-columns)
-- `utilities/grid/grid-template-rows.md` - Шаблон строк сетки (grid-template-rows)
+- `utilities/grid-and-flexbox-utilities/justify-content.md` - Выравнивание содержимого по основной оси
+- `utilities/grid-and-flexbox-utilities/justify-items.md` - Выравнивание каждого элемента по основной оси внутри ячейки
+- `utilities/grid-and-flexbox-utilities/justify-self.md` - Выравнивание отдельного элемента в ячейке по основной оси
+- `utilities/grid-and-flexbox-utilities/order.md` - Сортировка
+- `utilities/grid-and-flexbox-utilities/place-content.md` - Размещение содержимого по обеим осям
+- `utilities/grid-and-flexbox-utilities/place-items.md` - Размещение элементов по обеим осям
+- `utilities/grid-and-flexbox-utilities/place-self.md` - Размещение отдельного элемента
+- `utilities/grid/grid-auto-columns.md` - Автоматическая ширина столбцов сетки
+- `utilities/grid/grid-auto-flow.md` - Автоматическое формирование сетки
+- `utilities/grid/grid-auto-rows.md` - Автоматический размер строк сетки
+- `utilities/grid/grid-column-end.md` - Конечное положение колонки сетки
+- `utilities/grid/grid-column-start.md` - Начальное положение колонки сетки
+- `utilities/grid/grid-column.md` - Размер колонки сетки
+- `utilities/grid/grid-row-end.md` - Конечное положение строки сетки
+- `utilities/grid/grid-row-start.md` - Начальное положение строки сетки
+- `utilities/grid/grid-row.md` - Размер строки сетки
+- `utilities/grid/grid-template-columns.md` - Шаблон колонок сетки
+- `utilities/grid/grid-template-rows.md` - Шаблон строк сетки
 - `utilities/grid/index.md` - Сетка
 - `utilities/indents/index.md` - Отступы
-- `utilities/indents/margin.md` - Внешний отступ (margin)
-- `utilities/indents/padding.md` - Внутренний отступ (padding)
-- `utilities/indents/space.md` - Промежутки (space)
+- `utilities/indents/margin.md` - Внешний отступ
+- `utilities/indents/padding.md` - Внутренний отступ
+- `utilities/indents/space.md` - Промежутки
 - `utilities/index.md` - Утилиты
-- `utilities/interactivity/cursor.md` - Вид курсора (cursor)
+- `utilities/interactivity/cursor.md` - Вид курсора
 - `utilities/interactivity/index.md` - Интерактивность
-- `utilities/interactivity/sr-only.md` - Визуально скрытый контент (sr-only)
-- `utilities/interactivity/touch-action.md` - Сенсорное действие (touch-action)
-- `utilities/interactivity/user-select.md` - Выделение текста (user-select)
-- `utilities/interactivity/will-change.md` - Подготовка к изменениям (will-change)
-- `utilities/layout-break/break-after.md` - Разрыв после колонки (break-after)
-- `utilities/layout-break/break-before.md` - Разрыв до элемента (break-before)
-- `utilities/layout-break/break-inside.md` - Разрыв внутри элемента (break-inside)
-- `utilities/layout-break/column-gap.md` - Межколоночный интервал (column-gap)
-- `utilities/layout-break/column.md` - Колонки (column)
+- `utilities/interactivity/sr-only.md` - Визуально скрытый контент
+- `utilities/interactivity/touch-action.md` - Сенсорное действие
+- `utilities/interactivity/user-select.md` - Выделение текста
+- `utilities/interactivity/will-change.md` - Подготовка к изменениям
+- `utilities/layout-break/break-after.md` - Разрыв после колонки
+- `utilities/layout-break/break-before.md` - Разрыв до элемента
+- `utilities/layout-break/break-inside.md` - Разрыв внутри элемента
+- `utilities/layout-break/column-gap.md` - Межколоночный интервал
+- `utilities/layout-break/column.md` - Колонки
 - `utilities/layout-break/index.md` - Разрыв макета
-- `utilities/layout/aspect-ratio.md` - Соотношение сторон (Aspect Ratio)
-- `utilities/layout/box-decoration-break.md` - Оформление элемента, разбитого на несколько строк (box-decoration-break)
-- `utilities/layout/box-sizing.md` - Метод расчёта размера элемента (box-sizing)
-- `utilities/layout/clear.md` - Перенос после плавающих элементов (clear)
-- `utilities/layout/container.md` - Контейнер (container)
-- `utilities/layout/display.md` - Метод отображения элемента (display)
-- `utilities/layout/element-position.md` - Позиция элемента (element-position)
-- `utilities/layout/float.md` - Плавающий элемент (float)
+- `utilities/layout/aspect-ratio.md` - Соотношение сторон
+- `utilities/layout/box-decoration-break.md` - Оформление элемента, разбитого на несколько строк
+- `utilities/layout/box-sizing.md` - Метод расчёта размера элемента
+- `utilities/layout/clear.md` - Перенос после плавающих элементов
+- `utilities/layout/container.md` - Контейнер
+- `utilities/layout/display.md` - Метод отображения элемента
+- `utilities/layout/element-position.md` - Позиция элемента
+- `utilities/layout/float.md` - Плавающий элемент
 - `utilities/layout/index.md` - Макет
-- `utilities/layout/isolation.md` - Контекст наложения (isolation)
-- `utilities/layout/max-container.md` - Максимальный размер контейнера (max-container)
-- `utilities/layout/overflow.md` - Переполнение элемента (overflow)
-- `utilities/layout/visibility.md` - Видимость элемента (visibility)
-- `utilities/layout/z-index.md` - Положение элемента по оси Z (z-index)
-- `utilities/links/heritage-link-color.md` - Наследование цвета ссылок
+- `utilities/layout/isolation.md` - Контекст наложения
+- `utilities/layout/max-container.md` - Максимальный размер контейнера
+- `utilities/layout/overflow.md` - Переполнение элемента
+- `utilities/layout/query-container.md` - Контейнерные запросы
+- `utilities/layout/query-layout.md` - Адаптация по размеру контейнера
+- `utilities/layout/visibility.md` - Видимость элемента
+- `utilities/layout/z-index.md` - Положение элемента по оси Z
 - `utilities/links/index.md` - Ссылки
-- `utilities/links/links-default-parameters.md` - Параметры по умолчанию
-- `utilities/links/links-formatting.md` - Оформление ссылок
-- `utilities/links/links-underlining.md` - Подчеркивание ссылок
+- `utilities/links/links-formatting.md` - Ссылки
 - `utilities/mask/index.md` - Маска
 - `utilities/mask/mask-clip.md` - Область маски
 - `utilities/mask/mask-composite.md` - Композиция маски
@@ -438,47 +478,48 @@ Generated from:
 - `utilities/mask/mask-size.md` - Размер маски
 - `utilities/mask/mask-type.md` - Тип маски
 - `utilities/objects/index.md` - Объекты
-- `utilities/objects/object-fit.md` - Заполнение объектом (object-fit)
-- `utilities/objects/object-position.md` - Позиционирование объекта (object-position)
+- `utilities/objects/object-fit.md` - Заполнение объектом
+- `utilities/objects/object-position.md` - Позиционирование объекта
 - `utilities/outline/index.md` - Внешняя граница
 - `utilities/outline/outline-color.md` - Цвет внешней границы
-- `utilities/outline/outline-default-parameters.md` - Параметры по умолчанию
 - `utilities/outline/outline-offset.md` - Отступ внешней границы
 - `utilities/outline/outline-style.md` - Стиль внешней границы
 - `utilities/outline/outline-width.md` - Толщина внешней границы
-- `utilities/outline/ring-inset.md` - Внутреннее кольцо (ring-inset)
-- `utilities/outline/ring-opacity.md` - Прозрачность кольца (ring-opacity)
+- `utilities/outline/ring-inset.md` - Внутреннее кольцо
+- `utilities/outline/ring-opacity.md` - Прозрачность кольца
+- `utilities/outline/ring.md` - Фокусное кольцо
 - `utilities/overscroll/index.md` - Прокрутка
 - `utilities/overscroll/overscroll-behavior-smooth.md` - Плавность прокрутки
 - `utilities/overscroll/overscroll-behavior.md` - Поведение при прокрутке
-- `utilities/overscroll/scroll-backdrop-color.md` - Цвет подложки прокрутки (scroll-backdrop-color)
-- `utilities/overscroll/scroll-backdrop-radius.md` - Радиус границы подложки прокрутки (scroll-backdrop-radius)
-- `utilities/overscroll/scroll-backdrop-width.md` - Толщина подложки прокрутки (scroll-backdrop-width)
-- `utilities/overscroll/scroll-hover.md` - Полоса прокрутки при наведении (scroll-hover)
+- `utilities/overscroll/scroll-backdrop-color.md` - Цвет подложки прокрутки
+- `utilities/overscroll/scroll-backdrop-radius.md` - Радиус границы подложки прокрутки
+- `utilities/overscroll/scroll-backdrop-width.md` - Толщина подложки прокрутки
+- `utilities/overscroll/scroll-hover.md` - Полоса прокрутки при наведении
 - `utilities/overscroll/scroll-margin.md` - Внешний отступ прокрутки
-- `utilities/overscroll/scroll-padding.md` - Внутренний отступ прокрутки (scroll-padding)
-- `utilities/overscroll/scroll-slider-color.md` - Цвет ползунка прокрутки (scroll-slider-color / scroll-thumb-color)
-- `utilities/overscroll/scroll-slider-radius.md` - Радиус границы ползунка прокрутки (scroll-thumb-radius)
-- `utilities/overscroll/scroll-snap-align.md` - Выравнивание привязки прокрутки (scroll-snap-align)
-- `utilities/overscroll/scroll-snap-stop.md` - Ограничитель прокрутки (scroll-snap-stop)
-- `utilities/overscroll/scroll-snap-type.md` - Тип привязки прокрутки (scroll-snap-type)
-- `utilities/overscroll/scroll.md` - Толщина ползунка прокрутки (scroll / scroll-thumb-size)
-- `utilities/overscroll/scrollbar-presets.md` - Режимы полосы прокрутки
-- `utilities/print/display-print.md` - Отображение элемента при печати (display-print)
-- `utilities/print/display-visibility.md` - Видимость элемента при печати (print-visibility)
+- `utilities/overscroll/scroll-padding.md` - Внутренний отступ прокрутки
+- `utilities/overscroll/scroll-slider-color.md` - Цвет ползунка прокрутки
+- `utilities/overscroll/scroll-slider-radius.md` - Радиус границы ползунка прокрутки
+- `utilities/overscroll/scroll-snap-align.md` - Выравнивание привязки прокрутки
+- `utilities/overscroll/scroll-snap-stop.md` - Ограничитель прокрутки
+- `utilities/overscroll/scroll-snap-type.md` - Тип привязки прокрутки
+- `utilities/overscroll/scroll-subtle.md` - Ненавязчивая полоса прокрутки
+- `utilities/overscroll/scroll.md` - Толщина ползунка прокрутки
+- `utilities/print/display-print.md` - Отображение элемента при печати
+- `utilities/print/display-visibility.md` - Видимость элемента при печати
 - `utilities/print/index.md` - Печать
-- `utilities/shadows/drop-shadow-color.md` - Цвет падающей тени (drop-shadow-color)
-- `utilities/shadows/drop-shadow.md` - Падающая тень (drop-shadow)
-- `utilities/shadows/element-color.md` - Цвет тени элемента (box-shadow-color)
-- `utilities/shadows/element-shadow.md` - Тень элемента (box-shadow)
+- `utilities/shadows/drop-shadow-color.md` - Цвет падающей тени
+- `utilities/shadows/drop-shadow.md` - Падающая тень
+- `utilities/shadows/element-color.md` - Цвет тени элемента
+- `utilities/shadows/element-shadow.md` - Тень элемента
+- `utilities/shadows/elevation.md` - Высота
 - `utilities/shadows/index.md` - Тени
-- `utilities/sizes/height.md` - Высота (height)
+- `utilities/sizes/height.md` - Высота
 - `utilities/sizes/index.md` - Размеры
-- `utilities/sizes/max-height.md` - Максимальная высота (max-height)
-- `utilities/sizes/max-width.md` - Максимальная ширина (max-width)
-- `utilities/sizes/min-height.md` - Минимальная высота (min-height)
-- `utilities/sizes/min-width.md` - Минимальная ширина (min-width)
-- `utilities/sizes/width.md` - Ширина (width)
+- `utilities/sizes/max-height.md` - Максимальная высота
+- `utilities/sizes/max-width.md` - Максимальная ширина
+- `utilities/sizes/min-height.md` - Минимальная высота
+- `utilities/sizes/min-width.md` - Минимальная ширина
+- `utilities/sizes/width.md` - Ширина
 - `utilities/stripes/index.md` - Полосы
 - `utilities/stripes/stripes-color.md` - Цвет полос
 - `utilities/stripes/stripes-size.md` - Размер полосок
@@ -486,62 +527,53 @@ Generated from:
 - `utilities/svg/index.md` - SVG
 - `utilities/svg/svg-fill-brand.md` - Брендовая SVG-заливка
 - `utilities/svg/svg-fill-color.md` - Цвет заливки
-- `utilities/svg/svg-fill-rule.md` - Правило заливки SVG (fill-rule)
 - `utilities/svg/svg-fill-type.md` - Тип заливки
 - `utilities/svg/svg-image-size.md` - Размер SVG-изображений
 - `utilities/svg/svg-stroke-color.md` - Цвет обводки
-- `utilities/svg/svg-stroke-line-cap.md` - Концы обводки (Line Cap)
-- `utilities/svg/svg-stroke-line-join.md` - Углы обводки (Line Join)
+- `utilities/svg/svg-stroke-line-cap.md` - Концы обводки
+- `utilities/svg/svg-stroke-line-join.md` - Углы обводки
 - `utilities/svg/svg-stroke-width.md` - Толщина обводки
 - `utilities/tables/index.md` - Таблицы
-- `utilities/tables/table-border-cells.md` - Границы вокруг ячеек
+- `utilities/tables/table-border-spacing.md` - Границы и интервалы таблицы
 - `utilities/tables/table-border.md` - Границы таблицы
 - `utilities/tables/table-layout.md` - Макет таблицы
 - `utilities/tables/tables-active-rows-and-cells.md` - Активные строки и ячейки
 - `utilities/tables/tables-alternating-rows-and-columns.md` - Чередование строк и столбцов
 - `utilities/tables/tables-default-parameters.md` - Параметры по умолчанию для таблиц
-- `utilities/tables/tables-formatting.md` - Оформление таблицы
 - `utilities/text-formatting/index.md` - Оформление текста
-- `utilities/text-formatting/text-code.md` - Оформление кода
 - `utilities/text-formatting/text-color.md` - Цвет текста
-- `utilities/text-formatting/text-decoration-color.md` - Цвет линий оформления (text-decoration-color)
-- `utilities/text-formatting/text-decoration-offset.md` - Смещение линий оформления (text-decoration-offset)
-- `utilities/text-formatting/text-decoration-style.md` - Стиль линий оформления (text-decoration-style)
-- `utilities/text-formatting/text-decoration.md` - Линии оформления текста (text-decoration)
-- `utilities/text-formatting/text-formatting-color.md` - Цвет оформления текста
-- `utilities/text-formatting/text-formatting-style.md` - Стиль оформления текста
+- `utilities/text-formatting/text-decoration-color.md` - Цвет линий оформления
+- `utilities/text-formatting/text-decoration-offset.md` - Смещение линий оформления
+- `utilities/text-formatting/text-decoration-style.md` - Стиль линий оформления
+- `utilities/text-formatting/text-decoration.md` - Линии оформления текста
 - `utilities/text-formatting/text-formatting-text.md` - Оформление текста
 - `utilities/text-formatting/text-formatting-thickness.md` - Толщина оформления текста
-- `utilities/text-formatting/text-selecting.md` - Выделение текста
-- `utilities/text-formatting/text-underline-offset.md` - Смещение подчеркивания текста
 - `utilities/transform/index.md` - Преобразования
-- `utilities/transform/transform-origin.md` - Точка трансформации (transform-origin)
-- `utilities/transform/transform-rotate.md` - Вращение (transform-rotate)
-- `utilities/transform/transform-scale.md` - Масштабирование (transform-scale)
-- `utilities/transform/transform-skew.md` - Наклон (transform-skew)
-- `utilities/transform/transform-translate.md` - Смещение (transform-translate)
-- `utilities/typography/content.md` - Содержимое (content)
-- `utilities/typography/font-family.md` - Семейство шрифтов (font-family)
-- `utilities/typography/font-smoothing.md` - Сглаживание шрифтов (font-smoothing)
-- `utilities/typography/font-style.md` - Стиль шрифта (font-style)
-- `utilities/typography/font-variant-numeric.md` - Начертание цифр (font-variant-numeric)
-- `utilities/typography/font-variant.md` - Начертание шрифта (капитель) (font-variant)
-- `utilities/typography/font-weight.md` - Толщина шрифта (font-weight)
+- `utilities/transform/transform-origin.md` - Точка трансформации
+- `utilities/transform/transform-rotate.md` - Вращение
+- `utilities/transform/transform-scale.md` - Масштабирование
+- `utilities/transform/transform-skew.md` - Наклон
+- `utilities/transform/transform-translate.md` - Смещение
+- `utilities/typography/content.md` - Содержимое
+- `utilities/typography/font-family.md` - Семейство шрифтов
+- `utilities/typography/font-smoothing.md` - Сглаживание шрифтов
+- `utilities/typography/font-style.md` - Стиль шрифта
+- `utilities/typography/font-variant-numeric.md` - Начертание цифр
+- `utilities/typography/font-variant.md` - Начертание шрифта (капитель)
+- `utilities/typography/font-weight.md` - Толщина шрифта
 - `utilities/typography/index.md` - Типографика
-- `utilities/typography/letter-spacing.md` - Трекинг текста (letter-spacing)
-- `utilities/typography/line-clamp.md` - Ограничение строк (line-clamp)
-- `utilities/typography/line-height.md` - Высота строки (line-height)
-- `utilities/typography/list-style-position.md` - Положение маркера списка (list-style-position)
-- `utilities/typography/list-style-type.md` - Стиль маркера списка (list-style-type)
-- `utilities/typography/text-align.md` - Выравнивание текста (text-align)
-- `utilities/typography/text-default.md` - Параметры по умолчанию (text-default)
-- `utilities/typography/text-indent.md` - Отступ текста (text-indent)
-- `utilities/typography/text-max-width.md` - Длина строки (text-max-width)
-- `utilities/typography/text-overflow.md` - Обрезка текста (text-overflow)
-- `utilities/typography/text-role-modifiers.md` - Модификаторы ролей текста
-- `utilities/typography/text-size.md` - Размер текста (text-size)
-- `utilities/typography/text-transform.md` - Трансформация текста (text-transform)
-- `utilities/typography/title-size.md` - Размер заголовков (title-size)
-- `utilities/typography/vertical-align.md` - Выравнивание по вертикали (vertical-align)
-- `utilities/typography/white-space.md` - Обработка пробелов (white-space)
-- `utilities/typography/word-break.md` - Перенос строк (word-break)
+- `utilities/typography/letter-spacing.md` - Трекинг текста
+- `utilities/typography/line-clamp.md` - Ограничение строк
+- `utilities/typography/line-height.md` - Высота строки
+- `utilities/typography/list-style-position.md` - Положение маркера списка
+- `utilities/typography/list-style-type.md` - Стиль маркера списка
+- `utilities/typography/text-align.md` - Выравнивание текста
+- `utilities/typography/text-indent.md` - Отступ текста
+- `utilities/typography/text-max-width.md` - Длина строки
+- `utilities/typography/text-overflow.md` - Обрезка текста
+- `utilities/typography/text-size.md` - Размер текста
+- `utilities/typography/text-wrap.md` - Перенос текста
+- `utilities/typography/title-size.md` - Размер заголовков
+- `utilities/typography/vertical-align.md` - Выравнивание по вертикали
+- `utilities/typography/white-space.md` - Обработка пробелов
+- `utilities/typography/word-break.md` - Перенос строк

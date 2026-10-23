@@ -103,7 +103,7 @@ def apply_activity_heuristics(text: str, activity_id: str, score: int, hits: lis
     bonus_hits = []
 
     if activity_id == "source-refresh":
-        if has_any(text, ["ui-play", "ui-smart", "ui-doc", "ui repo", "upstream", "mirror", "inventory", "playground", "новые компоненты", "обновились репозитории"]):
+        if has_any(text, ["ui-play", "ui-source", "ui-smart", "ui-doc", "ui repo", "upstream", "mirror", "inventory", "playground", "новые компоненты", "обновились репозитории"]):
             score += 3
             bonus_hits.append("source-drift-intent")
 

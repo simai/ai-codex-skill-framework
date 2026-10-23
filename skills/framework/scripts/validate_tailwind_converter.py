@@ -512,19 +512,22 @@ def main() -> int:
             }
         )
     if smart_render.get("sfCode") == "table":
-        if smart_render.get("sourceBacked") is not True:
+        # Since 2026-10 the free distribution (ui/distr/smart) has no table runtime:
+        # sf-table belongs to SIMAI Pro (simai/ui-pro, component package `larena`).
+        # The converter must therefore keep static table markup and never auto-promote.
+        if smart_render.get("sourceBacked") is not False:
             failures.append(
                 {
                     "fixtureId": "smart-render-table-source-backed-smoke",
-                    "expected": "sf-code table is backed by the current ui-smart table runtime",
+                    "expected": "sf-code table is not backed by the free ui/distr/smart runtime",
                     "actual": smart_render,
                 }
             )
-        if smart_render.get("promotionStatus") != "candidate":
+        if smart_render.get("promotionStatus") != "blocked-by-missing-source-backed-smart":
             failures.append(
                 {
                     "fixtureId": "smart-render-table-promotion-smoke",
-                    "expected": "candidate",
+                    "expected": "blocked-by-missing-source-backed-smart",
                     "actual": smart_render.get("promotionStatus"),
                 }
             )

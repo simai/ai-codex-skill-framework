@@ -307,11 +307,11 @@ def run_json(command: list[str]) -> dict:
 
 
 SMART_RUNTIME_ASSETS = {
-    "sf-button": "source/simai/ui-smart/smart/buttons/js/buttons.js",
-    "sf-dropdown": "source/simai/ui-smart/smart/dropdown/js/dropdown.js",
-    "sf-input": "source/simai/ui-smart/smart/inputs/js/inputs.js",
-    "sf-pagination": "source/simai/ui-smart/smart/pagination/js/pagination.js",
-    "sf-modal": "source/simai/ui-smart/smart/modal/js/modal.js",
+    "sf-button": "source/simai/ui/distr/smart/buttons/js/buttons.js",
+    "sf-dropdown": "source/simai/ui/distr/smart/dropdown/js/dropdown.js",
+    "sf-input": "source/simai/ui/distr/smart/inputs/js/inputs.js",
+    "sf-pagination": "source/simai/ui/distr/smart/pagination/js/pagination.js",
+    "sf-modal": "source/simai/ui/distr/smart/modal/js/modal.js",
 }
 
 RUNTIME_COMPONENT_CSS_ASSETS = {
@@ -350,7 +350,7 @@ def runtime_expected_elements(page_id: str) -> list[str]:
 def runtime_blockers(page_id: str) -> list[str]:
     if page_id == "basic-tables":
         return [
-            "sf-code=\"table\" has no concrete source/simai/ui-smart/smart/table runtime artifact in the current source mirror.",
+            "sf-code=\"table\" has no concrete source/simai/ui/distr/smart/table runtime artifact in the current source mirror.",
             "Table promotion remains blocked until a real smart table asset and data/property contract are source-backed.",
         ]
     return []
@@ -391,7 +391,7 @@ def runtime_head_tags(page_id: str, page_root: Path, repo_root: Path) -> str:
     expected = runtime_expected_elements(page_id)
     core_css = repo_root / "source" / "simai" / "ui" / "distr" / "core" / "css" / "core.css"
     tags = [
-        f'<script>window.sfPath = "{path_ref(page_root, repo_root / "source" / "simai" / "ui" / "distr")}/"; window.sfSmartPath = "{path_ref(page_root, repo_root / "source" / "simai" / "ui-smart")}";</script>',
+        f'<script>window.sfPath = "{path_ref(page_root, repo_root / "source" / "simai" / "ui" / "distr")}/";</script>',
     ]
     if core_css.exists():
         tags.append(f'<link rel="stylesheet" href="{path_ref(page_root, core_css)}">')

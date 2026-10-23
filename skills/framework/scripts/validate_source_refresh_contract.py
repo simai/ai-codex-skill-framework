@@ -66,7 +66,7 @@ def main() -> int:
         if status == "error" and not optional:
             failures.append(f"Repo '{name}' is non-optional but lock status is error")
 
-    required_ok_repos = ["ui", "ui-loader", "ui-doc", "ui-play", "ui-smart"]
+    required_ok_repos = ["ui", "ui-source", "ui-doc", "ui-play"]
     for repo_name in required_ok_repos:
         if lock_specs.get(repo_name, {}).get("status") != "ok":
             failures.append(f"Required source-refresh repo '{repo_name}' is not synced with status ok")
@@ -86,7 +86,7 @@ def main() -> int:
         failures.append("Utility inventory treats the support directory 'js' as a utility group")
     if utilities.get("shippedOnlyGroups"):
         failures.append(
-            "Shipped utility groups have no current ui-loader source: "
+            "Shipped utility groups have no current ui-source source: "
             + ", ".join(utilities["shippedOnlyGroups"])
         )
     if summary.get("componentExampleGroupCount", 0) <= 0:
